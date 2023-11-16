@@ -1,0 +1,2905 @@
+Program.Sub.ScreenSU.Start
+gui.F_Search..create
+gui.F_Search..caption("Search Form")
+gui.F_Search..size(6435,4110)
+gui.F_Search..position(0,0)
+gui.F_Search..event(resize,f_search_resize)
+gui.F_Search..event(unload,f_search_unload)
+gui.F_Search..alwaysontop(False)
+gui.F_Search..fontname("Arial")
+gui.F_Search..fontsize(8)
+gui.F_Search..forecolor(0)
+gui.F_Search..fontstyle(False,False,False,False,)
+gui.F_Search..BackColor(-2147483633)
+gui.F_Search..controlbox(True)
+gui.F_Search..maxbutton(False)
+gui.F_Search..minbutton(True)
+gui.F_Search..mousepointer(0)
+gui.F_Search..moveable(True)
+gui.F_Search..sizeable(True)
+gui.F_Search..ShowInTaskBar(True)
+gui.F_Search..titlebar(True)
+gui.F_Search.lblSearch_EmployNumber.create(label,"Employee Number",True,1935,255,1,200,100,True,0,Arial,8,-2147483633,0)
+gui.F_Search.lblSearch_LName.create(label,"Last Name",True,1935,255,1,3300,700,True,0,Arial,8,-2147483633,0)
+gui.F_Search.lblSearch_fname.create(label,"First Name",True,1935,240,1,200,700,True,0,Arial,8,-2147483633,0)
+gui.F_Search.txtSearch_EmployFname.create(textbox,"",True,2970,300,0,200,900,False,0,Arial,8,-2147483643,1)
+gui.F_Search.txtSearch_EmployFname.maxLength(30)
+gui.F_Search.txtSearch_Lname.create(textbox,"",True,2700,300,0,3300,900,False,0,Arial,8,-2147483643,1)
+gui.F_Search.txtSearch_Lname.maxLength(30)
+gui.F_Search.txtSearch_EmployeeNum.create(textbox,"",True,2520,300,0,200,300,True,0,Arial,8,-2147483643,1)
+gui.F_Search.txtSearch_EmployeeNum.numericonly(1)
+gui.F_Search.txtSearch_EmployeeNum.maxLength(10)
+gui.F_Search.txtSearch_EmployeeNum.event(lostfocus,txtsearch_employeenum_lostfocus)
+gui.F_Search.cmdSearch_EmpNum.create(button)
+gui.F_Search.cmdSearch_EmpNum.caption("^")
+gui.F_Search.cmdSearch_EmpNum.visible(True)
+gui.F_Search.cmdSearch_EmpNum.size(450,300)
+gui.F_Search.cmdSearch_EmpNum.zorder(0)
+gui.F_Search.cmdSearch_EmpNum.position(2700,300)
+gui.F_Search.cmdSearch_EmpNum.enabled(True)
+gui.F_Search.cmdSearch_EmpNum.fontname("Arial")
+gui.F_Search.cmdSearch_EmpNum.fontsize(8)
+gui.F_Search.cmdSearch_EmpNum.event(click,cmdsearch_empnum_click)
+gui.F_Search.lblSearch_Result.create(label,"Result",True,1935,255,1,200,1400,True,0,Arial,8,-2147483633,0)
+gui.F_Search.gsflxSrchList.create(gsflexgrid)
+gui.F_Search.gsflxSrchList.FixedRows(0)
+gui.F_Search.gsflxSrchList.FixedCols(0)
+gui.F_Search.gsflxSrchList.visible(True)
+gui.F_Search.gsflxSrchList.size(5805,1395)
+gui.F_Search.gsflxSrchList.zorder(0)
+gui.F_Search.gsflxSrchList.position(200,1600)
+gui.F_Search.gsflxSrchList.enabled(True)
+gui.F_Search.txtSearch_EmpID.create(textbox,"",True,900,300,0,3300,300,False,0,Arial,8,15724527,1)
+gui.F_Search.lblEmpID.create(label,"Employee ID",True,1935,255,1,3300,100,True,0,Arial,8,-2147483633,0)
+gui.F_Search.cmdSearch_Clear.create(button)
+gui.F_Search.cmdSearch_Clear.caption("Clear")
+gui.F_Search.cmdSearch_Clear.visible(True)
+gui.F_Search.cmdSearch_Clear.size(800,390)
+gui.F_Search.cmdSearch_Clear.zorder(0)
+gui.F_Search.cmdSearch_Clear.position(200,3100)
+gui.F_Search.cmdSearch_Clear.enabled(True)
+gui.F_Search.cmdSearch_Clear.fontname("Arial")
+gui.F_Search.cmdSearch_Clear.fontsize(8)
+gui.F_Search.cmdSearch_Clear.event(click,cmdsearch_clear_click)
+gui.F_Search.txtSearch_EmployeeNum.tabstop(True)
+gui.F_Search.txtSearch_EmployeeNum.tabindex(1)
+gui.F_Search.cmdSearch_EmpNum.tabstop(True)
+gui.F_Search.cmdSearch_EmpNum.tabindex(2)
+gui.F_Search.cmdSearch_Clear.tabstop(True)
+gui.F_Search.cmdSearch_Clear.tabindex(3)
+gui.F_Search.txtSearch_EmployFname.tabstop(True)
+gui.F_Search.txtSearch_EmployFname.tabindex(4)
+gui.F_Search.txtSearch_Lname.tabstop(True)
+gui.F_Search.txtSearch_Lname.tabindex(5)
+
+
+gui.F_AssetAssignment..create
+gui.F_AssetAssignment..caption("Asset Assignment")
+gui.F_AssetAssignment..size(5775,3660)
+gui.F_AssetAssignment..position(0,0)
+gui.F_AssetAssignment..event(unload,f_assetassignment_unload)
+gui.F_AssetAssignment..alwaysontop(False)
+gui.F_AssetAssignment..fontname("Arial")
+gui.F_AssetAssignment..fontsize(8)
+gui.F_AssetAssignment..forecolor(0)
+gui.F_AssetAssignment..fontstyle(,,,,)
+gui.F_AssetAssignment..BackColor(-2147483633)
+gui.F_AssetAssignment..controlbox(True)
+gui.F_AssetAssignment..maxbutton(False)
+gui.F_AssetAssignment..minbutton(True)
+gui.F_AssetAssignment..mousepointer(0)
+gui.F_AssetAssignment..moveable(True)
+gui.F_AssetAssignment..sizeable(False)
+gui.F_AssetAssignment..ShowInTaskBar(True)
+gui.F_AssetAssignment..titlebar(True)
+gui.F_AssetAssignment.lblAA_DateAssigned.create(label,"Date Assigned",True,1935,255,1,200,100,True,0,Arial,8,-2147483633,0)
+gui.F_AssetAssignment.dtpAA_DateAssigned.create(datepicker)
+gui.F_AssetAssignment.dtpAA_DateAssigned.visible(True)
+gui.F_AssetAssignment.dtpAA_DateAssigned.size(2835,285)
+gui.F_AssetAssignment.dtpAA_DateAssigned.zorder(0)
+gui.F_AssetAssignment.dtpAA_DateAssigned.position(200,300)
+gui.F_AssetAssignment.dtpAA_DateAssigned.enabled(True)
+gui.F_AssetAssignment.dtpAA_DateAssigned.checkbox(False)
+gui.F_AssetAssignment.lblAA_EmpNum.create(label,"Employee Number",True,1935,240,1,215,690,True,0,Arial,8,-2147483633,0)
+gui.F_AssetAssignment.txtAA_EmpNum.create(textbox,"",True,2370,300,0,200,900,True,0,Arial,8,-2147483643,1)
+gui.F_AssetAssignment.txtAA_EmpNum.numericonly(1)
+gui.F_AssetAssignment.txtAA_EmpNum.maxLength(5)
+gui.F_AssetAssignment.txtAA_EmpNum.event(lostfocus,txtaa_empnum_lostfocus)
+gui.F_AssetAssignment.cmdAA_EmpNum.create(button)
+gui.F_AssetAssignment.cmdAA_EmpNum.caption("^")
+gui.F_AssetAssignment.cmdAA_EmpNum.visible(True)
+gui.F_AssetAssignment.cmdAA_EmpNum.size(450,300)
+gui.F_AssetAssignment.cmdAA_EmpNum.zorder(0)
+gui.F_AssetAssignment.cmdAA_EmpNum.position(2600,900)
+gui.F_AssetAssignment.cmdAA_EmpNum.enabled(True)
+gui.F_AssetAssignment.cmdAA_EmpNum.fontname("Arial")
+gui.F_AssetAssignment.cmdAA_EmpNum.fontsize(8)
+gui.F_AssetAssignment.cmdAA_EmpNum.event(click,cmdaa_empnum_click)
+gui.F_AssetAssignment.txtAA_TagID.create(textbox,"",True,2370,300,0,200,2100,True,0,Arial,8,-2147483643,1)
+gui.F_AssetAssignment.txtAA_TagID.maxLength(30)
+gui.F_AssetAssignment.txtAA_TagID.event(lostfocus,txtaa_tagid_lostfocus)
+gui.F_AssetAssignment.lblAA_TagID.create(label,"Tag ID",True,1935,255,1,200,1900,True,0,Arial,8,-2147483633,0)
+gui.F_AssetAssignment.cmdAA_TagID.create(button)
+gui.F_AssetAssignment.cmdAA_TagID.caption("^")
+gui.F_AssetAssignment.cmdAA_TagID.visible(True)
+gui.F_AssetAssignment.cmdAA_TagID.size(450,300)
+gui.F_AssetAssignment.cmdAA_TagID.zorder(0)
+gui.F_AssetAssignment.cmdAA_TagID.position(2600,2100)
+gui.F_AssetAssignment.cmdAA_TagID.enabled(True)
+gui.F_AssetAssignment.cmdAA_TagID.fontname("Arial")
+gui.F_AssetAssignment.cmdAA_TagID.fontsize(8)
+gui.F_AssetAssignment.cmdAA_TagID.event(click,cmdaa_tagid_click)
+gui.F_AssetAssignment.cmdAA_Clear.create(button)
+gui.F_AssetAssignment.cmdAA_Clear.caption("Clear")
+gui.F_AssetAssignment.cmdAA_Clear.visible(True)
+gui.F_AssetAssignment.cmdAA_Clear.size(800,390)
+gui.F_AssetAssignment.cmdAA_Clear.zorder(0)
+gui.F_AssetAssignment.cmdAA_Clear.position(1000,2600)
+gui.F_AssetAssignment.cmdAA_Clear.enabled(True)
+gui.F_AssetAssignment.cmdAA_Clear.fontname("Arial")
+gui.F_AssetAssignment.cmdAA_Clear.fontsize(8)
+gui.F_AssetAssignment.cmdAA_Clear.event(click,cmdaa_clear_click)
+gui.F_AssetAssignment.cmdAA_Save.create(button)
+gui.F_AssetAssignment.cmdAA_Save.caption("Save")
+gui.F_AssetAssignment.cmdAA_Save.visible(True)
+gui.F_AssetAssignment.cmdAA_Save.size(800,390)
+gui.F_AssetAssignment.cmdAA_Save.zorder(0)
+gui.F_AssetAssignment.cmdAA_Save.position(200,2600)
+gui.F_AssetAssignment.cmdAA_Save.enabled(True)
+gui.F_AssetAssignment.cmdAA_Save.fontname("Arial")
+gui.F_AssetAssignment.cmdAA_Save.fontsize(8)
+gui.F_AssetAssignment.cmdAA_Save.event(click,cmdaa_save_click)
+gui.F_AssetAssignment.cmdAA_RecordsJump.create(button)
+gui.F_AssetAssignment.cmdAA_RecordsJump.caption("Employee")
+gui.F_AssetAssignment.cmdAA_RecordsJump.visible(False)
+gui.F_AssetAssignment.cmdAA_RecordsJump.size(930,390)
+gui.F_AssetAssignment.cmdAA_RecordsJump.zorder(0)
+gui.F_AssetAssignment.cmdAA_RecordsJump.position(200,3400)
+gui.F_AssetAssignment.cmdAA_RecordsJump.enabled(True)
+gui.F_AssetAssignment.cmdAA_RecordsJump.fontname("Arial")
+gui.F_AssetAssignment.cmdAA_RecordsJump.fontsize(8)
+gui.F_AssetAssignment.cmdAA_RecordsJump.event(click,cmdJumpemployee_click)
+gui.F_AssetAssignment.txtAA_EmpID.create(textbox,"",True,2205,300,0,3115,900,False,0,Arial,8,16777215,1)
+gui.F_AssetAssignment.txtAA_AssetID.create(textbox,"",True,2205,270,0,3115,2100,False,0,Arial,8,16777215,1)
+gui.F_AssetAssignment.lblAA_Lname.create(label,"Last Name",True,1935,255,1,3115,1300,True,0,Arial,8,-2147483633,0)
+gui.F_AssetAssignment.lblAA_Fname.create(label,"First Name",True,1935,255,1,200,1300,True,0,Arial,8,-2147483633,0)
+gui.F_AssetAssignment.txtAA_Lname.create(textbox,"",True,2205,300,0,3115,1500,False,0,Arial,8,-2147483643,1)
+gui.F_AssetAssignment.txtAA_Lname.maxLength(15)
+gui.F_AssetAssignment.txtAA_Fname.create(textbox,"",True,2820,300,0,200,1500,False,0,Arial,8,-2147483643,1)
+gui.F_AssetAssignment.txtAA_Fname.maxLength(15)
+gui.F_AssetAssignment.cmdAA_Search.create(button)
+gui.F_AssetAssignment.cmdAA_Search.caption("Search")
+gui.F_AssetAssignment.cmdAA_Search.visible(False)
+gui.F_AssetAssignment.cmdAA_Search.size(855,375)
+gui.F_AssetAssignment.cmdAA_Search.zorder(0)
+gui.F_AssetAssignment.cmdAA_Search.position(1300,3400)
+gui.F_AssetAssignment.cmdAA_Search.enabled(True)
+gui.F_AssetAssignment.cmdAA_Search.fontname("Arial")
+gui.F_AssetAssignment.cmdAA_Search.fontsize(8)
+gui.F_AssetAssignment.cmdAA_Search.event(click,cmdjumpsearch_click)
+gui.F_AssetAssignment.cmdAA_Asset.create(button)
+gui.F_AssetAssignment.cmdAA_Asset.caption("Asset")
+gui.F_AssetAssignment.cmdAA_Asset.visible(False)
+gui.F_AssetAssignment.cmdAA_Asset.size(870,375)
+gui.F_AssetAssignment.cmdAA_Asset.zorder(0)
+gui.F_AssetAssignment.cmdAA_Asset.position(2300,3400)
+gui.F_AssetAssignment.cmdAA_Asset.enabled(True)
+gui.F_AssetAssignment.cmdAA_Asset.fontname("Arial")
+gui.F_AssetAssignment.cmdAA_Asset.fontsize(8)
+gui.F_AssetAssignment.cmdAA_Asset.event(click,cmdjumpasset_click)
+gui.F_AssetAssignment.lblEmpID.create(label,"Employee ID",True,1935,255,1,3115,700,True,0,Arial,8,-2147483633,0)
+gui.F_AssetAssignment.lblAA_AssetID.create(label,"Asset ID",True,1935,255,1,3115,1900,True,0,Arial,8,-2147483633,0)
+gui.F_AssetAssignment.dtpAA_DateAssigned.tabstop(True)
+gui.F_AssetAssignment.dtpAA_DateAssigned.tabindex(1)
+gui.F_AssetAssignment.txtAA_EmpNum.tabstop(True)
+gui.F_AssetAssignment.txtAA_EmpNum.tabindex(2)
+gui.F_AssetAssignment.cmdAA_EmpNum.tabstop(True)
+gui.F_AssetAssignment.cmdAA_EmpNum.tabindex(3)
+gui.F_AssetAssignment.txtAA_TagID.tabstop(True)
+gui.F_AssetAssignment.txtAA_TagID.tabindex(4)
+gui.F_AssetAssignment.cmdAA_TagID.tabstop(True)
+gui.F_AssetAssignment.cmdAA_TagID.tabindex(5)
+gui.F_AssetAssignment.cmdAA_Save.tabstop(True)
+gui.F_AssetAssignment.cmdAA_Save.tabindex(6)
+gui.F_AssetAssignment.cmdAA_Clear.tabstop(True)
+gui.F_AssetAssignment.cmdAA_Clear.tabindex(7)
+gui.F_AssetAssignment.cmdAA_RecordsJump.tabstop(True)
+gui.F_AssetAssignment.cmdAA_RecordsJump.tabindex(8)
+gui.F_AssetAssignment.txtAA_Lname.tabstop(True)
+gui.F_AssetAssignment.txtAA_Lname.tabindex(9)
+gui.F_AssetAssignment.txtAA_Fname.tabstop(True)
+gui.F_AssetAssignment.txtAA_Fname.tabindex(10)
+
+
+gui.F_Asset..create
+gui.F_Asset..caption("Enter Assets")
+gui.F_Asset..size(7320,6015)
+gui.F_Asset..position(0,0)
+gui.F_Asset..event(unload,Unload)
+gui.F_Asset..alwaysontop(False)
+gui.F_Asset..fontname("Arial")
+gui.F_Asset..fontsize(8)
+gui.F_Asset..forecolor(0)
+gui.F_Asset..fontstyle(,,,,)
+gui.F_Asset..BackColor(-2147483633)
+gui.F_Asset..controlbox(True)
+gui.F_Asset..maxbutton(False)
+gui.F_Asset..minbutton(True)
+gui.F_Asset..mousepointer(0)
+gui.F_Asset..moveable(True)
+gui.F_Asset..sizeable(False)
+gui.F_Asset..ShowInTaskBar(True)
+gui.F_Asset..titlebar(True)
+gui.F_Asset.lblAsset_Cost.create(label,"Cost",True,1935,255,1,3750,4300,True,0,Arial,8,-2147483633,0)
+gui.F_Asset.lblAsset_Status.create(label,"Status",True,1935,255,1,200,4300,True,0,Arial,8,-2147483633,0)
+gui.F_Asset.lblAsset_TagID.create(label,"Tag ID",True,1935,210,1,3750,100,True,0,Arial,8,-2147483633,0)
+gui.F_Asset.lblAsset_INvoice.create(label,"Invoice",True,1935,255,1,3750,3100,True,0,Arial,8,-2147483633,0)
+gui.F_Asset.lblAsset_Make.create(label,"Make",True,1935,240,1,200,2500,True,0,Arial,8,-2147483633,0)
+gui.F_Asset.lblAsset_Subcategory.create(label,"Subcategory",True,1935,255,1,200,1900,True,0,Arial,8,-2147483633,0)
+gui.F_Asset.lblAsset_Category.create(label,"Category",True,1875,255,1,3750,1300,True,0,Arial,8,-2147483633,0)
+gui.F_Asset.lblAsset_AssetType.create(label,"Asset Type",True,1935,255,1,200,1300,True,0,Arial,8,-2147483633,0)
+gui.F_Asset.lblAsset_DateReceived.create(label,"Date Purchased",True,1935,255,1,3750,700,True,0,Arial,8,-2147483633,0)
+gui.F_Asset.lblAsset_Description.create(label,"Asset Description",True,1935,255,1,200,700,True,0,Arial,8,-2147483633,0)
+gui.F_Asset.lblAsset_Model.create(label,"Model",True,1935,255,1,3750,2500,True,0,Arial,8,-2147483633,0)
+gui.F_Asset.dtpAsset_DateReceived.create(datepicker)
+gui.F_Asset.dtpAsset_DateReceived.visible(True)
+gui.F_Asset.dtpAsset_DateReceived.size(1935,285)
+gui.F_Asset.dtpAsset_DateReceived.zorder(0)
+gui.F_Asset.dtpAsset_DateReceived.position(3750,900)
+gui.F_Asset.dtpAsset_DateReceived.enabled(True)
+gui.F_Asset.dtpAsset_DateReceived.checkbox(False)
+gui.F_Asset.dlstAsset_Type.create(dropdownlist)
+gui.F_Asset.dlstAsset_Type.visible(True)
+gui.F_Asset.dlstAsset_Type.size(3180,330)
+gui.F_Asset.dlstAsset_Type.zorder(0)
+gui.F_Asset.dlstAsset_Type.position(200,1500)
+gui.F_Asset.dlstAsset_Type.enabled(True)
+gui.F_Asset.dlstAsset_Type.fontname("Arial")
+gui.F_Asset.dlstAsset_Type.fontsize(8)
+gui.F_Asset.dlstAsset_Type.event(change,dlstasset_type_click)
+gui.F_Asset.dlstAsset_Type.event(click,dlstasset_type_click)
+gui.F_Asset.dlstAsset_Category.create(dropdownlist)
+gui.F_Asset.dlstAsset_Category.visible(True)
+gui.F_Asset.dlstAsset_Category.size(3180,330)
+gui.F_Asset.dlstAsset_Category.zorder(0)
+gui.F_Asset.dlstAsset_Category.position(3750,1500)
+gui.F_Asset.dlstAsset_Category.enabled(True)
+gui.F_Asset.dlstAsset_Category.fontname("Arial")
+gui.F_Asset.dlstAsset_Category.fontsize(8)
+gui.F_Asset.dlstAsset_Category.event(change,dlstasset_category_click)
+gui.F_Asset.dlstAsset_Category.event(click,dlstasset_category_click)
+gui.F_Asset.dlstAsset_subcategory.create(dropdownlist)
+gui.F_Asset.dlstAsset_subcategory.visible(True)
+gui.F_Asset.dlstAsset_subcategory.size(3180,330)
+gui.F_Asset.dlstAsset_subcategory.zorder(0)
+gui.F_Asset.dlstAsset_subcategory.position(200,2100)
+gui.F_Asset.dlstAsset_subcategory.enabled(True)
+gui.F_Asset.dlstAsset_subcategory.fontname("Arial")
+gui.F_Asset.dlstAsset_subcategory.fontsize(8)
+gui.F_Asset.dlstAsset_subcategory.event(change,dlstasset_subcategory_click)
+gui.F_Asset.dlstAsset_subcategory.event(click,dlstasset_subcategory_click)
+gui.F_Asset.dlstAsset_Make.create(dropdownlist)
+gui.F_Asset.dlstAsset_Make.visible(True)
+gui.F_Asset.dlstAsset_Make.size(3180,330)
+gui.F_Asset.dlstAsset_Make.zorder(0)
+gui.F_Asset.dlstAsset_Make.position(200,2700)
+gui.F_Asset.dlstAsset_Make.enabled(True)
+gui.F_Asset.dlstAsset_Make.fontname("Arial")
+gui.F_Asset.dlstAsset_Make.fontsize(8)
+gui.F_Asset.dlstAsset_Make.event(click,dlstasset_make_click)
+gui.F_Asset.dlstAsset_Model.create(dropdownlist)
+gui.F_Asset.dlstAsset_Model.visible(True)
+gui.F_Asset.dlstAsset_Model.size(3180,330)
+gui.F_Asset.dlstAsset_Model.zorder(0)
+gui.F_Asset.dlstAsset_Model.position(3750,2700)
+gui.F_Asset.dlstAsset_Model.enabled(True)
+gui.F_Asset.dlstAsset_Model.fontname("Arial")
+gui.F_Asset.dlstAsset_Model.fontsize(8)
+gui.F_Asset.dlstAsset_Model.event(click,dlstasset_model_click)
+gui.F_Asset.lblAsset_Vendor.create(label,"Vendor ID",True,1935,255,1,200,3700,True,0,Arial,8,-2147483633,0)
+gui.F_Asset.txtAsset_Vendor.create(textbox,"",True,4905,315,0,1500,3900,False,0,Arial,8,-2147483643,1)
+gui.F_Asset.txtAsset_Vendor.maxLength(100)
+gui.F_Asset.cmdAsset_Vendor.create(button)
+gui.F_Asset.cmdAsset_Vendor.caption("^")
+gui.F_Asset.cmdAsset_Vendor.visible(True)
+gui.F_Asset.cmdAsset_Vendor.size(450,300)
+gui.F_Asset.cmdAsset_Vendor.zorder(0)
+gui.F_Asset.cmdAsset_Vendor.position(6400,3900)
+gui.F_Asset.cmdAsset_Vendor.enabled(True)
+gui.F_Asset.cmdAsset_Vendor.fontname("Arial")
+gui.F_Asset.cmdAsset_Vendor.fontsize(8)
+gui.F_Asset.cmdAsset_Vendor.event(click,Asset_Vendor)
+gui.F_Asset.txtAsset_Invoice.create(textbox,"",True,3180,300,0,3750,3300,True,0,Arial,8,-2147483643,1)
+gui.F_Asset.txtAsset_Invoice.maxLength(25)
+gui.F_Asset.lblAsset_serial.create(label,"Serial Number",True,1935,255,1,200,3100,True,0,Arial,8,-2147483633,0)
+gui.F_Asset.txtAsset_Serial.create(textbox,"",True,3180,300,0,200,3300,True,0,Arial,8,-2147483643,1)
+gui.F_Asset.txtAsset_Serial.maxLength(50)
+gui.F_Asset.txtAsset_TagID.create(textbox,"",True,3180,300,0,3750,300,True,0,Arial,8,-2147483643,1)
+gui.F_Asset.txtAsset_TagID.maxLength(30)
+gui.F_Asset.txtAsset_TagID.ForeColor(128)
+gui.F_Asset.dlstAsset_Status.create(dropdownlist)
+gui.F_Asset.dlstAsset_Status.visible(True)
+gui.F_Asset.dlstAsset_Status.size(3180,330)
+gui.F_Asset.dlstAsset_Status.zorder(0)
+gui.F_Asset.dlstAsset_Status.position(200,4500)
+gui.F_Asset.dlstAsset_Status.enabled(True)
+gui.F_Asset.dlstAsset_Status.fontname("Arial")
+gui.F_Asset.dlstAsset_Status.fontsize(8)
+gui.F_Asset.txtAsset_Cost.create(textbox,"",True,1170,300,0,3750,4500,True,0,Arial,8,-2147483643,1)
+gui.F_Asset.txtAsset_Cost.numericonly(1)
+gui.F_Asset.txtAsset_Cost.maxLength(8)
+gui.F_Asset.cmdAsset_Clear.create(button)
+gui.F_Asset.cmdAsset_Clear.caption("Clear")
+gui.F_Asset.cmdAsset_Clear.visible(True)
+gui.F_Asset.cmdAsset_Clear.size(800,390)
+gui.F_Asset.cmdAsset_Clear.zorder(0)
+gui.F_Asset.cmdAsset_Clear.position(1000,5000)
+gui.F_Asset.cmdAsset_Clear.enabled(True)
+gui.F_Asset.cmdAsset_Clear.fontname("Arial")
+gui.F_Asset.cmdAsset_Clear.fontsize(8)
+gui.F_Asset.cmdAsset_Clear.event(click,cmdasset_clear_click)
+gui.F_Asset.cmdAsset_Save.create(button)
+gui.F_Asset.cmdAsset_Save.caption("Save")
+gui.F_Asset.cmdAsset_Save.visible(True)
+gui.F_Asset.cmdAsset_Save.size(800,390)
+gui.F_Asset.cmdAsset_Save.zorder(0)
+gui.F_Asset.cmdAsset_Save.position(200,5000)
+gui.F_Asset.cmdAsset_Save.enabled(True)
+gui.F_Asset.cmdAsset_Save.fontname("Arial")
+gui.F_Asset.cmdAsset_Save.fontsize(8)
+gui.F_Asset.cmdAsset_Save.event(click,cmdasset_save_click)
+gui.F_Asset.txtAsset_VID.create(textbox,"",True,1215,300,0,200,3900,True,0,Arial,8,16777215,1)
+gui.F_Asset.txtAsset_VID.numericonly(1)
+gui.F_Asset.txtAsset_VID.maxLength(5)
+gui.F_Asset.txtAsset_VID.event(lostfocus,txtasset_vid_lostfocus)
+gui.F_Asset.lblAsset_Lookup.create(label,"Asset ID",True,1935,255,1,200,100,True,0,Arial,8,-2147483633,0)
+gui.F_Asset.txtAsset_AssetLookup.create(textbox,"",True,2685,300,0,200,300,False,0,Arial,8,-2147483643,1)
+gui.F_Asset.txtAsset_AssetLookup.maxLength(10)
+gui.F_Asset.txtAsset_AssetLookup.event(lostfocus,txtasset_assetid_lostfocus)
+gui.F_Asset.cmdAsset_Lookup.create(button)
+gui.F_Asset.cmdAsset_Lookup.caption("^")
+gui.F_Asset.cmdAsset_Lookup.visible(True)
+gui.F_Asset.cmdAsset_Lookup.size(450,300)
+gui.F_Asset.cmdAsset_Lookup.zorder(0)
+gui.F_Asset.cmdAsset_Lookup.position(2900,300)
+gui.F_Asset.cmdAsset_Lookup.enabled(True)
+gui.F_Asset.cmdAsset_Lookup.fontname("Arial")
+gui.F_Asset.cmdAsset_Lookup.fontsize(8)
+gui.F_Asset.cmdAsset_Lookup.event(click,Asset_Lookup)
+gui.F_Asset.txtAsset_Description.create(textbox,"",True,3180,300,0,200,900,True,0,Arial,8,-2147483643,1)
+gui.F_Asset.txtAsset_Description.maxLength(100)
+gui.F_Asset.cmdAssign.create(button)
+gui.F_Asset.cmdAssign.caption("Assign")
+gui.F_Asset.cmdAssign.visible(True)
+gui.F_Asset.cmdAssign.size(800,390)
+gui.F_Asset.cmdAssign.zorder(0)
+gui.F_Asset.cmdAssign.position(3400,5000)
+gui.F_Asset.cmdAssign.enabled(True)
+gui.F_Asset.cmdAssign.fontname("Arial")
+gui.F_Asset.cmdAssign.fontsize(8)
+gui.F_Asset.cmdAssign.event(click,cmdJumpaassign_click)
+gui.F_Asset.cmdEmployee.create(button)
+gui.F_Asset.cmdEmployee.caption("Employee")
+gui.F_Asset.cmdEmployee.visible(True)
+gui.F_Asset.cmdEmployee.size(800,390)
+gui.F_Asset.cmdEmployee.zorder(0)
+gui.F_Asset.cmdEmployee.position(2600,5000)
+gui.F_Asset.cmdEmployee.enabled(True)
+gui.F_Asset.cmdEmployee.fontname("Arial")
+gui.F_Asset.cmdEmployee.fontsize(8)
+gui.F_Asset.cmdEmployee.event(click,cmdJumpemployee_click)
+gui.F_Asset.cmdVendor.create(button)
+gui.F_Asset.cmdVendor.caption("Vendor")
+gui.F_Asset.cmdVendor.visible(True)
+gui.F_Asset.cmdVendor.size(800,390)
+gui.F_Asset.cmdVendor.zorder(0)
+gui.F_Asset.cmdVendor.position(1800,5000)
+gui.F_Asset.cmdVendor.enabled(True)
+gui.F_Asset.cmdVendor.fontname("Arial")
+gui.F_Asset.cmdVendor.fontsize(8)
+gui.F_Asset.cmdVendor.event(click,cmdJumpvendor_click)
+gui.F_Asset.cmdAsset_MaintJump.create(button)
+gui.F_Asset.cmdAsset_MaintJump.caption("Maint")
+gui.F_Asset.cmdAsset_MaintJump.visible(True)
+gui.F_Asset.cmdAsset_MaintJump.size(800,390)
+gui.F_Asset.cmdAsset_MaintJump.zorder(0)
+gui.F_Asset.cmdAsset_MaintJump.position(4200,5000)
+gui.F_Asset.cmdAsset_MaintJump.enabled(True)
+gui.F_Asset.cmdAsset_MaintJump.fontname("Arial")
+gui.F_Asset.cmdAsset_MaintJump.fontsize(8)
+gui.F_Asset.cmdAsset_MaintJump.event(click,cmdjumpmaint_click)
+gui.F_Asset.cmdJumpAsset_Search.create(button)
+gui.F_Asset.cmdJumpAsset_Search.caption("Search")
+gui.F_Asset.cmdJumpAsset_Search.visible(True)
+gui.F_Asset.cmdJumpAsset_Search.size(800,390)
+gui.F_Asset.cmdJumpAsset_Search.zorder(0)
+gui.F_Asset.cmdJumpAsset_Search.position(5000,5000)
+gui.F_Asset.cmdJumpAsset_Search.enabled(True)
+gui.F_Asset.cmdJumpAsset_Search.fontname("Arial")
+gui.F_Asset.cmdJumpAsset_Search.fontsize(8)
+gui.F_Asset.cmdJumpAsset_Search.event(click,cmdjumpsearch_click)
+gui.F_Asset.lblVendorName.create(label,"Vendor Name",True,1935,255,1,1545,3705,True,0,Arial,8,-2147483633,0)
+gui.F_Asset.cmdAsset_Lookup.tabstop(True)
+gui.F_Asset.cmdAsset_Lookup.tabindex(1)
+gui.F_Asset.txtAsset_TagID.tabstop(True)
+gui.F_Asset.txtAsset_TagID.tabindex(2)
+gui.F_Asset.txtAsset_Description.tabstop(True)
+gui.F_Asset.txtAsset_Description.tabindex(3)
+gui.F_Asset.dtpAsset_DateReceived.tabstop(True)
+gui.F_Asset.dtpAsset_DateReceived.tabindex(4)
+gui.F_Asset.dlstAsset_Type.tabstop(True)
+gui.F_Asset.dlstAsset_Type.tabindex(5)
+gui.F_Asset.dlstAsset_Category.tabstop(True)
+gui.F_Asset.dlstAsset_Category.tabindex(6)
+gui.F_Asset.dlstAsset_subcategory.tabstop(True)
+gui.F_Asset.dlstAsset_subcategory.tabindex(7)
+gui.F_Asset.dlstAsset_Make.tabstop(True)
+gui.F_Asset.dlstAsset_Make.tabindex(8)
+gui.F_Asset.dlstAsset_Model.tabstop(True)
+gui.F_Asset.dlstAsset_Model.tabindex(9)
+gui.F_Asset.txtAsset_Serial.tabstop(True)
+gui.F_Asset.txtAsset_Serial.tabindex(10)
+gui.F_Asset.txtAsset_Invoice.tabstop(True)
+gui.F_Asset.txtAsset_Invoice.tabindex(11)
+gui.F_Asset.txtAsset_VID.tabstop(True)
+gui.F_Asset.txtAsset_VID.tabindex(12)
+gui.F_Asset.cmdAsset_Vendor.tabstop(True)
+gui.F_Asset.cmdAsset_Vendor.tabindex(13)
+gui.F_Asset.dlstAsset_Status.tabstop(True)
+gui.F_Asset.dlstAsset_Status.tabindex(14)
+gui.F_Asset.txtAsset_Cost.tabstop(True)
+gui.F_Asset.txtAsset_Cost.tabindex(15)
+gui.F_Asset.cmdAsset_Save.tabstop(True)
+gui.F_Asset.cmdAsset_Save.tabindex(16)
+gui.F_Asset.cmdAsset_Clear.tabstop(True)
+gui.F_Asset.cmdAsset_Clear.tabindex(17)
+gui.F_Asset.cmdVendor.tabstop(True)
+gui.F_Asset.cmdVendor.tabindex(18)
+gui.F_Asset.cmdEmployee.tabstop(True)
+gui.F_Asset.cmdEmployee.tabindex(19)
+gui.F_Asset.cmdAssign.tabstop(True)
+gui.F_Asset.cmdAssign.tabindex(20)
+gui.F_Asset.cmdAsset_MaintJump.tabstop(True)
+gui.F_Asset.cmdAsset_MaintJump.tabindex(21)
+gui.F_Asset.cmdJumpAsset_Search.tabstop(True)
+gui.F_Asset.cmdJumpAsset_Search.tabindex(22)
+gui.F_Asset.txtAsset_Vendor.tabstop(True)
+gui.F_Asset.txtAsset_Vendor.tabindex(23)
+gui.F_Asset.txtAsset_AssetLookup.tabstop(True)
+gui.F_Asset.txtAsset_AssetLookup.tabindex(24)
+
+
+gui.F_Vendor..create
+gui.F_Vendor..caption("Vendor")
+gui.F_Vendor..size(5580,6855)
+gui.F_Vendor..position(0,0)
+gui.F_Vendor..event(resize,f_vendor_resize)
+gui.F_Vendor..event(unload,f_vendor_unload)
+gui.F_Vendor..alwaysontop(False)
+gui.F_Vendor..fontname("Arial")
+gui.F_Vendor..fontsize(8)
+gui.F_Vendor..forecolor(0)
+gui.F_Vendor..fontstyle(,,,,)
+gui.F_Vendor..BackColor(-2147483633)
+gui.F_Vendor..controlbox(True)
+gui.F_Vendor..maxbutton(False)
+gui.F_Vendor..minbutton(True)
+gui.F_Vendor..mousepointer(0)
+gui.F_Vendor..moveable(True)
+gui.F_Vendor..sizeable(True)
+gui.F_Vendor..ShowInTaskBar(True)
+gui.F_Vendor..titlebar(True)
+gui.F_Vendor.lblVendor_CompanyName.create(label,"Vendor Company Name:",True,1935,315,1,1560,100,True,0,Arial,8,-2147483633,0)
+gui.F_Vendor.lblVendor_ContactName.create(label,"Contact Name:",True,1935,255,1,185,690,True,0,Arial,8,-2147483633,0)
+gui.F_Vendor.lblVendor_AccountNum.create(label,"Account Number:",True,1935,255,1,2800,700,True,0,Arial,8,-2147483633,0)
+gui.F_Vendor.lblVendor_Address.create(label,"Address:",True,1935,255,1,200,1300,True,0,Arial,8,-2147483633,0)
+gui.F_Vendor.lblVendor_City.create(label,"City:",True,900,360,1,200,1900,True,0,Arial,8,-2147483633,0)
+gui.F_Vendor.lblVendor_State.create(label,"State:",True,990,210,1,2000,1900,True,0,Arial,8,-2147483633,0)
+gui.F_Vendor.lblVendor_Zipcode.create(label,"Zipcode:",True,855,255,1,3400,1900,True,0,Arial,8,-2147483633,0)
+gui.F_Vendor.lblVendor_PhoneNum.create(label,"Phone Number:",True,1215,255,1,200,2500,True,0,Arial,8,-2147483633,0)
+gui.F_Vendor.lblVendor_WebAddress.create(label,"Web Address:",True,1935,285,1,2700,2500,True,0,Arial,8,-2147483633,0)
+gui.F_Vendor.lblVendor_Email.create(label,"Email Address:",True,1935,255,1,200,3100,True,0,Arial,8,-2147483633,0)
+gui.F_Vendor.lblVendor_Notes.create(label,"Notes:",True,645,255,1,200,3700,True,0,Arial,8,-2147483633,0)
+gui.F_Vendor.txtVendor_ContactName.create(textbox,"",True,2490,300,0,200,900,True,0,Arial,8,-2147483643,1)
+gui.F_Vendor.txtVendor_ContactName.maxLength(30)
+gui.F_Vendor.txtVendor_AcctNum.create(textbox,"",True,2295,300,0,2825,900,True,0,Arial,8,16777215,1)
+gui.F_Vendor.txtVendor_AcctNum.maxLength(30)
+gui.F_Vendor.txtVendor_Address.create(textbox,"",True,4905,300,0,200,1500,True,0,Arial,8,-2147483643,1)
+gui.F_Vendor.txtVendor_Address.maxLength(50)
+gui.F_Vendor.txtVendor_City.create(textbox,"",True,1530,300,0,200,2100,True,0,Arial,8,-2147483643,1)
+gui.F_Vendor.txtVendor_City.maxLength(30)
+gui.F_Vendor.txtVendor_State.create(textbox,"",True,1215,300,0,2000,2100,True,0,Arial,8,-2147483643,1)
+gui.F_Vendor.txtVendor_State.maxLength(15)
+gui.F_Vendor.txtVendor_Zipcode.create(textbox,"",True,1710,300,0,3400,2100,True,0,Arial,8,-2147483643,1)
+gui.F_Vendor.txtVendor_Zipcode.numericonly(0)
+gui.F_Vendor.txtVendor_Zipcode.maxLength(15)
+gui.F_Vendor.txtVendor_WebAddress.create(textbox,"",True,2430,300,0,2700,2700,True,0,Arial,8,-2147483643,1)
+gui.F_Vendor.txtVendor_WebAddress.maxLength(100)
+gui.F_Vendor.txtVendr_PhoneNum.create(textbox,"",True,2310,315,0,200,2700,True,0,Arial,8,-2147483643,1)
+gui.F_Vendor.txtVendr_PhoneNum.numericonly(1)
+gui.F_Vendor.txtVendr_PhoneNum.maxLength(20)
+gui.F_Vendor.txtVendor_Email.create(textbox,"",True,4935,300,0,200,3300,True,0,Arial,8,-2147483643,1)
+gui.F_Vendor.txtVendor_Email.maxLength(75)
+gui.F_Vendor.mltxtVendor_Notes.create(textboxm)
+gui.F_Vendor.mltxtVendor_Notes.text("")
+gui.F_Vendor.mltxtVendor_Notes.visible(True)
+gui.F_Vendor.mltxtVendor_Notes.size(4950,1635)
+gui.F_Vendor.mltxtVendor_Notes.zorder(0)
+gui.F_Vendor.mltxtVendor_Notes.position(200,3900)
+gui.F_Vendor.mltxtVendor_Notes.enabled(True)
+gui.F_Vendor.mltxtVendor_Notes.alignment(0)
+gui.F_Vendor.mltxtVendor_Notes.fontname("Arial")
+gui.F_Vendor.mltxtVendor_Notes.fontsize(8)
+gui.F_Vendor.mltxtVendor_Notes.maxLength(500)
+gui.F_Vendor.mltxtVendor_Notes.BackColor(-2147483643)
+gui.F_Vendor.cmdVendor_Clear.create(button)
+gui.F_Vendor.cmdVendor_Clear.caption("Clear")
+gui.F_Vendor.cmdVendor_Clear.visible(True)
+gui.F_Vendor.cmdVendor_Clear.size(800,390)
+gui.F_Vendor.cmdVendor_Clear.zorder(0)
+gui.F_Vendor.cmdVendor_Clear.position(1000,5800)
+gui.F_Vendor.cmdVendor_Clear.enabled(True)
+gui.F_Vendor.cmdVendor_Clear.fontname("Arial")
+gui.F_Vendor.cmdVendor_Clear.fontsize(8)
+gui.F_Vendor.cmdVendor_Clear.event(click,cmdvendor_clear_click)
+gui.F_Vendor.cmdVendor_Delete.create(button)
+gui.F_Vendor.cmdVendor_Delete.caption("Delete")
+gui.F_Vendor.cmdVendor_Delete.visible(False)
+gui.F_Vendor.cmdVendor_Delete.size(800,390)
+gui.F_Vendor.cmdVendor_Delete.zorder(0)
+gui.F_Vendor.cmdVendor_Delete.position(1800,5800)
+gui.F_Vendor.cmdVendor_Delete.enabled(False)
+gui.F_Vendor.cmdVendor_Delete.fontname("Arial")
+gui.F_Vendor.cmdVendor_Delete.fontsize(8)
+gui.F_Vendor.cmdVendor_Delete.event(click,Delete)
+gui.F_Vendor.cmdVendor_Save.create(button)
+gui.F_Vendor.cmdVendor_Save.caption("Save")
+gui.F_Vendor.cmdVendor_Save.visible(True)
+gui.F_Vendor.cmdVendor_Save.size(800,390)
+gui.F_Vendor.cmdVendor_Save.zorder(0)
+gui.F_Vendor.cmdVendor_Save.position(200,5800)
+gui.F_Vendor.cmdVendor_Save.enabled(True)
+gui.F_Vendor.cmdVendor_Save.fontname("Arial")
+gui.F_Vendor.cmdVendor_Save.fontsize(8)
+gui.F_Vendor.cmdVendor_Save.event(click,cmdvendor_save_click)
+gui.F_Vendor.txtVendor_CompanyName.create(textbox,"",True,3120,300,0,1550,300,True,0,Arial,8,-2147483643,1)
+gui.F_Vendor.txtVendor_CompanyName.maxLength(30)
+gui.F_Vendor.cmdVendor_CompanyName.create(button)
+gui.F_Vendor.cmdVendor_CompanyName.caption("^")
+gui.F_Vendor.cmdVendor_CompanyName.visible(True)
+gui.F_Vendor.cmdVendor_CompanyName.size(450,300)
+gui.F_Vendor.cmdVendor_CompanyName.zorder(0)
+gui.F_Vendor.cmdVendor_CompanyName.position(4700,300)
+gui.F_Vendor.cmdVendor_CompanyName.enabled(True)
+gui.F_Vendor.cmdVendor_CompanyName.fontname("Arial")
+gui.F_Vendor.cmdVendor_CompanyName.fontsize(8)
+gui.F_Vendor.cmdVendor_CompanyName.event(click,cmdvendor_companyname_click)
+gui.F_Vendor.txtVendor_VID.create(textbox,"",True,1200,300,0,200,300,True,0,Arial,8,16777215,1)
+gui.F_Vendor.txtVendor_VID.numericonly(1)
+gui.F_Vendor.txtVendor_VID.maxLength(5)
+gui.F_Vendor.txtVendor_VID.event(lostfocus,txtvendor_vid_lostfocus)
+gui.F_Vendor.lblVendorID.create(label,"Vendor ID",True,1935,255,1,200,100,True,0,Arial,8,-2147483633,0)
+gui.F_Vendor.txtVendor_VID.tabstop(True)
+gui.F_Vendor.txtVendor_VID.tabindex(1)
+gui.F_Vendor.cmdVendor_CompanyName.tabstop(True)
+gui.F_Vendor.cmdVendor_CompanyName.tabindex(2)
+gui.F_Vendor.txtVendor_ContactName.tabstop(True)
+gui.F_Vendor.txtVendor_ContactName.tabindex(3)
+gui.F_Vendor.txtVendor_AcctNum.tabstop(True)
+gui.F_Vendor.txtVendor_AcctNum.tabindex(4)
+gui.F_Vendor.txtVendor_Address.tabstop(True)
+gui.F_Vendor.txtVendor_Address.tabindex(5)
+gui.F_Vendor.txtVendor_City.tabstop(True)
+gui.F_Vendor.txtVendor_City.tabindex(6)
+gui.F_Vendor.txtVendor_State.tabstop(True)
+gui.F_Vendor.txtVendor_State.tabindex(7)
+gui.F_Vendor.txtVendor_Zipcode.tabstop(True)
+gui.F_Vendor.txtVendor_Zipcode.tabindex(8)
+gui.F_Vendor.txtVendr_PhoneNum.tabstop(True)
+gui.F_Vendor.txtVendr_PhoneNum.tabindex(9)
+gui.F_Vendor.txtVendor_WebAddress.tabstop(True)
+gui.F_Vendor.txtVendor_WebAddress.tabindex(10)
+gui.F_Vendor.txtVendor_Email.tabstop(True)
+gui.F_Vendor.txtVendor_Email.tabindex(11)
+gui.F_Vendor.mltxtVendor_Notes.tabstop(True)
+gui.F_Vendor.mltxtVendor_Notes.tabindex(12)
+gui.F_Vendor.cmdVendor_Save.tabstop(True)
+gui.F_Vendor.cmdVendor_Save.tabindex(13)
+gui.F_Vendor.cmdVendor_Clear.tabstop(True)
+gui.F_Vendor.cmdVendor_Clear.tabindex(14)
+gui.F_Vendor.cmdVendor_Delete.tabstop(True)
+gui.F_Vendor.cmdVendor_Delete.tabindex(15)
+gui.F_Vendor.txtVendor_CompanyName.tabstop(True)
+gui.F_Vendor.txtVendor_CompanyName.tabindex(16)
+
+
+gui.F_Maintenance..create
+gui.F_Maintenance..caption("Maintenance")
+gui.F_Maintenance..size(6675,4845)
+gui.F_Maintenance..position(0,0)
+gui.F_Maintenance..event(resize,f_maintenance_resize)
+gui.F_Maintenance..event(unload,f_maintenance_unload)
+gui.F_Maintenance..alwaysontop(False)
+gui.F_Maintenance..fontname("Arial")
+gui.F_Maintenance..fontsize(8)
+gui.F_Maintenance..forecolor(0)
+gui.F_Maintenance..fontstyle(,,,,)
+gui.F_Maintenance..BackColor(-2147483633)
+gui.F_Maintenance..controlbox(True)
+gui.F_Maintenance..maxbutton(False)
+gui.F_Maintenance..minbutton(True)
+gui.F_Maintenance..mousepointer(0)
+gui.F_Maintenance..moveable(True)
+gui.F_Maintenance..sizeable(True)
+gui.F_Maintenance..ShowInTaskBar(True)
+gui.F_Maintenance..titlebar(True)
+gui.F_Maintenance.lblMain_TagID.create(label,"Select Tag ID",True,1935,255,1,200,100,True,0,Arial,8,-2147483633,0)
+gui.F_Maintenance.lblMain_Cost.create(label,"Maintenance Cost",True,1935,255,1,3400,1300,True,0,Arial,8,-2147483633,0)
+gui.F_Maintenance.lblMain_PurchaseDate:.create(label,"Date of Purchase",True,1935,270,1,200,700,True,0,Arial,8,-2147483633,0)
+gui.F_Maintenance.lblMain_WarrantEndDT.create(label,"Warranty End Date:",True,1935,330,1,3400,700,True,0,Arial,8,-2147483633,0)
+gui.F_Maintenance.lbl1Main_extWarranty.create(label,"Extended Warranty",True,1935,255,1,200,1300,True,0,Arial,8,-2147483633,0)
+gui.F_Maintenance.lblMain_Details.create(label,"Notes",True,1935,195,1,200,1900,True,0,Arial,8,-2147483633,0)
+gui.F_Maintenance.txtMain_tagID.create(textbox,"",True,2385,300,0,200,300,True,0,Arial,8,-2147483643,1)
+gui.F_Maintenance.txtMain_tagID.maxLength(30)
+gui.F_Maintenance.txtMain_tagID.event(lostfocus,txtmain_tagid_lostfocus)
+gui.F_Maintenance.cmdMain_TagID.create(button)
+gui.F_Maintenance.cmdMain_TagID.caption("^")
+gui.F_Maintenance.cmdMain_TagID.visible(True)
+gui.F_Maintenance.cmdMain_TagID.size(450,300)
+gui.F_Maintenance.cmdMain_TagID.zorder(0)
+gui.F_Maintenance.cmdMain_TagID.position(2600,300)
+gui.F_Maintenance.cmdMain_TagID.enabled(True)
+gui.F_Maintenance.cmdMain_TagID.fontname("Arial")
+gui.F_Maintenance.cmdMain_TagID.fontsize(8)
+gui.F_Maintenance.cmdMain_TagID.event(click,cmdmain_tagid_click)
+gui.F_Maintenance.dtpMain_PurchaseDate.create(datepicker)
+gui.F_Maintenance.dtpMain_PurchaseDate.visible(True)
+gui.F_Maintenance.dtpMain_PurchaseDate.size(2880,330)
+gui.F_Maintenance.dtpMain_PurchaseDate.zorder(0)
+gui.F_Maintenance.dtpMain_PurchaseDate.position(200,900)
+gui.F_Maintenance.dtpMain_PurchaseDate.enabled(False)
+gui.F_Maintenance.dtpMain_PurchaseDate.checkbox(False)
+gui.F_Maintenance.dtpMain_WarrantyEndDT.create(datepicker)
+gui.F_Maintenance.dtpMain_WarrantyEndDT.visible(True)
+gui.F_Maintenance.dtpMain_WarrantyEndDT.size(2880,285)
+gui.F_Maintenance.dtpMain_WarrantyEndDT.zorder(0)
+gui.F_Maintenance.dtpMain_WarrantyEndDT.position(3400,900)
+gui.F_Maintenance.dtpMain_WarrantyEndDT.enabled(True)
+gui.F_Maintenance.dtpMain_WarrantyEndDT.checkbox(False)
+gui.F_Maintenance.dlstMain_ExtWarranty.create(dropdownlist)
+gui.F_Maintenance.dlstMain_ExtWarranty.visible(True)
+gui.F_Maintenance.dlstMain_ExtWarranty.size(2880,330)
+gui.F_Maintenance.dlstMain_ExtWarranty.zorder(0)
+gui.F_Maintenance.dlstMain_ExtWarranty.position(200,1500)
+gui.F_Maintenance.dlstMain_ExtWarranty.enabled(True)
+gui.F_Maintenance.dlstMain_ExtWarranty.fontname("Arial")
+gui.F_Maintenance.dlstMain_ExtWarranty.fontsize(8)
+gui.F_Maintenance.txtMain_Cost.create(textbox,"",True,2880,300,0,3400,1500,True,0,Arial,8,-2147483643,1)
+gui.F_Maintenance.txtMain_Cost.numericonly(1)
+gui.F_Maintenance.txtMain_Cost.maxLength(8)
+gui.F_Maintenance.cmdMain_Clear.create(button)
+gui.F_Maintenance.cmdMain_Clear.caption("Clear")
+gui.F_Maintenance.cmdMain_Clear.visible(True)
+gui.F_Maintenance.cmdMain_Clear.size(800,390)
+gui.F_Maintenance.cmdMain_Clear.zorder(0)
+gui.F_Maintenance.cmdMain_Clear.position(1000,3800)
+gui.F_Maintenance.cmdMain_Clear.enabled(True)
+gui.F_Maintenance.cmdMain_Clear.fontname("Arial")
+gui.F_Maintenance.cmdMain_Clear.fontsize(8)
+gui.F_Maintenance.cmdMain_Clear.event(click,cmdmain_clear_click)
+gui.F_Maintenance.txtMain_AssetID.create(textbox,"",True,855,300,0,3400,300,False,0,Arial,8,16777215,1)
+gui.F_Maintenance.cmdMain_Save.create(button)
+gui.F_Maintenance.cmdMain_Save.caption("Save")
+gui.F_Maintenance.cmdMain_Save.visible(True)
+gui.F_Maintenance.cmdMain_Save.size(800,390)
+gui.F_Maintenance.cmdMain_Save.zorder(0)
+gui.F_Maintenance.cmdMain_Save.position(200,3800)
+gui.F_Maintenance.cmdMain_Save.enabled(True)
+gui.F_Maintenance.cmdMain_Save.fontname("Arial")
+gui.F_Maintenance.cmdMain_Save.fontsize(8)
+gui.F_Maintenance.cmdMain_Save.event(click,cmdmain_save_click)
+gui.F_Maintenance.lblMain_AssetID.create(label,"Asset ID",True,1935,255,1,3400,100,False,0,Arial,8,-2147483633,0)
+gui.F_Maintenance.mltxtM_Notes.create(textboxm)
+gui.F_Maintenance.mltxtM_Notes.text("")
+gui.F_Maintenance.mltxtM_Notes.visible(True)
+gui.F_Maintenance.mltxtM_Notes.size(6075,1560)
+gui.F_Maintenance.mltxtM_Notes.zorder(0)
+gui.F_Maintenance.mltxtM_Notes.position(185,2130)
+gui.F_Maintenance.mltxtM_Notes.enabled(True)
+gui.F_Maintenance.mltxtM_Notes.alignment(0)
+gui.F_Maintenance.mltxtM_Notes.fontname("Arial")
+gui.F_Maintenance.mltxtM_Notes.fontsize(8)
+gui.F_Maintenance.mltxtM_Notes.maxLength(500)
+gui.F_Maintenance.mltxtM_Notes.BackColor(-2147483643)
+gui.F_Maintenance.txtMain_tagID.tabstop(True)
+gui.F_Maintenance.txtMain_tagID.tabindex(1)
+gui.F_Maintenance.cmdMain_TagID.tabstop(True)
+gui.F_Maintenance.cmdMain_TagID.tabindex(2)
+gui.F_Maintenance.dtpMain_PurchaseDate.tabstop(True)
+gui.F_Maintenance.dtpMain_PurchaseDate.tabindex(3)
+gui.F_Maintenance.dtpMain_WarrantyEndDT.tabstop(True)
+gui.F_Maintenance.dtpMain_WarrantyEndDT.tabindex(4)
+gui.F_Maintenance.dlstMain_ExtWarranty.tabstop(True)
+gui.F_Maintenance.dlstMain_ExtWarranty.tabindex(5)
+gui.F_Maintenance.txtMain_Cost.tabstop(True)
+gui.F_Maintenance.txtMain_Cost.tabindex(6)
+gui.F_Maintenance.mltxtM_Notes.tabstop(True)
+gui.F_Maintenance.mltxtM_Notes.tabindex(7)
+gui.F_Maintenance.cmdMain_Save.tabstop(True)
+gui.F_Maintenance.cmdMain_Save.tabindex(8)
+gui.F_Maintenance.cmdMain_Clear.tabstop(True)
+gui.F_Maintenance.cmdMain_Clear.tabindex(9)
+
+
+gui.F_Record..create
+gui.F_Record..caption("Employee Form")
+gui.F_Record..size(6345,3675)
+gui.F_Record..position(0,0)
+gui.F_Record..event(unload,f_record_unload)
+gui.F_Record..alwaysontop(False)
+gui.F_Record..fontname("Arial")
+gui.F_Record..fontsize(8)
+gui.F_Record..forecolor(0)
+gui.F_Record..fontstyle(,,,,)
+gui.F_Record..BackColor(-2147483633)
+gui.F_Record..controlbox(True)
+gui.F_Record..maxbutton(False)
+gui.F_Record..minbutton(True)
+gui.F_Record..mousepointer(0)
+gui.F_Record..moveable(True)
+gui.F_Record..sizeable(False)
+gui.F_Record..ShowInTaskBar(True)
+gui.F_Record..titlebar(True)
+gui.F_Record.lblRecord_EmpNum.create(label,"Employee Number:",True,1935,255,1,200,100,True,0,Arial,8,-2147483633,0)
+gui.F_Record.lblRecord_Location.create(label,"Location:",True,1935,255,1,215,1860,True,0,Arial,8,-2147483633,0)
+gui.F_Record.lblRecord_Email.create(label,"Email Address:",True,1935,255,1,200,1300,True,0,Arial,8,-2147483633,0)
+gui.F_Record.lblRecord_Lname.create(label,"Last Name:",True,1935,255,1,3200,700,True,0,Arial,8,-2147483633,0)
+gui.F_Record.lblRecord_Fname.create(label,"First Name:",True,1935,255,1,200,700,True,0,Arial,8,-2147483633,0)
+gui.F_Record.txtrecord_EmpNum.create(textbox,"",True,2175,300,0,200,330,True,0,Arial,8,-2147483643,1)
+gui.F_Record.txtrecord_EmpNum.numericonly(1)
+gui.F_Record.txtrecord_EmpNum.maxLength(10)
+gui.F_Record.txtrecord_EmpNum.event(lostfocus,txtrecord_empnum_lostfocus)
+gui.F_Record.cmdRecord_EmpNum.create(button)
+gui.F_Record.cmdRecord_EmpNum.caption("^")
+gui.F_Record.cmdRecord_EmpNum.visible(True)
+gui.F_Record.cmdRecord_EmpNum.size(480,300)
+gui.F_Record.cmdRecord_EmpNum.zorder(0)
+gui.F_Record.cmdRecord_EmpNum.position(2390,330)
+gui.F_Record.cmdRecord_EmpNum.enabled(True)
+gui.F_Record.cmdRecord_EmpNum.fontname("Arial")
+gui.F_Record.cmdRecord_EmpNum.fontsize(8)
+gui.F_Record.cmdRecord_EmpNum.event(click,cmdrecord_empnum_click)
+gui.F_Record.txtRecord_fnam.create(textbox,"",True,2715,300,0,200,900,True,0,Arial,8,-2147483643,1)
+gui.F_Record.txtRecord_fnam.maxLength(15)
+gui.F_Record.txtRecord_Lname.create(textbox,"",True,2700,300,0,3200,900,True,0,Arial,8,-2147483643,1)
+gui.F_Record.txtRecord_Lname.maxLength(15)
+gui.F_Record.txtRecord_Email.create(textbox,"",True,5715,300,0,185,1505,True,0,Arial,8,-2147483643,1)
+gui.F_Record.txtRecord_Email.maxLength(100)
+gui.F_Record.dlstRecord_Location.create(dropdownlist)
+gui.F_Record.dlstRecord_Location.visible(True)
+gui.F_Record.dlstRecord_Location.size(2715,330)
+gui.F_Record.dlstRecord_Location.zorder(0)
+gui.F_Record.dlstRecord_Location.position(200,2100)
+gui.F_Record.dlstRecord_Location.enabled(True)
+gui.F_Record.dlstRecord_Location.fontname("Arial")
+gui.F_Record.dlstRecord_Location.fontsize(8)
+gui.F_Record.cmdRecord_Save.create(button)
+gui.F_Record.cmdRecord_Save.caption("Save")
+gui.F_Record.cmdRecord_Save.visible(True)
+gui.F_Record.cmdRecord_Save.size(800,390)
+gui.F_Record.cmdRecord_Save.zorder(0)
+gui.F_Record.cmdRecord_Save.position(200,2600)
+gui.F_Record.cmdRecord_Save.enabled(True)
+gui.F_Record.cmdRecord_Save.fontname("Arial")
+gui.F_Record.cmdRecord_Save.fontsize(8)
+gui.F_Record.cmdRecord_Save.event(click,cmdrecord_save_click)
+gui.F_Record.cmdRecord_Clear.create(button)
+gui.F_Record.cmdRecord_Clear.caption("Clear")
+gui.F_Record.cmdRecord_Clear.visible(True)
+gui.F_Record.cmdRecord_Clear.size(800,390)
+gui.F_Record.cmdRecord_Clear.zorder(0)
+gui.F_Record.cmdRecord_Clear.position(1000,2600)
+gui.F_Record.cmdRecord_Clear.enabled(True)
+gui.F_Record.cmdRecord_Clear.fontname("Arial")
+gui.F_Record.cmdRecord_Clear.fontsize(8)
+gui.F_Record.cmdRecord_Clear.event(click,cmdrecord_clear_click)
+gui.F_Record.txtRecord_EmpID.create(textbox,"",True,1035,300,0,3200,300,False,0,Arial,8,14671839,1)
+gui.F_Record.dlstEmp_Type.create(dropdownlist)
+gui.F_Record.dlstEmp_Type.visible(True)
+gui.F_Record.dlstEmp_Type.size(2715,330)
+gui.F_Record.dlstEmp_Type.zorder(0)
+gui.F_Record.dlstEmp_Type.position(3200,2100)
+gui.F_Record.dlstEmp_Type.enabled(True)
+gui.F_Record.dlstEmp_Type.fontname("Arial")
+gui.F_Record.dlstEmp_Type.fontsize(8)
+gui.F_Record.lblEmp_Type.create(label,"Employee Type:",True,1935,255,1,3200,1900,True,0,Arial,8,-2147483633,0)
+gui.F_Record.lblEmp_EmpID.create(label,"Employee ID",True,1935,255,1,3200,100,True,0,Arial,8,-2147483633,0)
+gui.F_Record.txtrecord_EmpNum.tabstop(True)
+gui.F_Record.txtrecord_EmpNum.tabindex(1)
+gui.F_Record.cmdRecord_EmpNum.tabstop(True)
+gui.F_Record.cmdRecord_EmpNum.tabindex(2)
+gui.F_Record.txtRecord_fnam.tabstop(True)
+gui.F_Record.txtRecord_fnam.tabindex(3)
+gui.F_Record.txtRecord_Lname.tabstop(True)
+gui.F_Record.txtRecord_Lname.tabindex(4)
+gui.F_Record.txtRecord_Email.tabstop(True)
+gui.F_Record.txtRecord_Email.tabindex(5)
+gui.F_Record.dlstRecord_Location.tabstop(True)
+gui.F_Record.dlstRecord_Location.tabindex(6)
+gui.F_Record.dlstEmp_Type.tabstop(True)
+gui.F_Record.dlstEmp_Type.tabindex(7)
+gui.F_Record.cmdRecord_Save.tabstop(True)
+gui.F_Record.cmdRecord_Save.tabindex(8)
+gui.F_Record.cmdRecord_Clear.tabstop(True)
+gui.F_Record.cmdRecord_Clear.tabindex(9)
+
+
+Program.Sub.ScreenSU.End
+
+Program.Sub.Preflight.Start
+Variable.UDT.UASearch.Define("Tag_ID",String)
+Variable.UDT.UASearch.Define("Category",String)
+Variable.UDT.UASearch.Define("Subcategory",String)
+Variable.UDT.UASearch.Define("Make",String)
+Variable.UDT.UASearch.Define("Model",String)
+Variable.uGlobal.USrch.Declare("UASearch")
+
+Program.Sub.Preflight.End
+
+Program.Sub.Main.Start
+'Coded by: SUPERVSR
+'Project Start Date: 2/22/2011
+
+F.ODBC.Connection!con.OpenConnection(V.Ambient.PDSN,V.Ambient.pUser,V.Ambient.pPass)
+
+'Gui.F_Search.dlstSearch_AssetType.AddItem("Hardware",0)
+'Gui.F_Search.dlstSearch_AssetType.AddItem("Software",1)
+
+Gui.F_Asset.dlstAsset_Type.AddItem("Hardware",0)
+Gui.F_Asset.dlstAsset_Type.AddItem("Software",1)
+Gui.F_Asset.dlstAsset_Status.AddItem(" ",0)
+Gui.F_Asset.dlstAsset_Status.ListIndex(0)
+Gui.F_Asset.dlstAsset_Status.Additem("Active",1)
+Gui.F_Asset.dlstAsset_Status.AddItem("Inactive",2)
+Gui.F_Asset.dlstAsset_Status.AddItem("Retired",3)
+
+Gui.F_Maintenance.dlstMain_ExtWarranty.AddItem(" ",0)
+Gui.F_Maintenance.dlstMain_ExtWarranty.AddItem("Yes",1)
+Gui.F_Maintenance.dlstMain_ExtWarranty.AddItem("No",2)
+
+Gui.F_Record.dlstRecord_Location.AddItem(" ",0)
+Gui.F_Record.dlstRecord_Location.AddItem("Internal",1)
+Gui.F_Record.dlstRecord_Location.AddItem("External",2)
+
+Gui.F_Record.dlstEmp_Type.AddItem(" ",0)
+Gui.F_Record.dlstEmp_Type.AddItem("Employee",1)
+Gui.F_Record.dlstEmp_Type.AddItem("Storage",2)
+
+
+'Gui.F_Search..Show
+Gui.F_Asset..Show
+'Gui.F_AssetAssignment..Show
+'Gui.F_Maintenance..Show
+'Gui.F_Vendor..Show
+'Gui.F_Record..Show
+
+Program.Sub.Main.End
+
+program.sub.cmdsearch_empnum_click.start
+V.Local.sTitle.Declare(String)
+V.Local.sWidth.Declare(String)
+V.local.sSQL.Declare(String)
+V.local.sRet.Declare(String)
+V.Local.sError.Declare(String)
+
+F.Intrinsic.Control.SetErrorHandler("cmdsearch_empnum_click_Err")
+F.Intrinsic.Control.ClearErrors
+
+F.Intrinsic.Control.CallSub(Cmdsearch_clear_click)
+F.Intrinsic.String.Split("Employee ID*!*Employee Number*!* First Name*!* Last Name","*!*",V.Local.sTitle)
+F.Intrinsic.String.Split("0*!*2000 *!* 2500*!*2500","*!*",V.Local.sWidth)
+V.Local.sSQL.Set("Select Employee_ID, Emp_Num,Fname, Lname From AM_Employee Order by Emp_Num")
+
+F.Intrinsic.UI.Browser("Select Employee","con",V.Local.sSQL,V.Local.sTitle,V.Local.sWidth,V.Local.sRet)
+F.intrinsic.control.If(V.Local.sRet,<>,"***CANCEL***")
+F.Intrinsic.String.Split(V.Local.sRet,"*!*",V.Local.sRet)
+	Gui.F_Search.txtSearch_EmpID.Text(V.Local.sRet(0))
+	Gui.F_Search.txtSearch_EmployeeNum.Text(V.Local.sRet(1))
+	Gui.F_Search.txtSearch_EmployFname.Text(V.Local.sRet(2))
+	Gui.F_Search.txtSearch_Lname.text(V.Local.sRet(3))
+F.Intrinsic.Control.Else
+F.Intrinsic.UI.Msgbox("No Employee Selected")
+F.Intrinsic.Control.Endif
+
+F.Intrinsic.Control.CallSub(Cmdsearch_search_click)
+
+F.Intrinsic.Control.ExitSub
+F.Intrinsic.Control.Label("cmdsearch_empnum_click_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+    Function.Intrinsic.String.Concat("Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+    F.Intrinsic.UI.Msgbox(V.Local.sError)
+Function.Intrinsic.Control.EndIf
+
+program.sub.cmdsearch_empnum_click.end
+
+Program.Sub.Unload.Start
+
+Function.ODBC.connection!con.Close
+Function.intrinsic.control.end
+
+Program.Sub.Unload.End
+
+Program.Sub.Search_CatLoad.Start
+V.Local.sSQL.Declare(String)
+V.Local.i.Declare(Long)
+V.Local.sError.Declare(String)
+
+F.Intrinsic.Control.SetErrorHandler("Search_CatLoad_Err")
+F.Intrinsic.Control.ClearErrors
+
+F.Intrinsic.String.Concat("Select * from AM_Asset_Catergory Where Parent = -1 and Hw_Sw = ",V.Args.Hw_Sw,V.Local.sSQL)
+Gui.F_Search.dlstSearch_Category.ClearItems
+F.ODBC.Connection!con.openrecordsetRO("rstAssetType",V.local.sSQL)
+F.Intrinsic.Control.DoUntil(V.ODBC.con!rstAssetType.EOF,=,True)
+		Gui.F_Search.dlstSearch_Category.AddItem(V.ODBC.con!rstAssetType.FieldVal!Description,V.ODBC.con!rstAssetType.FieldVal!Asset_Category_ID)
+	F.ODBC.con!rstAssetType.MoveNext
+F.Intrinsic.Control.Loop
+F.ODBC.con!rstAssetType.Close
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("Search_CatLoad_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+    Function.Intrinsic.String.Concat("Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+    F.Intrinsic.UI.Msgbox(V.Local.sError)
+Function.Intrinsic.Control.EndIf
+
+Program.Sub.Search_CatLoad.End
+
+Program.Sub.Search_dlstLoad.Start
+
+'Gui.F_Search.dlstSearch_AssetType.AddItem("Hardware")
+'Gui.F_Search.dlstSearch_AssetType.AddItem("Software")
+
+Program.Sub.Search_dlstLoad.End
+
+program.sub.cmdsearch_clear_click.start
+V.Local.sError.Declare(String)
+
+F.Intrinsic.Control.SetErrorHandler("cmdsearch_clear_click_Err")
+F.Intrinsic.Control.ClearErrors
+	Gui.F_Search.gsflxSrchList.Rows(1)
+	Gui.F_Search.txtSearch_EmployeeNum.Text("")
+	Gui.F_Search.txtSearch_EmployFname.Text("")
+	Gui.F_Search.txtSearch_Lname.Text("")
+	Gui.F_Search.txtSearch_EmpID.Text("")
+
+'	Gui.F_Search.dlstSearch_AssetType.clearitems
+'	Gui.F_Search.dlstSearch_AssetType.Additem("Hardware",0)
+'	Gui.F_Search.dlstSearch_AssetType.AddItem("Software",1)
+'	Gui.F_Search.dlstSearch_category.ClearItems
+F.Intrinsic.Control.ExitSub
+F.Intrinsic.Control.Label("cmdsearch_clear_click_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+    Function.Intrinsic.String.Concat("Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+    F.Intrinsic.UI.Msgbox(V.Local.sError)
+Function.Intrinsic.Control.EndIf
+
+
+
+
+
+program.sub.cmdsearch_clear_click.end
+
+program.sub.f_search_resize.start
+
+V.local.width.declare(Long)
+V.local.height.declare(Long)
+V.local.x.declare(Long)
+V.local.Y.declare(Long)
+
+Function.Intrinsic.Control.If(Variable.Screen.F_Search.Width,<,6435)
+	Gui.F_Search..Size(6435,Variable.Screen.F_Search.Height)
+Function.Intrinsic.Control.EndIf
+Function.Intrinsic.Control.If(Variable.Screen.F_Search.height,<,4110)
+	Gui.F_Search..Size(Variable.Screen.F_Search.Width,4110)
+Function.Intrinsic.Control.EndIf
+F.Intrinsic.Math.Sub(V.Screen.F_Search.Height,2715,V.Local.height)
+F.Intrinsic.Math.Sub(V.Screen.F_Search.Width,630,V.Local.width)
+Gui.F_Search.gsflxSrchlist.Size(V.Local.width,V.Local.height)
+
+F.Intrinsic.Math.Add(V.Screen.F_Search!gsflxSrchList.Height,1705,V.Local.Y)
+V.Local.x.Set(V.Screen.F_Search!cmdSearch_Clear.Left)
+Gui.F_Search.cmdSearch_Clear.Position(V.Local.x,V.Local.Y)
+
+program.sub.f_search_resize.end
+
+program.sub.cmdsearch_search_click.start
+V.Local.iemp.Declare(Long)
+V.Local.iC.Declare(Long)
+V.Local.iU.Declare(Long)
+V.Local.sSQL.Declare(String)
+
+F.Intrinsic.Control.If(V.Screen.F_Search!txtSearch_EmployeeNum.Text,=,"")
+	F.Intrinsic.UI.Msgbox("No Employee Selected")
+F.Intrinsic.Control.Else
+
+	Gui.F_Search.gsflxSrchList.Rows(2)
+	Gui.F_Search.gsflxSrchList.Cols(5)
+	Gui.F_Search.gsflxSrchList.TextMatrix(0,0,"Tag #")
+	Gui.F_Search.gsflxSrchList.ColWidth(0,1000)
+	Gui.F_Search.gsflxSrchList.TextMatrix(1,0,"Category")
+	Gui.F_Search.gsflxSrchList.ColWidth(1,1000)
+	Gui.F_Search.gsflxSrchList.TextMatrix(2,0,"Sub Category")
+	Gui.F_Search.gsflxSrchList.ColWidth(2,1500)
+	Gui.F_Search.gsflxSrchList.TextMatrix(3,0,"Make")
+	Gui.F_Search.gsflxSrchList.ColWidth(3,1000)
+	Gui.F_Search.gsflxSrchList.TextMatrix(4,0,"Model")
+	Gui.F_Search.gsflxSrchList.ColWidth(4,1250)
+
+	'Build Style and apply using for loop
+	F.Intrinsic.Control.For(V.Local.iC,0,4,1)
+		Gui.F_Search.gsflxSrchList.BuildStyle(1,V.Local.iC,"type","Locked","true")
+		Gui.F_Search.gsflxSrchList.BuildStyle(1,V.Local.iC,"Format","alignment","4")
+		'Gui.F_Search.gsflxSrchList.BuildStyle(1,V.Local.iC,"Color","Back",V.Color.Orange)
+	F.Intrinsic.Control.Next(V.Local.iC)
+
+	Gui.F_Search.gsflxSrchList.ApplyStyle(1,1)
+'	F.Intrinsic.Debug.InvokeDebugger
+'	F.Intrinsic.Debug.Stop
+	V.uGlobal.uSrch.Redim(-1,-1)
+	F.Intrinsic.String.Concat("Select Asset_ID, Tag_ID from AM_Asset_Assignment where Employee_ID= ",V.Screen.F_Search!txtSearch_EmpID.Text," order by AA_ID Desc ",V.Local.sSQL)
+	'F.Intrinsic.UI.Msgbox(V.Local.sSQL)
+	F.ODBC.Connection!con.OpenRecordsetRO("rstS",V.Local.sSQL)
+
+	F.Intrinsic.Control.DoUntil(V.ODBC.con!rstS.EOF,=,True)
+		F.Intrinsic.Control.If(V.ODBC.con!rstS.FieldValisnull!Tag_ID,=,False)
+		
+		F.Intrinsic.String.Concat("Select Top 1 Assign_Date, Employee_ID from AM_Asset_Assignment where Asset_ID=",V.odbc.con!rstS.FieldVal!Asset_ID," order by Assign_Date DESC ",V.Local.sSQL)
+		'F.Intrinsic.UI.Msgbox(V.Local.sSQL)
+		F.ODBC.Connection!con.OpenRecordsetRO("rstLU",V.Local.sSQL)
+			F.Intrinsic.Control.If(V.ODBC.con!rstLu.EOF,=,False)
+				V.Local.iemp.Set(V.Screen.F_Search!txtSearch_EmpID.Text)
+				'V.Local.iemp.Set(V.Screen.F_Search!txtSearch_EmplD.Text)
+
+				F.Intrinsic.Control.If(V.ODBC.con!rstLu.FieldVal!Employee_ID,=,V.Local.iemp)
+					F.Intrinsic.Control.If(V.uGlobal.uSrch.UBound,=,-1)
+						V.uGlobal.uSrch.Redim(0,0)
+						V.Local.iU.Set(0)
+					F.Intrinsic.Control.Else
+						V.Local.iU.Set(V.uGlobal.uSrch.UBound)
+						F.Intrinsic.Math.Add(V.Local.iU,1,V.Local.iU)
+						V.uGlobal.uSrch.RedimPreserve(V.uGlobal.uSrch.LBound,V.Local.iU)
+					F.Intrinsic.Control.EndIf
+				F.Intrinsic.Control.EndIf
+				F.Intrinsic.Control.If(V.Local.iU,<=,V.uGlobal.USrch.UBound)
+					F.Intrinsic.String.Concat("select A.Tag_ID, A.Asset_ID, C1.Description as Category, C2.Description as SubCat, M1.Description as Make, M2.Description as Model From ((((AM_Asset as A Left JOIN AM_Asset_Catergory as C1 ON A.Asset_Category_ID = C1.Asset_Category_ID) LEFT JOIN AM_Asset_Catergory as C2 ON A.Subcategory = C2.Asset_Category_ID) LEFT JOIN AM_Make as M1 ON A.Make = M1.Asset_Make_ID) LEFT JOIN AM_Make as M2 ON A.Model = M2.Asset_Make_ID) where A.Asset_ID=",V.ODBC.con!rstS.FieldVal!Asset_ID,"",V.Local.sSQL)
+					F.ODBC.Connection!con.OpenRecordsetRO("rstFLX",V.Local.sSQL)
+					F.Intrinsic.Control.If(V.ODBC.con!rstFLX.EOF,=,False)
+						V.uGlobal.USrch(v.Local.iU)!Tag_ID.Set(V.ODBC.con!rstFLX.FieldVal!Tag_ID)
+						V.uGlobal.USrch(v.Local.iU)!Category.Set(V.ODBC.con!rstFLX.FieldVal!Category)
+						V.uGlobal.USrch(v.Local.iU)!Subcategory.Set(V.ODBC.con!rstFLX.FieldVal!Subcat)
+					F.Intrinsic.Control.If(V.ODBC.con!rstFLX.FieldValisnull!Make,=,False)
+						V.uGlobal.USrch(v.Local.iU)!Make.Set(V.ODBC.con!rstFLX.FieldVal!Make)
+					F.Intrinsic.Control.Else
+						V.uGlobal.USrch(v.Local.iU)!Make.Set("")
+					F.Intrinsic.Control.EndIf
+					F.Intrinsic.Control.If(V.ODBC.con!rstFLX.FieldValisnull!Model,=,False)
+							V.uGlobal.USrch(v.Local.iU)!Model.Set(V.ODBC.con!rstFLX.FieldVal!Model)
+					F.Intrinsic.Control.Else
+							V.uGlobal.USrch(v.Local.iU)!Model.Set("")
+					F.Intrinsic.Control.EndIf
+					F.Intrinsic.Control.EndIf
+					F.ODBC.con!rstFLX.Close
+				F.Intrinsic.Control.EndIf
+			F.Intrinsic.Control.EndIf
+			F.ODBC.con!rstLU.Close
+		F.Intrinsic.Control.EndIf
+		F.ODBC.con!rstS.MoveNext
+	F.Intrinsic.Control.Loop
+	F.ODBC.con!rstS.Close
+	F.Intrinsic.Control.If(V.uGlobal.USrch.UBound,=,-1)
+		F.Intrinsic.UI.Msgbox("Employee doesn't have assets assigned")
+		F.Intrinsic.Control.Else
+		Gui.F_Search.gsflxSrchList.LoadfromUDT("uGlobal.uSrch","Tag_ID*!*Category*!*Subcategory*!*Make*!*Model",1)
+		Gui.F_Search.gsflxSrchList.FixedRows(1)
+	F.Intrinsic.Control.Endif
+F.Intrinsic.Control.EndIf
+
+program.sub.cmdsearch_search_click.end
+
+program.sub.txtsearch_employeenum_lostfocus.start
+V.Local.sSQL.Declare(String)
+V.Local.sError.Declare(String)
+
+F.Intrinsic.Control.If(V.Screen.F_Search!txtSearch_EmployeeNum.Text,=,"")
+	F.Intrinsic.Control.ExitSub
+F.Intrinsic.Control.else
+'F.Intrinsic.Control.If(V.Screen.F_Search!txtSearch_EmployeeNum.Text,<>,"")
+'	F.Intrinsic.Control.If(V.Screen.F_Search!txtSearch_employfname.Text,=,"")
+	F.Intrinsic.String.Concat("Select * From AM_Employee Where Emp_Num = ",V.Screen.F_Search!txtsearch_EmployeeNum.Text,V.Local.sSQL)
+	F.ODBC.Connection!con.OpenRecordsetRO("rstT",V.Local.sSQL)
+		F.Intrinsic.Control.If(V.ODBC.con!rstT.EOF,=,True)
+'		F.Intrinsic.String.Concat("Employee not found. You entered Employee ID = ",V.screen.F_Search!txtSearch_EmployeeNum.Text,V.Local.sSQL)
+'			F.Intrinsic.UI.Msgbox(V.Local.sSQL)
+			F.Intrinsic.UI.Msgbox("Employee not found. Please enter a different Employee Number")
+			Gui.F_Search.txtSearch_EmployeeNum.SetFocus
+			F.Intrinsic.Control.CallSub(Cmdsearch_clear_click)
+		F.Intrinsic.Control.Else
+			Gui.F_Search.txtSearch_EmpId.Text(V.ODBC.con!rstT.Fieldval!Employee_ID)
+			Gui.F_Search.txtSearch_Employfname.Text(V.ODBC.con!rstT.FieldVal!Fname)
+			Gui.F_Search.txtSearch_Lname.Text(V.ODBC.con!rstT.FieldVal!Lname)
+			F.Intrinsic.Control.CallSub(Cmdsearch_search_click)
+		F.Intrinsic.Control.EndIf
+			
+		F.ODBC.con!rstT.Close
+	'F.Intrinsic.Control.EndIf
+F.Intrinsic.Control.EndIf
+'F.Intrinsic.Control.EndIf
+F.Intrinsic.Debug.Stop
+
+program.sub.txtsearch_employeenum_lostfocus.end
+
+Program.Sub.Asset_tlstLoad.Start
+Gui.F_Asset.dlstAsset_Type.AddItem("Hardware")
+
+Gui.F_Asset.dlstAsset_Type.AddItem("Software")
+
+
+
+Program.Sub.Asset_tlstLoad.End
+
+Program.Sub.Asset_dlstCatLoad.Start
+
+V.Local.sSQL.Declare(String)
+V.Local.i.Declare(Long)
+
+F.Intrinsic.String.Concat("Select * from AM_Asset_Catergory Where Parent = -1 and Hw_Sw = ",V.Args.Hw_Sw,V.Local.sSQL)
+
+Gui.F_Asset.dlstAsset_Category.ClearItems
+Gui.F_Asset.dlstAsset_subcategory.ClearItems
+Gui.F_Asset.dlstAsset_Make.ClearItems
+Gui.F_Asset.dlstAsset_Model.ClearItems
+
+
+F.ODBC.Connection!con.openrecordsetRO("rstAssetType",V.local.sSQL)
+F.Intrinsic.Control.DoUntil(V.ODBC.con!rstAssetType.EOF,=,True)
+		Gui.F_Asset.dlstAsset_Category.AddItem(V.ODBC.con!rstAssetType.FieldVal!Description,V.ODBC.con!rstAssetType.FieldVal!Asset_Category_ID)
+
+
+	F.ODBC.con!rstAssetType.MoveNext
+F.Intrinsic.Control.Loop
+
+F.ODBC.con!rstAssettype.Close
+
+
+
+
+
+Program.Sub.Asset_dlstCatLoad.End
+
+Program.Sub.Asset_Vendor.Start
+V.Local.sTitle.Declare(String)
+V.Local.sWidth.Declare(String)
+V.local.sSQL.Declare(String)
+V.local.sRet.Declare(String)
+V.local.sVendor.Declare(String)
+
+
+
+F.Intrinsic.String.Split("Vendor Number *!* Vendor Name","*!*",V.Local.sTitle)
+F.Intrinsic.String.Split("1000 *!* 2500","*!*",V.Local.sWidth)
+V.Local.sSQL.Set("Select Vendor_ID, Company_Name From AM_Vendor_Details where DeleteDt is null order by Vendor_ID")
+
+F.Intrinsic.UI.Browser("Select Vendor","con",V.Local.sSQL,V.Local.sTitle,V.Local.sWidth,4000,5000,V.Local.sRet)
+
+F.intrinsic.control.If(V.Local.sRet,<>,"***CANCEL***")
+F.Intrinsic.String.Split(V.Local.sRet,"*!*",V.Local.sVendor)
+
+Gui.F_Asset.txtAsset_VID.Text(V.Local.sVendor(0))
+Gui.F_Asset.txtAsset_Vendor.Text(V.Local.sVendor(1))
+F.Intrinsic.Control.Else
+'	F.Intrinsic.Control.If(V.Screen.F_Asset!txtAsset_AssetLookup.Text)
+'F.Intrinsic.UI.Msgbox("Vendor does not exist")
+F.Intrinsic.Control.Endif
+
+
+
+
+Program.Sub.Asset_Vendor.End
+
+program.sub.dlstasset_type_click.start
+V.Local.sError.Declare(String)
+
+F.Intrinsic.Control.SetErrorHandler("dlstasset_type_click_Err")
+F.Intrinsic.Control.ClearErrors
+
+F.Intrinsic.control.CallSub(Asset_dlstcatload,"Hw_Sw",V.Screen.F_Asset!dlstAsset_Type.ItemData)
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("dlstasset_type_click_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+    Function.Intrinsic.String.Concat("Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+    F.Intrinsic.UI.Msgbox(V.Local.sError)
+Function.Intrinsic.Control.EndIf
+
+
+
+
+program.sub.dlstasset_type_click.end
+
+program.sub.dlstasset_category_click.start
+V.Local.sError.Declare(String)
+
+F.Intrinsic.Control.SetErrorHandler("dlstasset_category_click_Err")
+F.Intrinsic.Control.ClearErrors
+
+F.Intrinsic.Control.CallSub(Asset_dlstsubcatload,"Parent",V.Screen.F_Asset!dlstAsset_Category.ItemData)
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("dlstasset_category_click_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+    Function.Intrinsic.String.Concat("Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+    F.Intrinsic.UI.Msgbox(V.Local.sError)
+Function.Intrinsic.Control.EndIf
+
+
+
+program.sub.dlstasset_category_click.end
+
+Program.Sub.Asset_dlstSubCatLoad.Start
+
+V.Local.sSQL.Declare(String)
+V.Local.i.Declare(Long)
+
+F.Intrinsic.String.Concat("select * from AM_Asset_Catergory where Parent = ",V.Args.Parent,V.Local.sSQL)
+
+
+
+
+
+Gui.F_Asset.dlstAsset_subCategory.ClearItems
+Gui.F_Asset.dlstAsset_Make.ClearItems
+Gui.F_Asset.dlstAsset_Model.ClearItems
+
+
+F.ODBC.Connection!con.openrecordsetRO("rstAssetType",V.local.sSQL)
+F.Intrinsic.Control.DoUntil(V.ODBC.con!rstAssetType.EOF,=,True)
+		Gui.F_Asset.dlstAsset_subCategory.AddItem(V.ODBC.con!rstAssetType.FieldVal!Description,V.ODBC.con!rstAssetType.FieldVal!Asset_Category_ID)
+
+
+	F.ODBC.con!rstAssetType.MoveNext
+F.Intrinsic.Control.Loop
+
+F.ODBC.con!rstAssetType.Close
+
+
+
+
+
+Program.Sub.Asset_dlstSubCatLoad.End
+
+program.sub.dlstasset_subcategory_click.start
+V.Local.sError.Declare(String)
+
+F.Intrinsic.Control.SetErrorHandler("dlstasset_subcategory_click_Err")
+F.Intrinsic.Control.ClearErrors
+
+F.Intrinsic.Control.CallSub(Asset_dlstmakeload,"Parent",V.Screen.F_Asset!dlstAsset_subcategory.ItemData)
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("dlstasset_subcategory_click_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+    Function.Intrinsic.String.Concat("Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+    F.Intrinsic.UI.Msgbox(V.Local.sError)
+Function.Intrinsic.Control.EndIf
+
+
+
+
+
+
+program.sub.dlstasset_subcategory_click.end
+
+program.sub.dlstasset_make_click.start
+V.Local.sError.Declare(String)
+
+F.Intrinsic.Control.SetErrorHandler("dlstasset_make_click_Err")
+F.Intrinsic.Control.ClearErrors
+
+F.Intrinsic.Control.CallSub(Asset_dlstmodelload,"Parent",V.Screen.F_Asset!dlstAsset_Make.ItemData)
+
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("dlstasset_make_click_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+    Function.Intrinsic.String.Concat("Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+    F.Intrinsic.UI.Msgbox(V.Local.sError)
+Function.Intrinsic.Control.EndIf
+
+
+
+program.sub.dlstasset_make_click.end
+
+Program.Sub.Asset_dlstMakeLoad.Start
+V.Local.sSQL.Declare(String)
+V.Local.i.Declare(Long)
+
+F.Intrinsic.String.Concat("select * from AM_Make where Parent = -1 and SubcatID = ",V.Args.Parent,V.Local.sSQL)
+
+
+
+
+
+Gui.F_Asset.dlstAsset_Make.ClearItems
+
+Gui.F_Asset.dlstAsset_Model.ClearItems
+
+
+F.ODBC.Connection!con.openrecordsetRO("rstAssetType",V.local.sSQL)
+F.Intrinsic.Control.DoUntil(V.ODBC.con!rstAssetType.EOF,=,True)
+Gui.F_Asset.dlstAsset_Make.AddItem(V.ODBC.con!rstAssetType.FieldVal!Description,V.ODBC.con!rstAssetType.FieldVal!Asset_Make_ID)
+F.ODBC.con!rstAssetType.MoveNext
+F.Intrinsic.Control.Loop
+F.ODBC.con!rstAssetType.Close
+
+Program.Sub.Asset_dlstMakeLoad.End
+
+Program.Sub.Asset_dlstModelLoad.Start
+V.Local.sSQL.Declare(String)
+V.Local.i.Declare(Long)
+
+F.Intrinsic.String.Concat("select * from AM_Make where Parent = ",V.Args.Parent,V.Local.sSQL)
+
+
+Gui.F_Asset.dlstAsset_Model.ClearItems
+
+
+F.ODBC.Connection!con.openrecordsetRO("rstAssetType",V.local.sSQL)
+F.Intrinsic.Control.DoUntil(V.ODBC.con!rstAssetType.EOF,=,True)
+		Gui.F_Asset.dlstAsset_Model.AddItem(V.ODBC.con!rstAssetType.FieldVal!Description,V.ODBC.con!rstAssetType.FieldVal!Asset_Make_ID)
+
+
+
+	F.ODBC.con!rstAssetType.MoveNext
+F.Intrinsic.Control.Loop
+
+F.ODBC.con!rstAssetType.Close
+
+
+Program.Sub.Asset_dlstModelLoad.End
+
+Program.Sub.Asset_Lookup.Start
+V.Local.sTitle.Declare(String)
+V.Local.iWidth.Declare(String)
+V.local.sSQL.Declare(String)
+V.local.sRet.Declare(String)
+V.Local.sText.Declare(String)
+V.Local.Datex.Declare(Date)
+V.Local.iTemp.Declare(Long)
+
+F.Intrinsic.String.Split("Asset ID *!*Tag ID*!* Hw_Sw*!*Category*!*SubCategory*!*Make*!*Model","*!*",V.Local.sTitle)
+F.Intrinsic.String.Split("1000*!*2000*!*0*!*2000*!*1500*!*1000*!*1500*!*0*!*0*!*0*!*0*!*0*!*0*!*0","*!*",V.Local.iWidth)
+'F.Intrinsic.String.Split("AID*!*HW_SW*!*Tag ID*!*Category*!*Sub-Category*!*Make*!*Model","*!*",V.Local.sTitle)
+'F.Intrinsic.String.Split("0*!*0*!*2000*!*2000*!*2000*!*2000*!*2000","*!*",V.Local.sWidth)
+
+'V.Local.sSQL.Set("Select A.Asset_ID, A.Tag_ID,C.Hw_Sw, C1.Description, C.Description, M1.Description, M2.Description, V.Company_Name, A.Invoice, A.Serial_Number, A.Asset_Description, A.Cost, A.VID, A.Date_Received FROM AM_Asset as A, AM_Make as M1, AM_Make as M2, AM_Asset_Catergory as C, AM_Asset_Catergory as C1, AM_Vendor_Details as V WHERE A.Asset_Category_ID = C1.Asset_Category_ID AND A.Make = M1.Asset_Make_ID AND C.Asset_Category_ID = M1.subcatID AND M1.Asset_Make_ID = M2.Parent AND A.Model = M2.Asset_Make_ID AND A.VID = V.Vendor_ID ORDER BY A.Asset_ID, C1.Description,C.Description,M1.Description")
+'V.local.sSQL.Set("Select A.Asset_ID, A.TAG_ID, C1.Hw_Sw, C1.Description, C2.Description, M1.Description, M2.Description, V.Company_Name, A.Invoice, A.Serial_Number, A.Asset_Description, A.Cost, A.VID, A.Date_Received FROM AM_Asset as A, AM_Make as M1, AM_Make as M2, AM_Asset_Catergory as C1, AM_Asset_Catergory as C2, AM_Vendor_Details as V WHERE A.Asset_Category_ID = C1.Asset_Category_ID AND A.Make = M1.Asset_Make_ID AND A.Model = M2.Asset_Make_ID AND A.Subcategory=C2.Asset_Category_ID AND  A.VID = V.Vendor_ID ORDER BY A.ASSET_ID")
+F.ODBC.Connection!con.OpenRecordsetRO("rst","Select * from AM_Asset Order By Asset_ID")
+F.Intrinsic.Control.DoUntil(V.ODBC.con!rst.EOF,=,True)
+	F.Intrinsic.Control.If(V.ODBC.con!rst.FieldVal!Tag_ID,<>," ")
+		F.Intrinsic.String.Concat(V.Local.sText,V.ODBC.con!rst.FieldVal!Asset_ID,"*!*",V.Local.sText)
+		F.Intrinsic.String.Concat(V.Local.sText,V.ODBC.con!rst.FieldVal!Tag_ID,"*!*",V.Local.sText)
+		F.Intrinsic.String.Concat("select Hw_Sw, Description from AM_Asset_Catergory where Asset_Category_ID = ",V.ODBC.con!rst.FieldVal!Asset_Category_ID," ",V.Local.sSQL)
+		F.ODBC.connection!con.OpenRecordsetRO("rstLu",V.Local.sSql)
+		F.Intrinsic.Control.If(V.ODBC.con!rstLu.EOF,=,False)
+			F.Intrinsic.Control.If(V.ODBC.con!rstLU.FieldVal!Hw_Sw,=,0)
+				F.Intrinsic.String.Concat(V.Local.sText,"Hardware","*!*",V.Local.sText)
+			F.Intrinsic.Control.Else
+				F.Intrinsic.String.Concat(V.Local.sText,"Software","*!*",V.Local.sText)
+			F.Intrinsic.Control.EndIf
+			F.Intrinsic.String.Concat(V.Local.sText,V.ODBC.con!rstLu.FieldVal!Description,"*!*",V.Local.sText)
+		F.Intrinsic.Control.Else
+			F.Intrinsic.String.Concat(V.Local.sText,"*!**!*",V.Local.sText)
+		F.Intrinsic.Control.EndIf
+		F.ODBC.con!rstLu.Close
+		F.Intrinsic.String.Concat("select Description from AM_Asset_Catergory where Asset_Category_ID = ",V.ODBC.con!rst.FieldVal!subcategory," ",V.Local.sSql)
+		F.ODBC.connection!con.OpenRecordsetRO("rstLu",V.Local.sSql)
+		F.Intrinsic.Control.If(V.ODBC.con!rstLu.EOF,=,False)
+			F.Intrinsic.String.Concat(V.Local.sText,V.ODBC.con!rstLu.FieldVal!Description,"*!*",V.Local.sText)
+		F.Intrinsic.Control.Else
+			F.Intrinsic.String.Concat(V.Local.sText,"*!*",V.Local.sText)
+		F.Intrinsic.Control.EndIf
+		F.ODBC.con!rstLu.Close
+		'Make
+		'F.Intrinsic.UI.Msgbox(V.ODBC.con!rst.FieldVal!Make)
+		F.Intrinsic.Control.If(V.ODBC.con!rst.FieldValisnull!Make,=,False)
+	'		F.Intrinsic.Control.If(V.ODBC.con!rst.FieldVal!Make,<>,"")
+				F.Intrinsic.String.Concat("select Description from AM_Make where Asset_Make_ID = ",V.ODBC.con!rst.FieldVal!Make," ",V.Local.sSql)
+				'F.Intrinsic.UI.Msgbox(V.Local.sSQL)
+				F.ODBC.connection!con.OpenRecordsetRO("rstLu",V.Local.sSql)
+				F.Intrinsic.Control.If(V.ODBC.con!rstLu.EOF,=,False)
+					F.Intrinsic.String.Concat(V.Local.sText,V.ODBC.con!rstLu.FieldVal!Description,"*!*",V.Local.sText)
+				F.Intrinsic.Control.Else
+					F.Intrinsic.String.Concat(V.Local.sText,"*!*",V.Local.sText)
+				F.Intrinsic.Control.EndIf
+				F.ODBC.con!rstLu.Close
+	'		F.Intrinsic.Control.EndIf
+		F.Intrinsic.Control.else
+			F.Intrinsic.String.Concat(V.Local.sText,"*!*",V.Local.sText)
+		F.Intrinsic.Control.Endif
+
+		F.Intrinsic.Control.If(V.ODBC.con!rst.FieldValisnull!Model,=,False)
+			F.Intrinsic.String.Concat("select Description from AM_Make where Asset_Make_ID = ",V.ODBC.con!rst.FieldVal!Model," ",V.Local.sSql)
+			F.ODBC.connection!con.OpenRecordsetRO("rstLu",V.Local.sSql)
+			F.Intrinsic.Control.If(V.ODBC.con!rstLu.EOF,=,False)
+				F.Intrinsic.String.Concat(V.Local.sText,V.ODBC.con!rstLu.FieldVal!Description,"*!*",V.Local.sText)
+			F.Intrinsic.Control.Else
+				F.Intrinsic.String.Concat(V.Local.sText,"*!*",V.Local.sText)
+			F.Intrinsic.Control.EndIf
+			F.ODBC.con!rstLu.Close
+		F.Intrinsic.Control.Else
+				F.Intrinsic.String.Concat(V.Local.sText,"*!*",V.Local.sText)
+		F.Intrinsic.Control.EndIf
+		'company name - Vendor_Details
+		F.Intrinsic.Control.If(V.ODBC.con!rst.FieldValisnull!VID,=,False)
+			F.Intrinsic.String.Concat("select  Company_Name From AM_Vendor_Details Where Vendor_ID = ",V.ODBC.con!rst.FieldVal!VID," ",V.Local.sSQL)
+			F.ODBC.Connection!con.OpenRecordsetRO("rstLu",V.Local.sSQL)
+			F.Intrinsic.Control.If(V.ODBC.con!rstLu.EOF,=,False)
+				F.Intrinsic.String.Concat(V.Local.sText,V.ODBC.con!rstLu.FieldVal!Company_Name,"*!*",V.Local.sText)
+			F.Intrinsic.Control.Else
+				F.Intrinsic.String.Concat(V.Local.sText,"*!*",V.Local.sText)
+			F.Intrinsic.Control.EndIf
+			F.ODBC.con!rstLu.Close
+		F.Intrinsic.Control.Else
+			F.Intrinsic.String.Concat(V.Local.sText,"*!*",V.Local.sText)
+		F.Intrinsic.Control.EndIf
+		'Invoice
+		F.Intrinsic.Control.If(V.ODBC.con!rst.FieldValIsNull!Invoice,=,False)
+			F.Intrinsic.String.Concat(V.Local.sText,V.ODBC.con!rst.FieldVal!Invoice,"*!*",V.Local.sText)
+		F.Intrinsic.Control.Else
+			F.Intrinsic.String.Concat(V.Local.sText,"*!*",V.Local.sText)
+		F.Intrinsic.Control.EndIf
+		'Serial_Number
+		F.Intrinsic.Control.If(V.ODBC.con!rst.FieldValIsNull!Serial_Number,=,False)
+			F.Intrinsic.String.Concat(V.Local.sText,V.ODBC.con!rst.FieldVal!Serial_Number,"*!*",V.Local.sText)
+		F.Intrinsic.Control.Else
+			F.Intrinsic.String.Concat(V.Local.sText,"*!*",V.Local.sText)
+		F.Intrinsic.Control.EndIf
+		'Asset_Description
+		F.Intrinsic.Control.If(V.ODBC.con!rst.FieldValIsNull!Asset_Description,=,False)
+			F.Intrinsic.String.Concat(V.Local.sText,V.ODBC.con!rst.FieldVal!Asset_Description,"*!*",V.Local.sText)
+		F.Intrinsic.Control.Else
+			F.Intrinsic.String.Concat(V.Local.sText,"*!*",V.Local.sText)
+		F.Intrinsic.Control.EndIf
+		'Cost
+		F.Intrinsic.Control.If(V.ODBC.con!rst.FieldValIsNull!Cost,=,False)
+			F.Intrinsic.String.Concat(V.Local.sText,V.ODBC.con!rst.FieldVal!Cost,"*!*",V.Local.sText)
+		F.Intrinsic.Control.Else
+			F.Intrinsic.String.Concat(V.Local.sText,"*!*",V.Local.sText)
+		F.Intrinsic.Control.EndIf
+		'VID
+		F.Intrinsic.Control.If(V.ODBC.con!rst.FieldValIsNull!VID,=,False)
+			F.Intrinsic.String.Concat(V.Local.sText,V.ODBC.con!rst.FieldVal!VID,"*!*",V.Local.sText)
+		F.Intrinsic.Control.Else
+			F.Intrinsic.String.Concat(V.Local.sText,"*!*",V.Local.sText)
+		F.Intrinsic.Control.EndIf
+		'Date_Received
+		F.Intrinsic.Control.If(V.ODBC.con!rst.FieldValIsNull!Date_Received,=,False)
+			F.Intrinsic.String.Concat(V.Local.sText,V.ODBC.con!rst.FieldVal!Date_Received,"@!@",V.Local.sText)
+		F.Intrinsic.Control.Else
+			F.Intrinsic.String.Concat(V.Local.sText,"@!@",V.Local.sText)
+		F.Intrinsic.Control.EndIf
+F.Intrinsic.Control.EndIf
+F.ODBC.con!rst.MoveNext
+F.Intrinsic.Control.Loop
+F.ODBC.con!rst.Close
+F.Intrinsic.Debug.Stop
+
+F.Intrinsic.Math.Sub(V.Local.sText.Length,3,V.Local.iTemp)
+F.Intrinsic.String.Left(V.Local.sText,V.Local.iTemp,V.Local.sText)
+'F.Intrinsic.UI.Msgbox(V.Local.sText)
+F.Intrinsic.UI.BrowserFromString("Select Asset",V.Local.sText,"*!*","@!@",V.Local.sTitle,V.Local.iWidth,9950,6000,V.Local.sRet)
+
+F.intrinsic.control.If(V.Local.sRet,<>,"***CANCEL***")
+	F.Intrinsic.String.Split(V.Local.sRet,"*!*",V.Local.sRet)
+	F.Intrinsic.String.Concat("Select * From AM_Asset Where Asset_ID = ",V.Local.sRet(0),"",V.Local.sSQL)
+	F.ODBC.Connection!con.OpenRecordsetRO("rstAID",V.Local.sSQL)
+	F.Intrinsic.Control.If(V.ODBC.con!rstAID.EOF,=,False)
+	Gui.F_Asset.txtAsset_AssetLookup.Text(V.Local.sRet(0))
+	Gui.F_Asset.txtAsset_TagID.Text(V.Local.sRet(1))
+	Gui.F_Asset.dlstAsset_Type.Text(V.Local.sRet(2))
+	Gui.F_Asset.dlstAsset_Category.Text(V.Local.sRet(3))
+	Gui.F_Asset.dlstAsset_subcategory.Text(V.Local.sRet(4))
+	Gui.F_Asset.dlstAsset_Make.Text(V.Local.sRet(5))
+	Gui.F_Asset.dlstAsset_Model.Text(V.Local.sRet(6))
+	Gui.F_Asset.txtAsset_Vendor.Text(V.Local.sRet(7))
+	Gui.F_Asset.txtAsset_Invoice.Text(V.Local.sRet(8))
+	Gui.F_Asset.txtAsset_Serial.Text(V.Local.sRet(9))
+	Gui.F_Asset.txtAsset_Description.Text(V.Local.sRet(10))
+	Gui.F_Asset.txtAsset_Cost.Text(V.Local.sRet(11))
+	Gui.F_Asset.txtAsset_VID.Text(V.Local.sRet(12))
+	'Try and put in date variable, declare the variable, then set it to the v.local.sret(13), then the dtp is set to the new variable not the sret
+	V.Local.Datex.Set(V.Local.sRet(13))
+	Gui.F_Asset.dtpAsset_DateReceived.value(V.Local.datex)
+F.Intrinsic.Debug.Stop
+	F.Intrinsic.Control.If(V.ODBC.con!rstAID.FieldVal!Status,=,1)
+		Gui.F_Asset.dlstAsset_Status.Text("Active")
+	F.Intrinsic.Control.ElseIf(V.ODBC.con!rstAID.FieldVal!Status,=,2)
+		Gui.F_Asset.dlstAsset_Status.Text("Inactive")
+	F.Intrinsic.Control.Else
+		Gui.F_Asset.dlstAsset_Status.Text("Retired")
+	F.Intrinsic.Control.EndIf
+
+	F.Intrinsic.Control.EndIf
+	F.ODBC.con!rstAID.Close
+F.Intrinsic.Control.EndIf
+F.Intrinsic.Debug.Stop
+
+Program.Sub.Asset_Lookup.End
+
+program.sub.cmdasset_clear_click.start
+Gui.F_Asset.txtAsset_Description.Text("")
+Gui.F_Asset.dlstAsset_Status.ListIndex(3)
+
+
+V.Local.sError.Declare(String)
+
+F.Intrinsic.Control.SetErrorHandler("cmdasset_clear_click_Err")
+F.Intrinsic.Control.ClearErrors
+
+Gui.F_Asset.dtpAsset_DateReceived.Value(V.Ambient.Date)
+
+
+Gui.F_Asset.dlstAsset_Type.ClearItems
+Gui.F_Asset.dlstAsset_Type.AddItem("Hardware",0)
+Gui.F_Asset.dlstAsset_Type.AddItem("Software",1)
+Gui.F_Asset.dlstAsset_Category.ClearItems
+Gui.F_Asset.dlstAsset_subcategory.clearitems
+Gui.F_Asset.dlstAsset_Make.ClearItems
+Gui.F_Asset.dlstAsset_Model.ClearItems
+Gui.F_Asset.txtAsset_Serial.Text("")
+Gui.F_Asset.txtAsset_Invoice.Text("")
+Gui.F_Asset.txtAsset_Vendor.Text("")
+Gui.F_Asset.txtAsset_TagID.Text("")
+Gui.F_Asset.txtAsset_AssetLookup.Text("")
+Gui.F_Asset.txtAsset_Cost.Text(0)
+Gui.F_Asset.txtAsset_VID.Text("")
+Gui.F_Asset.dlstAsset_Status.Text(" ")
+
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("cmdasset_clear_click_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+    Function.Intrinsic.String.Concat("Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+    F.Intrinsic.UI.Msgbox(V.Local.sError)
+Function.Intrinsic.Control.EndIf
+
+program.sub.cmdasset_clear_click.end
+
+program.sub.cmdasset_save_click.start
+V.Local.sSQL.Declare(String)
+V.Local.iAID.Declare(Long)
+V.Local.sError.Declare(String)
+
+'F.Intrinsic.Control.SetErrorHandler("cmdasset_save_click_Err")
+F.Intrinsic.Control.ClearErrors
+
+F.Intrinsic.Control.If(V.Screen.F_Asset!dlstAsset_Type.Text,=,"")
+	F.Intrinsic.UI.Msgbox("Please Select Asset Type")
+F.Intrinsic.Control.Elseif(V.Screen.F_Asset!dlstAsset_Category.Text,=,"")
+	F.Intrinsic.UI.Msgbox("Please choose category")
+F.Intrinsic.Control.Elseif(V.Screen.F_Asset!dlstAsset_subcategory.Text,=,"")
+	F.Intrinsic.UI.Msgbox("Choose a model")
+F.Intrinsic.Control.ElseIf(V.Screen.F_Asset!txtAsset_Serial.Text,=,"")
+	F.Intrinsic.UI.Msgbox("Enter the Serial Number")
+	Gui.F_Asset.txtAsset_Serial.Setfocus
+F.Intrinsic.Control.Elseif(V.Screen.F_Asset!txtAsset_Vendor.Text,=,"")
+	F.Intrinsic.UI.Msgbox("Enter Vendor Name")
+	Gui.F_Asset.cmdAsset_Vendor.SetFocus
+F.Intrinsic.Control.ElseIf(V.Screen.F_Asset!txtAsset_Cost.Text,=,"")
+	F.Intrinsic.UI.Msgbox("Enter Cost")
+	Gui.F_Asset.txtAsset_Cost.SetFocus
+F.Intrinsic.Control.Else
+'F.Intrinsic.Debug.InvokeDebugger
+'F.Intrinsic.Debug.Stop
+	F.Intrinsic.Control.If(V.Screen.F_Asset!txtAsset_TagID.Text.Trim,<>,"")
+		f.Intrinsic.Control.If(V.Screen.F_Asset!txtAsset_AssetLookup.Text.trim,=,"")
+			F.Intrinsic.String.Concat("Select Asset_ID, Tag_ID FROM AM_Asset Where Tag_ID = '",V.Screen.F_Asset!txtAsset_TagID.Text,"'",V.Local.sSQL)
+		F.Intrinsic.Control.Else
+			F.Intrinsic.String.Concat("Select Asset_ID, Tag_ID FROM AM_Asset Where Tag_ID = '",V.Screen.F_Asset!txtAsset_TagID.Text,"' and Asset_ID <> ",V.Screen.F_Asset!txtAsset_AssetLookup.Text,V.Local.sSQL)
+		F.Intrinsic.Control.EndIf
+		F.ODBC.Connection!con.OpenRecordsetRO("rstTag",V.Local.sSQL)
+		F.Intrinsic.Control.if(V.ODBC.con!rstTag.EOF,=,False)
+			F.Intrinsic.String.Concat("TagID already exist. Please choose a TagID that is not being used. TagID assigned to Asset ID = ",V.ODBC.con!rstTag.FieldVal!Asset_ID,V.Local.sSQL)
+			F.Intrinsic.UI.Msgbox(V.Local.sSQL)
+			Gui.F_Asset.txtAsset_TagID.SetFocus
+			F.ODBC.con!rstTag.Close
+			F.Intrinsic.Control.ExitSub
+		F.Intrinsic.Control.EndIf
+		F.ODBC.con!rstTag.Close
+	F.Intrinsic.Control.EndIf
+	
+	F.Intrinsic.Control.If(V.Screen.F_Asset!txtAsset_AssetLookup.Text,=,"")
+		V.Local.iAID.Set(-1)
+	F.Intrinsic.Control.Else
+		V.Local.iAID.Set(V.Screen.F_Asset!txtAsset_AssetLookup.Text,=,"")
+	F.Intrinsic.Control.EndIf
+		F.Intrinsic.String.Concat("Select * From AM_Asset Where Asset_ID = ",V.local.iAID,"",V.Local.sSQL)
+		F.ODBC.Connection!con.OpenRecordsetRW("rstSave",V.Local.sSQL)
+	F.Intrinsic.Control.If(V.Screen.F_Asset!dlstAsset_Type.Text,<>,"")
+		F.Intrinsic.Control.If(V.ODBC.con!rstSave.EOF,=,True)
+			F.ODBC.con!rstSave.AddNew
+			F.ODBC.con!rstSave.Set!Asset_Category_ID(V.Screen.F_Asset!dlstAsset_Category.ItemData)
+			F.ODBC.con!rstSave.Set!Subcategory(V.Screen.F_Asset!dlstAsset_subcategory.ItemData)
+			F.Intrinsic.Control.If(V.Screen.F_Asset!dlstAsset_Make.Text,<>,"")
+				F.ODBC.con!rstSave.Set!Make(V.Screen.F_Asset!dlstAsset_Make.ItemData)
+			F.Intrinsic.Control.EndIf
+			F.Intrinsic.Control.If(V.Screen.F_Asset!dlstAsset_Model.Text,<>,"")
+				F.ODBC.con!rstSave.Set!Model(V.Screen.F_Asset!dlstAsset_Model.ItemData)
+			F.Intrinsic.Control.EndIf
+			F.ODBC.con!rstSave.Set!Invoice(V.Screen.F_Asset!txtAsset_Invoice.text)
+			F.ODBC.con!rstSave.Set!Serial_Number(V.Screen.F_Asset!txtAsset_Serial.text)
+			F.ODBC.con!rstSave.Set!Date_Received(V.Screen.F_Asset!dtpAsset_DateReceived.value)
+			F.ODBC.con!rstSave.Set!VID(V.Screen.F_Asset!txtAsset_VID.Text)
+		F.Intrinsic.Control.EndIf
+			F.ODBC.con!rstSave.Set!Tag_ID(V.Screen.F_Asset!txtAsset_TagID.Text)
+			F.ODBC.con!rstSave.Set!Status(V.Screen.F_Asset!dlstAsset_Status.ItemData)
+			F.ODBC.con!rstSave.Set!Asset_Description(V.Screen.F_Asset!txtAsset_Description.text)
+			F.Intrinsic.Control.If(V.Screen.F_Asset!txtAsset_Cost.Text,<>,"")
+				F.ODBC.con!rstSave.Set!Cost(V.Screen.F_Asset!txtAsset_Cost.text)
+			F.Intrinsic.Control.EndIf
+		F.ODBC.con!rstSave.Update
+		F.ODBC.con!rstSave.Close
+	F.Intrinsic.Control.EndIf
+	F.Intrinsic.Control.CallSub(Cmdasset_clear_click)
+	F.Intrinsic.Control.EndIf
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("cmdasset_save_click_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+    Function.Intrinsic.String.Concat("Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+    F.Intrinsic.UI.Msgbox(V.Local.sError)
+Function.Intrinsic.Control.EndIf
+
+
+
+program.sub.cmdasset_save_click.end
+
+Program.Sub.dlstasset_model_click.Start
+
+
+Program.Sub.dlstasset_model_click.End
+
+program.sub.cmdaa_empnum_click.start
+'F.Intrinsic.Debug.InvokeDebugger
+
+V.Local.sTitle.Declare(String)
+V.Local.sWidth.Declare(String)
+V.local.sSQL.Declare(String)
+V.local.sRet.Declare(String)
+V.Local.sError.Declare(String)
+
+F.Intrinsic.Control.SetErrorHandler("cmdaa_empnum_click_Err")
+F.Intrinsic.Control.ClearErrors
+'F.Intrinsic.Debug.Stop
+'Gui.F_AssetAssignment.cmdAA_EmpNum.Enabled(False)
+'Gui.F_AssetAssignment..Enabled(False)
+F.Intrinsic.String.Split("Employee ID*!*Employee Number*!* First Name*!* Last Name","*!*",V.Local.sTitle)
+F.Intrinsic.String.Split("0*!*1500 *!* 1700*!*1800","*!*",V.Local.sWidth)
+V.Local.sSQL.Set("Select Employee_ID, Emp_Num,Fname, Lname From AM_Employee order by Emp_Num")
+
+F.Intrinsic.UI.Browser("Select Employee","con",V.Local.sSQL,V.Local.sTitle,V.Local.sWidth,5000,5000,V.Local.sRet)
+F.intrinsic.control.If(V.Local.sRet,<>,"***CANCEL***")
+F.Intrinsic.String.Split(V.Local.sRet,"*!*",V.Local.sRet)
+	Gui.F_AssetAssignment.txtAA_EmpID.Text(V.Local.sRet(0))
+	Gui.F_AssetAssignment.txtAA_EmpNum.Text(V.Local.sRet(1))
+	Gui.F_AssetAssignment.txtAA_Fname.Text(V.Local.sRet(2))
+	Gui.F_AssetAssignment.txtAA_Lname.Text(V.Local.sRet(3))
+F.Intrinsic.Control.Endif
+'Gui.F_AssetAssignment..Enabled(True)
+'Gui.F_AssetAssignment.cmdAA_EmpNum.Enabled(True)
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("cmdaa_empnum_click_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+    Function.Intrinsic.String.Concat("Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+    F.Intrinsic.UI.Msgbox(V.Local.sError)
+Function.Intrinsic.Control.EndIf
+
+
+program.sub.cmdaa_empnum_click.end
+
+program.sub.cmdaa_tagid_click.start
+V.Local.sTitle.Declare(String)
+V.Local.iWidth.Declare(Long)
+V.local.sSQL.Declare(String)
+V.local.sRet.Declare(String)
+V.Local.sError.Declare(String)
+V.Local.sText.Declare(String)
+V.Local.iTemp.Declare(Long)
+
+F.Intrinsic.Control.SetErrorHandler("cmdaa_tagid_click_Err")
+F.Intrinsic.Control.ClearErrors
+Gui.F_AssetAssignment.cmdAA_TagID.Enabled(False)
+F.Intrinsic.String.Split("Asset ID *!*Tag ID*!* Hw_Sw*!*Category*!*SubCategory*!*Make*!*Model","*!*",V.Local.sTitle)
+F.Intrinsic.String.Split("1000*!*1000*!*0*!*1500*!*1500*!*1000*!*1000*!*0*!*0*!*0*!*0*!*0*!*0*!*0","*!*",V.Local.iWidth)
+F.ODBC.Connection!con.OpenRecordsetRO("rst","Select * from AM_Asset Order By Asset_ID")
+F.Intrinsic.Control.DoUntil(V.ODBC.con!rst.EOF,=,True)
+'F.Intrinsic.Control.If(V.ODBC.con!rst.FieldValisnull,=,False)
+'F.Intrinsic.Debug.Stop
+	F.Intrinsic.Control.If(V.ODBC.con!rst.FieldVal!Tag_ID,<>," ")
+		F.Intrinsic.String.Concat(V.Local.sText,V.ODBC.con!rst.FieldVal!Asset_ID,"*!*",V.Local.sText)
+		F.Intrinsic.String.Concat(V.Local.sText,V.ODBC.con!rst.FieldVal!Tag_ID,"*!*",V.Local.sText)
+		F.Intrinsic.String.Concat("select Hw_Sw, Description from AM_Asset_Catergory where Asset_Category_ID = ",V.ODBC.con!rst.FieldVal!Asset_Category_ID," ",V.Local.sSQL)
+		F.ODBC.connection!con.OpenRecordsetRO("rstLu",V.Local.sSql)
+		F.Intrinsic.Control.If(V.ODBC.con!rstLu.EOF,=,False)
+			F.Intrinsic.Control.If(V.ODBC.con!rstLU.FieldVal!Hw_Sw,=,0)
+				F.Intrinsic.String.Concat(V.Local.sText,"Hardware","*!*",V.Local.sText)
+			F.Intrinsic.Control.Else
+				F.Intrinsic.String.Concat(V.Local.sText,"Software","*!*",V.Local.sText)
+			F.Intrinsic.Control.EndIf
+			F.Intrinsic.String.Concat(V.Local.sText,V.ODBC.con!rstLu.FieldVal!Description,"*!*",V.Local.sText)
+		F.Intrinsic.Control.Else
+			F.Intrinsic.String.Concat(V.Local.sText,"*!**!*",V.Local.sText)
+		F.Intrinsic.Control.EndIf
+		F.ODBC.con!rstLu.Close
+
+		F.Intrinsic.String.Concat("select Description from AM_Asset_Catergory where Asset_Category_ID = ",V.ODBC.con!rst.FieldVal!subcategory," ",V.Local.sSql)
+		F.ODBC.connection!con.OpenRecordsetRO("rstLu",V.Local.sSql)
+		F.Intrinsic.Control.If(V.ODBC.con!rstLu.EOF,=,False)
+			F.Intrinsic.String.Concat(V.Local.sText,V.ODBC.con!rstLu.FieldVal!Description,"*!*",V.Local.sText)
+		F.Intrinsic.Control.Else
+			F.Intrinsic.String.Concat(V.Local.sText,"*!*",V.Local.sText)
+		F.Intrinsic.Control.EndIf
+		F.ODBC.con!rstLu.Close
+		'Make
+		'F.Intrinsic.UI.Msgbox(V.ODBC.con!rst.FieldVal!Make)
+		F.Intrinsic.Control.If(V.ODBC.con!rst.FieldValisnull!Make,=,False)
+	'		F.Intrinsic.Control.If(V.ODBC.con!rst.FieldVal!Make,<>,"")
+				F.Intrinsic.String.Concat("select Description from AM_Make where Asset_Make_ID = ",V.ODBC.con!rst.FieldVal!Make," ",V.Local.sSql)
+				'F.Intrinsic.UI.Msgbox(V.Local.sSQL)
+				F.ODBC.connection!con.OpenRecordsetRO("rstLu",V.Local.sSql)
+				F.Intrinsic.Control.If(V.ODBC.con!rstLu.EOF,=,False)
+					F.Intrinsic.String.Concat(V.Local.sText,V.ODBC.con!rstLu.FieldVal!Description,"*!*",V.Local.sText)
+				F.Intrinsic.Control.Else
+					F.Intrinsic.String.Concat(V.Local.sText,"*!*",V.Local.sText)
+				F.Intrinsic.Control.EndIf
+				F.ODBC.con!rstLu.Close
+	'		F.Intrinsic.Control.EndIf
+		F.Intrinsic.Control.else
+			F.Intrinsic.String.Concat(V.Local.sText,"*!*",V.Local.sText)
+		F.Intrinsic.Control.Endif
+
+		F.Intrinsic.Control.If(V.ODBC.con!rst.FieldValisnull!Model,=,False)
+			F.Intrinsic.String.Concat("select Description from AM_Make where Asset_Make_ID = ",V.ODBC.con!rst.FieldVal!Model," ",V.Local.sSql)
+			F.ODBC.connection!con.OpenRecordsetRO("rstLu",V.Local.sSql)
+			F.Intrinsic.Control.If(V.ODBC.con!rstLu.EOF,=,False)
+				F.Intrinsic.String.Concat(V.Local.sText,V.ODBC.con!rstLu.FieldVal!Description,"*!*",V.Local.sText)
+			F.Intrinsic.Control.Else
+				F.Intrinsic.String.Concat(V.Local.sText,"*!*",V.Local.sText)
+			F.Intrinsic.Control.EndIf
+			F.ODBC.con!rstLu.Close
+		F.Intrinsic.Control.Else
+				F.Intrinsic.String.Concat(V.Local.sText,"*!*",V.Local.sText)
+		F.Intrinsic.Control.EndIf
+'		'company name - Vendor_Details
+		F.Intrinsic.Control.If(V.ODBC.con!rst.FieldValisnull!VID,=,False)
+			F.Intrinsic.String.Concat("select  Company_Name From AM_Vendor_Details Where Vendor_ID = ",V.ODBC.con!rst.FieldVal!VID," ",V.Local.sSQL)
+			F.ODBC.Connection!con.OpenRecordsetRO("rstLu",V.Local.sSQL)
+			F.Intrinsic.Control.If(V.ODBC.con!rstLu.EOF,=,False)
+				F.Intrinsic.String.Concat(V.Local.sText,V.ODBC.con!rstLu.FieldVal!Company_Name,"*!*",V.Local.sText)
+			F.Intrinsic.Control.Else
+				F.Intrinsic.String.Concat(V.Local.sText,"*!*",V.Local.sText)
+			F.Intrinsic.Control.EndIf
+			F.ODBC.con!rstLu.Close
+		F.Intrinsic.Control.EndIf
+		'Invoice
+		F.Intrinsic.Control.If(V.ODBC.con!rst.FieldValIsNull!Invoice,=,False)
+			F.Intrinsic.String.Concat(V.Local.sText,V.ODBC.con!rst.FieldVal!Invoice,"*!*",V.Local.sText)
+		F.Intrinsic.Control.Else
+			F.Intrinsic.String.Concat(V.Local.sText,"*!*",V.Local.sText)
+		F.Intrinsic.Control.EndIf
+		'Serial_Number
+		F.Intrinsic.Control.If(V.ODBC.con!rst.FieldValIsNull!Serial_Number,=,False)
+			F.Intrinsic.String.Concat(V.Local.sText,V.ODBC.con!rst.FieldVal!Serial_Number,"*!*",V.Local.sText)
+		F.Intrinsic.Control.Else
+			F.Intrinsic.String.Concat(V.Local.sText,"*!*",V.Local.sText)
+		F.Intrinsic.Control.EndIf
+		'Asset_Description
+		F.Intrinsic.Control.If(V.ODBC.con!rst.FieldValIsNull!Asset_Description,=,False)
+			F.Intrinsic.String.Concat(V.Local.sText,V.ODBC.con!rst.FieldVal!Asset_Description,"*!*",V.Local.sText)
+		F.Intrinsic.Control.Else
+			F.Intrinsic.String.Concat(V.Local.sText,"*!*",V.Local.sText)
+		F.Intrinsic.Control.EndIf
+		'Cost
+		F.Intrinsic.Control.If(V.ODBC.con!rst.FieldValIsNull!Cost,=,False)
+			F.Intrinsic.String.Concat(V.Local.sText,V.ODBC.con!rst.FieldVal!Cost,"*!*",V.Local.sText)
+		F.Intrinsic.Control.Else
+			F.Intrinsic.String.Concat(V.Local.sText,"*!*",V.Local.sText)
+		F.Intrinsic.Control.EndIf
+		'VID
+		F.Intrinsic.Control.If(V.ODBC.con!rst.FieldValIsNull!VID,=,False)
+			F.Intrinsic.String.Concat(V.Local.sText,V.ODBC.con!rst.FieldVal!VID,"*!*",V.Local.sText)
+		F.Intrinsic.Control.Else
+			F.Intrinsic.String.Concat(V.Local.sText,"*!*",V.Local.sText)
+		F.Intrinsic.Control.EndIf
+		'Date_Received
+		F.Intrinsic.Control.If(V.ODBC.con!rst.FieldValIsNull!Date_Received,=,False)
+			F.Intrinsic.String.Concat(V.Local.sText,V.ODBC.con!rst.FieldVal!Date_Received,"@!@",V.Local.sText)
+		F.Intrinsic.Control.Else
+			F.Intrinsic.String.Concat(V.Local.sText,"@!@",V.Local.sText)
+		F.Intrinsic.Control.EndIf
+	F.Intrinsic.Control.EndIf
+'F.Intrinsic.Control.EndIf
+F.ODBC.con!rst.MoveNext
+F.Intrinsic.Control.Loop
+F.ODBC.con!rst.Close
+
+F.Intrinsic.Math.Sub(V.Local.sText.Length,3,V.Local.iTemp)
+F.Intrinsic.String.Left(V.Local.sText,V.Local.iTemp,V.Local.sText)
+
+F.Intrinsic.Debug.Stop
+'F.Intrinsic.UI.Msgbox(V.Local.sText)
+F.Intrinsic.UI.BrowserFromString("Select Asset",V.Local.sText,"*!*","@!@",V.Local.sTitle,V.Local.iWidth,8000,6000,V.Local.sRet)
+
+F.intrinsic.control.If(V.Local.sRet,<>,"***CANCEL***")
+	F.Intrinsic.String.Split(V.Local.sRet,"*!*",V.Local.sRet)
+	F.Intrinsic.String.Concat("Select * From AM_Asset Where Asset_ID = ",V.Local.sRet(0),"",V.Local.sSQL)
+	F.ODBC.Connection!con.OpenRecordsetRO("rstAID",V.Local.sSQL)
+	F.Intrinsic.Control.If(V.ODBC.con!rstAID.EOF,=,False)
+'Gui.F_Asset.txtAsset_TagID.Text(V.Local.sRet(1))
+		Gui.F_AssetAssignment.txtAA_AssetID.Text(V.Local.sRet(0))
+		Gui.F_AssetAssignment.txtAA_TagID.Text(V.local.sRet(1))
+'F.Intrinsic.String.Split("Tag ID *!* Asset ID *!* Category *!* Make","*!*",V.Local.sTitle)
+'F.Intrinsic.String.Split("1000","*!*",V.Local.sWidth)
+'V.Local.sSQL.Set("Select A.Tag_ID, A.Asset_ID, C.Description, M.Description From AM_Asset as A, AM_Asset_Catergory as C, AM_Make as M Where A.Asset_Category_ID = C.Asset_Category_ID and A.Make = M.Asset_Make_ID AND A.Tag_ID <>''")
+'F.Intrinsic.UI.Browser("Select Tag ID","con",V.Local.sSQL,V.Local.sTitle,V.Local.sWidth,V.Local.sRet)
+'F.intrinsic.control.If(V.Local.sRet,<>,"***CANCEL***")
+'F.Intrinsic.String.Split(V.Local.sRet,"*!*",V.Local.sRet)
+'	Gui.F_AssetAssignment.txtAA_TagID.Text(V.Local.sRet(0))
+'	Gui.F_AssetAssignment.txtAA_AssetID.Text(V.Local.sRet(1))
+'F.Intrinsic.Control.Endif
+F.Intrinsic.Control.EndIf
+	F.ODBC.con!rstAID.Close
+F.Intrinsic.Control.EndIf
+
+Gui.F_AssetAssignment.cmdAA_TagID.Enabled(True)
+
+F.Intrinsic.Control.ExitSub
+F.Intrinsic.Control.Label("cmdaa_tagid_click_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+    Function.Intrinsic.String.Concat("Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+    F.Intrinsic.UI.Msgbox(V.Local.sError)
+Function.Intrinsic.Control.EndIf
+
+
+
+program.sub.cmdaa_tagid_click.end
+
+program.sub.cmdaa_clear_click.start
+V.Local.sError.Declare(String)
+
+F.Intrinsic.Control.SetErrorHandler("cmdaa_clear_click_Err")
+F.Intrinsic.Control.ClearErrors
+
+	Gui.F_AssetAssignment.txtAA_EmpNum.Text("")
+	Gui.F_AssetAssignment.txtAA_Fname.Text("")
+	Gui.F_AssetAssignment.txtAA_Lname.Text("")
+	Gui.F_AssetAssignment.txtAA_TagID.Text("")
+	Gui.F_AssetAssignment.dtpAA_DateAssigned.Value(V.Ambient.Date)
+	Gui.F_AssetAssignment.txtAA_AssetID.Text("")
+	Gui.F_AssetAssignment.txtAA_EmpID.Text("")
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("cmdaa_clear_click_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+    Function.Intrinsic.String.Concat("Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+    F.Intrinsic.UI.Msgbox(V.Local.sError)
+Function.Intrinsic.Control.EndIf
+
+
+
+program.sub.cmdaa_clear_click.end
+
+program.sub.cmdaa_save_click.start
+V.Local.sError.Declare(String)
+V.Local.iError.Declare(Long)
+V.Local.sSQL.Declare(String)
+V.Local.sTemp.Declare(String)
+V.Local.dTemp.Declare(Date)
+
+F.Intrinsic.Control.SetErrorHandler("cmdaa_save_click_Err")
+F.Intrinsic.Control.ClearErrors
+
+F.Intrinsic.Control.If(V.Screen.F_AssetAssignment!txtAA_EmpNum.Text,=,"")
+	F.Intrinsic.UI.Msgbox("Select Employee")
+F.Intrinsic.Control.Elseif(V.Screen.F_AssetAssignment!txtAA_TagID.Text,=,"")
+	F.Intrinsic.UI.Msgbox("Select or Assign a Tag ID")
+F.Intrinsic.Control.Else
+	F.ODBC.Connection!con.OpenRecordsetRW("rstSave","SELECT * FROM AM_Asset_Assignment")
+	F.ODBC.con!rstSave.AddNew
+	F.ODBC.con!rstSave.Set!Employee_ID(V.Screen.F_AssetAssignment!txtAA_EmpID.Text)
+	F.ODBC.con!rstSave.Set!Asset_ID(V.Screen.F_AssetAssignment!txtAA_AssetID.Text)
+	F.Intrinsic.String.Format(V.Ambient.Now,"HH:NN:SS",V.Local.sTemp)
+	F.Intrinsic.String.Concat(V.Screen.F_AssetAssignment!dtpAA_DateAssigned.Value," ",V.Local.sTemp,V.Local.sTemp)
+	F.Intrinsic.String.Format(V.Local.sTemp,"YYYY-MM-DD HH:NN:SS.0000000",V.Local.sTemp)
+	F.ODBC.con!rstSave.Set!Assign_Date(V.Local.sTemp)
+	F.ODBC.con!rstSave.Set!Tag_ID(V.Screen.F_AssetAssignment!txtAA_TagID.Text)
+	F.ODBC.con!rstSave.update
+	F.ODBC.con!rstSave.Close
+F.Intrinsic.Control.EndIf
+
+
+F.Intrinsic.String.Concat("Select * From AM_Asset Where Asset_ID = ",V.Screen.F_AssetAssignment!txtAA_AssetID.Text,"",V.Local.sSQL)
+F.ODBC.Connection!con.OpenRecordsetRW("rstSave",V.Local.sSQL)
+F.Intrinsic.Control.If(V.ODBC.con!rstSave.EOF,=,False)
+	F.ODBC.con!rstSave.Set!Tag_ID(V.Screen.F_AssetAssignment!txtAA_TagID.Text)
+	F.ODBC.con!rstSave.Update
+	F.ODBC.con!rstSave.Close
+F.Intrinsic.Control.EndIf
+F.Intrinsic.Control.CallSub(Cmdaa_clear_click)
+
+
+F.intrinsic.control.exitSub
+
+
+F.Intrinsic.Control.Label("cmdaa_save_click_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+    Function.Intrinsic.String.Concat("Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+    F.Intrinsic.UI.Msgbox(V.Local.sError)
+Function.Intrinsic.Control.EndIf
+'F.Intrinsic.Control.EndIf
+
+
+program.sub.cmdaa_save_click.end
+
+program.sub.cmdaa_recordsjump_click.start
+
+program.sub.cmdaa_recordsjump_click.end
+
+program.sub.f_assetassignment_resize.start
+
+V.local.width.declare(Long)
+V.local.height.declare(Long)
+V.local.x.declare(Long)
+V.local.Y.declare(Long)
+
+
+Function.Intrinsic.Control.If(Variable.Screen.F_AssetAssignment.Width,<,6195)
+	Gui.F_AssetAssignment..Size(6195,Variable.Screen.F_AssetAssignment.Height)
+Function.Intrinsic.Control.EndIf
+Function.Intrinsic.Control.If(Variable.Screen.F_AssetAssignment.height,<,6615)
+	Gui.F_AssetAssignment..Size(Variable.Screen.F_AssetAssignment.Width,6615)
+Function.Intrinsic.Control.EndIf
+'Function.Intrinsic.Math.mult(Variable.Screen.F_AssetAssignment.Height,0.247,Variable.Local.height)
+'Function.Intrinsic.Math.mult(Variable.Screen.F_AssetAssignment.Width,0.898,Variable.Local.width)
+'F.Intrinsic.Math.Sub(V.Screen.F_AssetAssignment.Height,4980,V.Local.height)
+'F.Intrinsic.Math.Sub(V.Screen.F_AssetAssignment.Width,630,V.Local.width)
+'Gui.F_AssetAssignment.gflxAA_Details.Size(V.Local.width,V.Local.height)
+
+'Function.Intrinsic.Math.mult(Variable.Screen.F_AssetAssignment.Height,0.801,Variable.Local.Y)
+'F.Intrinsic.Math.Add(V.Screen.F_AssetAssignment!gflxAA_Details.Height,3665,V.Local.Y)
+'V.Local.x.Set(V.Screen.F_AssetAssignment!cmdAA_RecordsJump.Left)
+'Gui.F_AssetAssignment.cmdAA_RecordsJump.Position(V.Local.x,V.Local.y)
+'Function.Intrinsic.Math.mult(Variable.Screen.F_AssetAssignment.Height,0.801,Variable.Local.Y)
+'F.Intrinsic.Math.Add(V.Screen.F_AssetAssignment!gflxAA_Details.Height,3665,V.Local.Y)
+'V.Local.x.Set(V.Screen.F_AssetAssignment!cmdAA_Search.Left)
+'Gui.F_AssetAssignment.cmdAA_Search.Position(V.Local.x,V.Local.y)
+'Function.Intrinsic.Math.mult(Variable.Screen.F_AssetAssignment.Height,0.801,Variable.Local.Y)
+'F.Intrinsic.Math.Add(V.Screen.F_AssetAssignment!gflxAA_Details.Height,3665,V.Local.Y)
+'V.Local.x.Set(V.Screen.F_AssetAssignment!cmdAA_Asset.Left)
+'Gui.F_AssetAssignment.cmdAA_Asset.Position(V.Local.x,V.Local.y)
+
+program.sub.f_assetassignment_resize.end
+
+Program.Sub.Vendor_BrowserLoad.Start
+
+
+
+
+Program.Sub.Vendor_BrowserLoad.End
+
+program.sub.cmdvendor_companyname_click.start
+V.Local.sTitle.Declare(String)
+V.Local.sWidth.Declare(String)
+V.local.sSQL.Declare(String)
+V.local.sRet.Declare(String)
+V.local.sVendor.Declare(String)
+V.Local.sError.Declare(String)
+
+F.Intrinsic.Control.SetErrorHandler("cmdvendor_companyname_click_Err")
+F.Intrinsic.Control.ClearErrors
+
+F.Intrinsic.String.Split("*!*Vendor *!* Contact Name *!* Account Number","*!*",V.Local.sTitle)
+F.Intrinsic.String.Split("1000 *!* 2500 *!* 2000*!*2400*!*0*!*0*!*0*!*0*!*0*!*0*!*0*!*0","*!*",V.Local.sWidth)
+V.Local.sSQL.Set("Select Vendor_ID, Company_Name, Vendor_Contact_Name, Account_Number, Address, City, State, Zipcode, Vendor_Phone_Number,  Web_Address, Email, Notes From AM_Vendor_Details Order By Vendor_ID")
+F.Intrinsic.UI.Browser("Select Vendor","con",V.Local.sSQL,V.Local.sTitle,V.Local.sWidth,5200,5500,V.Local.sRet)
+F.intrinsic.control.If(V.Local.sRet,<>,"***CANCEL***")
+	F.Intrinsic.String.Split(V.Local.sRet,"*!*",V.Local.sRet)
+	Gui.F_Vendor.txtVendor_VID.Text(V.Local.sRet(0))
+	Gui.F_Vendor.txtVendor_CompanyName.Text(V.Local.sRet(1))
+	Gui.F_Vendor.txtVendor_ContactName.Text(V.Local.sRet(2))
+	Gui.F_Vendor.txtVendor_AcctNum.Text(V.Local.sRet(3))
+	Gui.F_Vendor.txtVendor_Address.Text(V.Local.sRet(4))
+	Gui.F_Vendor.txtVendor_City.Text(V.Local.sRet(5))
+	Gui.F_Vendor.txtVendor_State.Text(V.Local.sRet(6))
+	Gui.F_Vendor.txtVendor_Zipcode.Text(V.Local.sRet(7))
+	Gui.F_Vendor.txtVendr_PhoneNum.Text(V.Local.sRet(8))
+	Gui.F_Vendor.txtVendor_WebAddress.Text(V.Local.sRet(9))
+	Gui.F_Vendor.txtVendor_Email.Text(V.Local.sRet(10))
+	Gui.F_Vendor.mltxtVendor_Notes.Text(V.Local.sRet(11))
+F.Intrinsic.Control.EndIf
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("cmdvendor_companyname_click_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+    Function.Intrinsic.String.Concat("Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+    F.Intrinsic.UI.Msgbox(V.Local.sError)
+Function.Intrinsic.Control.EndIf
+
+program.sub.cmdvendor_companyname_click.end
+
+program.sub.cmdvendor_clear_click.start
+V.Local.sError.Declare(String)
+
+F.Intrinsic.Control.SetErrorHandler("cmdvendor_clear_click_Err")
+F.Intrinsic.Control.ClearErrors
+
+Gui.F_Vendor.txtVendor_CompanyName.Text("")
+Gui.F_Vendor.txtVendor_ContactName.Text("")
+Gui.F_Vendor.txtVendor_AcctNum.Text("")
+Gui.F_Vendor.txtVendor_Address.Text("")
+Gui.F_Vendor.txtVendor_City.Text("")
+Gui.F_Vendor.txtVendor_State.Text("")
+Gui.F_Vendor.txtVendor_Zipcode.Text("")
+Gui.F_Vendor.txtVendr_PhoneNum.Text("")
+Gui.F_Vendor.txtVendor_WebAddress.Text("")
+Gui.F_Vendor.txtVendor_Email.Text("")
+Gui.F_Vendor.mltxtVendor_Notes.Text("")
+Gui.F_Vendor.txtVendor_VID.Text("")
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("cmdvendor_clear_click_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+    Function.Intrinsic.String.Concat("Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+    F.Intrinsic.UI.Msgbox(V.Local.sError)
+Function.Intrinsic.Control.EndIf
+
+
+
+
+
+program.sub.cmdvendor_clear_click.end
+
+program.sub.cmdvendor_save_click.start
+V.Local.iVID.Declare(Long)
+V.Local.sSQL.Declare(String)
+V.Local.sError.Declare(String)
+V.Local.iRet.Declare(Long)
+
+F.Intrinsic.Control.SetErrorHandler("cmdvendor_save_click_Err")
+F.Intrinsic.Control.ClearErrors
+
+F.Intrinsic.Control.If(V.Screen.F_Vendor!txtVendor_CompanyName.Text,=,"")
+	F.Intrinsic.UI.Msgbox("Enter or Choose Vendor")
+F.Intrinsic.Control.ElseIf(V.Screen.F_Vendor!txtVendor_AcctNum.Text,=,"")
+	F.Intrinsic.UI.Msgbox("Enter the Account Number")
+F.Intrinsic.Control.Elseif(V.Screen.F_Vendor!txtVendr_PhoneNum.Text,=,"")
+	F.Intrinsic.UI.Msgbox("Enter vendor phone number")
+F.Intrinsic.Control.Else
+	F.Intrinsic.String.Instr(V.screen.F_Vendor!txtVendor_Email.Text,"@",1,V.Local.iRet)
+	F.Intrinsic.Control.If(V.Local.iRet,=,0)
+		F.Intrinsic.UI.Msgbox("Invalid Email - Please use @")
+	F.Intrinsic.Control.Else
+		F.Intrinsic.String.Instr(V.Screen.F_Vendor!txtVendor_Email.Text," ",V.Local.iRet)
+		F.Intrinsic.Control.If(V.Local.iRet,<>,0)
+			F.Intrinsic.UI.Msgbox("No Spaces allowed in email")
+		F.Intrinsic.Control.Else
+
+			F.Intrinsic.Control.If(V.Screen.F_Vendor!txtVendor_VID.Text,=,"")
+				V.Local.iVID.Set(-1)
+			F.Intrinsic.Control.Else
+				V.Local.iVID.Set(V.Screen.F_Vendor!txtVendor_VID.Text,=,"")
+			F.Intrinsic.Control.EndIf
+F.Intrinsic.Debug.Stop
+			F.Intrinsic.String.Concat("Select * From AM_Vendor_Details Where Vendor_ID = ",V.local.iVID,"",V.Local.sSQL)
+			F.ODBC.Connection!con.OpenRecordsetRW("rstSave",V.Local.sSQL)
+			F.Intrinsic.Control.If(V.ODBC.con!rstSave.EOF,=,True)
+				F.ODBC.con!rstSave.AddNew
+			F.Intrinsic.Control.EndIf
+			F.ODBC.con!rstSave.Set!Company_Name(V.Screen.F_Vendor!txtVendor_CompanyName.Text)
+			F.ODBC.con!rstSave.Set!Vendor_Contact_Name(V.screen.F_Vendor!txtVendor_ContactName.Text)
+			F.ODBC.con!rstSave.Set!Account_Number(V.Screen.F_Vendor!txtVendor_AcctNum.Text)
+			F.ODBC.con!rstSave.Set!Address(V.Screen.F_Vendor!txtVendor_Address.Text)
+			F.ODBC.con!rstSave.Set!City(V.Screen.F_Vendor!txtVendor_City.Text)
+			F.ODBC.con!rstSave.Set!State(V.Screen.F_Vendor!txtVendor_State.Text)
+			F.ODBC.con!rstSave.Set!Zipcode(V.Screen.F_Vendor!txtVendor_Zipcode.Text)
+			F.ODBC.con!rstSave.Set!Vendor_Phone_Number(V.Screen.F_Vendor!txtVendr_PhoneNum.Text)
+			F.ODBC.con!rstSave.Set!Web_Address(V.Screen.F_Vendor!txtVendor_WebAddress.Text)
+			F.ODBC.con!rstSave.Set!Email(V.Screen.F_Vendor!txtVendor_Email.Text)
+			F.ODBC.con!rstSave.Set!Notes(V.Screen.F_Vendor!mltxtVendor_Notes.Text)
+			F.ODBC.con!rstSave.Update
+			F.ODBC.con!rstSave.Close
+			F.Intrinsic.Control.CallSub(Cmdvendor_clear_click)
+		F.Intrinsic.Control.EndIf
+	F.Intrinsic.Control.Endif
+F.Intrinsic.Control.Endif
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("cmdvendor_save_click_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+    Function.Intrinsic.String.Concat("Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+'F.ODBC.con!rstSave.Close
+    F.Intrinsic.UI.Msgbox(V.Local.sError)
+Function.Intrinsic.Control.EndIf
+
+
+
+program.sub.cmdvendor_save_click.end
+
+Program.Sub.Delete.Start
+V.Local.sSQL.Declare(String)
+V.Local.dateP.Declare(Date)
+V.Local.sError.Declare(String)
+
+F.Intrinsic.Control.SetErrorHandler("Vendor_Delete_Err")
+F.Intrinsic.Control.ClearErrors
+
+F.Intrinsic.Control.If(V.Screen.F_Vendor!txtVendor_VID.Text,<>,"")
+	V.Local.dateP.Set(V.Ambient.Date)
+	F.Intrinsic.String.Concat("Update AM_Vendor_Details set DeleteDt='",V.Local.dateP.PervasiveDate,"' where Vendor_ID=",V.Screen.F_Vendor!txtVendor_VID.Text,"",V.Local.sSQL)
+	F.ODBC.Connection!con.Execute(V.Local.sSQL)
+F.Intrinsic.Control.EndIf
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("Vendor_Delete_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+    Function.Intrinsic.String.Concat("Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+    F.Intrinsic.UI.Msgbox(V.Local.sError)
+Function.Intrinsic.Control.EndIf
+
+Program.Sub.Delete.End
+
+program.sub.f_vendor_resize.start
+
+V.local.width.declare(Long)
+V.local.height.declare(Long)
+V.local.x.declare(Long)
+V.local.Y.declare(Long)
+Function.Intrinsic.Control.If(Variable.Screen.F_Vendor.Width,<,5580)
+	Gui.F_Vendor..Size(5580,Variable.Screen.F_Vendor.Height)
+Function.Intrinsic.Control.EndIf
+Function.Intrinsic.Control.If(Variable.Screen.F_Vendor.height,<,6855)
+	Gui.F_Vendor..Size(Variable.Screen.F_Vendor.Width,6855)
+Function.Intrinsic.Control.EndIf
+'Function.Intrinsic.Math.mult(Variable.Screen.F_Vendor.Height,0.212,Variable.Local.height)
+''Function.Intrinsic.Math.mult(Variable.Screen.F_Vendor.Width,0.835,Variable.Local.width)
+F.Intrinsic.Math.Sub(V.Screen.F_Vendor.Height,5220,V.Local.height)
+F.Intrinsic.Math.Sub(V.Screen.F_Vendor.Width,630,V.Local.width)
+Gui.F_Vendor.mltxtVendor_Notes.Size(V.Local.width,V.Local.height)
+
+'Function.Intrinsic.Math.mult(Variable.Screen.F_Vendor.Height,0.754,Variable.Local.Y)
+F.Intrinsic.Math.Add(V.Screen.F_Vendor!mltxtVendor_Notes.Height,4165,V.Local.Y)
+V.Local.x.Set(V.Screen.F_Vendor!cmdVendor_Clear.Left)
+Gui.F_Vendor.cmdVendor_Clear.Position(V.Local.x,V.Local.y)
+'Function.Intrinsic.Math.mult(Variable.Screen.F_Vendor.Height,0.754,Variable.Local.Y)
+F.Intrinsic.Math.Add(V.Screen.F_Vendor!mltxtVendor_Notes.Height,4165,V.Local.Y)
+V.Local.x.Set(V.Screen.F_Vendor!cmdVendor_Delete.Left)
+Gui.F_Vendor.cmdVendor_Delete.Position(V.Local.x,V.Local.y)
+'Function.Intrinsic.Math.mult(Variable.Screen.F_Vendor.Height,0.754,Variable.Local.Y)
+F.Intrinsic.Math.Add(V.Screen.F_Vendor!mltxtVendor_Notes.Height,4165,V.Local.Y)
+V.Local.x.Set(V.Screen.F_Vendor!cmdVendor_Save.Left)
+Gui.F_Vendor.cmdVendor_Save.Position(V.Local.x,V.Local.y)
+
+program.sub.f_vendor_resize.end
+
+program.sub.cmdmain_companyname_click.start
+'V.Local.sTitle.Declare(String)
+'V.Local.sWidth.Declare(String)
+'V.local.sSQL.Declare(String)
+'V.local.sRet.Declare(String)
+'V.local.sVendor.Declare(String)
+'V.Local.sError.Declare(String)
+'
+''F.Intrinsic.Control.SetErrorHandler("cmdmain_companyname_click_Err")
+''F.Intrinsic.Control.ClearErrors
+'
+'F.Intrinsic.String.Split("Vendor ID *!* Vendor Name*!* Email Address","*!*",V.Local.sTitle)
+'F.Intrinsic.String.Split("1300 *!* 2500 *!* 0 *!* 0 *!* 0*!* 2500*!*0","*!*",V.Local.sWidth)
+'V.Local.sSQL.Set("Select Vendor_ID, Maintenance_Notes From AM_Vendor_Details Order By Vendor_ID")
+'
+'F.Intrinsic.UI.Browser("Select Employee","con",V.Local.sSQL,V.Local.sTitle,V.Local.sWidth,V.Local.sRet)
+'F.intrinsic.control.If(V.Local.sRet,<>,"***CANCEL***")
+'F.Intrinsic.String.Split(V.Local.sRet,"*!*",V.Local.sRet)
+''	Gui.F_Maintenance.txtMain_VID.Text(V.Local.sRet(0))
+''	Gui.F_Maintenance.txtMain_CompanyName.Text(V.Local.sRet(1))
+''	Gui.F_maintenance.txtMain_VendorContact.Text(V.Local.sRet(2))
+''	Gui.F_Maintenance.txtMain_AcctNum.Text(V.Local.sRet(3))
+''	Gui.F_Maintenance.txtMain_PhoneNum.Text(V.Local.sRet(4))
+'	Gui.F_Maintenance.mltxtM_Notes.Text(V.Local.sRet(1))
+''	Gui.F_Maintenance.txtMain_AssetIDMain_InvoiceNum.Text(V.Local.sRet(6))
+'F.Intrinsic.Control.Endif
+'
+'F.Intrinsic.Control.ExitSub
+''F.Intrinsic.Control.Label("cmdmain_companyname_click_Err")
+'F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+'    Function.Intrinsic.String.Concat("Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+'   ' F.Intrinsic.UI.Msgbox(V.Local.sError)
+'Function.Intrinsic.Control.EndIf
+
+program.sub.cmdmain_companyname_click.end
+
+program.sub.cmdmain_tagid_click.start
+V.Local.sTitle.Declare(String)
+V.Local.iWidth.Declare(String)
+V.local.sSQL.Declare(String)
+V.local.sRet.Declare(String)
+V.Local.sText.Declare(String)
+V.Local.Datex.Declare(Date)
+V.Local.iTemp.Declare(Long)
+
+F.Intrinsic.String.Split("Asset ID *!*Tag ID*!* Hw_Sw*!*Category*!*SubCategory*!*Make*!*Model","*!*",V.Local.sTitle)
+F.Intrinsic.String.Split("1000*!*2000*!*0*!*2000*!*1500*!*1000*!*1500*!*0*!*0*!*0*!*0*!*0*!*0","*!*",V.Local.iWidth)
+F.ODBC.Connection!con.OpenRecordsetRW("rst","Select * from AM_Asset Order By Asset_ID")
+F.Intrinsic.Control.DoUntil(V.ODBC.con!rst.EOF,=,True)
+	F.Intrinsic.Control.If(V.ODBC.con!rst.FieldVal!Tag_ID,<>," ")
+		F.Intrinsic.String.Concat(V.Local.sText,V.ODBC.con!rst.FieldVal!Asset_ID,"*!*",V.Local.sText)
+		F.Intrinsic.String.Concat(V.Local.sText,V.ODBC.con!rst.FieldVal!Tag_ID,"*!*",V.Local.sText)
+		F.Intrinsic.String.Concat("select Hw_Sw, Description from AM_Asset_Catergory where Asset_Category_ID = ",V.ODBC.con!rst.FieldVal!Asset_Category_ID," ",V.Local.sSQL)
+		F.ODBC.connection!con.OpenRecordsetRO("rstLu",V.Local.sSql)
+		F.Intrinsic.Control.If(V.ODBC.con!rstLu.EOF,=,False)
+			F.Intrinsic.Control.If(V.ODBC.con!rstLU.FieldVal!Hw_Sw,=,0)
+				F.Intrinsic.String.Concat(V.Local.sText,"Hardware","*!*",V.Local.sText)
+			F.Intrinsic.Control.Else
+				F.Intrinsic.String.Concat(V.Local.sText,"Software","*!*",V.Local.sText)
+			F.Intrinsic.Control.EndIf
+			F.Intrinsic.String.Concat(V.Local.sText,V.ODBC.con!rstLu.FieldVal!Description,"*!*",V.Local.sText)
+		F.Intrinsic.Control.Else
+			F.Intrinsic.String.Concat(V.Local.sText,"*!**!*",V.Local.sText)
+		F.Intrinsic.Control.EndIf
+		F.ODBC.con!rstLu.Close
+		F.Intrinsic.String.Concat("select Description from AM_Asset_Catergory where Asset_Category_ID = ",V.ODBC.con!rst.FieldVal!subcategory," ",V.Local.sSql)
+		F.ODBC.connection!con.OpenRecordsetRO("rstLu",V.Local.sSql)
+		F.Intrinsic.Control.If(V.ODBC.con!rstLu.EOF,=,False)
+			F.Intrinsic.String.Concat(V.Local.sText,V.ODBC.con!rstLu.FieldVal!Description,"*!*",V.Local.sText)
+		F.Intrinsic.Control.Else
+			F.Intrinsic.String.Concat(V.Local.sText,"*!*",V.Local.sText)
+		F.Intrinsic.Control.EndIf
+		F.ODBC.con!rstLu.Close
+		'Make
+			F.Intrinsic.Control.If(V.ODBC.con!rst.FieldValisnull!Make,=,False)
+				F.Intrinsic.String.Concat("select Description from AM_Make where Asset_Make_ID = ",V.ODBC.con!rst.FieldVal!Make," ",V.Local.sSql)
+				F.ODBC.connection!con.OpenRecordsetRO("rstLu",V.Local.sSql)
+				F.Intrinsic.Control.If(V.ODBC.con!rstLu.EOF,=,False)
+					F.Intrinsic.String.Concat(V.Local.sText,V.ODBC.con!rstLu.FieldVal!Description,"*!*",V.Local.sText)
+				F.Intrinsic.Control.Else
+					F.Intrinsic.String.Concat(V.Local.sText,"*!*",V.Local.sText)
+				F.Intrinsic.Control.EndIf
+				F.ODBC.con!rstLu.Close
+		F.Intrinsic.Control.else
+			F.Intrinsic.String.Concat(V.Local.sText,"*!*",V.Local.sText)
+		F.Intrinsic.Control.Endif
+
+		F.Intrinsic.Control.If(V.ODBC.con!rst.FieldValisnull!Model,=,False)
+			F.Intrinsic.String.Concat("select Description from AM_Make where Asset_Make_ID = ",V.ODBC.con!rst.FieldVal!Model," ",V.Local.sSql)
+			F.ODBC.connection!con.OpenRecordsetRO("rstLu",V.Local.sSql)
+			F.Intrinsic.Control.If(V.ODBC.con!rstLu.EOF,=,False)
+				F.Intrinsic.String.Concat(V.Local.sText,V.ODBC.con!rstLu.FieldVal!Description,"*!*",V.Local.sText)
+			F.Intrinsic.Control.Else
+				F.Intrinsic.String.Concat(V.Local.sText,"*!*",V.Local.sText)
+			F.Intrinsic.Control.EndIf
+			F.ODBC.con!rstLu.Close
+		F.Intrinsic.Control.Else
+				F.Intrinsic.String.Concat(V.Local.sText,"*!*",V.Local.sText)
+		F.Intrinsic.Control.EndIf
+		'company name - Vendor_Details
+'		F.Intrinsic.Control.If(V.ODBC.con!rst.FieldValisnull!VID,=,False)
+'			F.Intrinsic.String.Concat("select  Company_Name From AM_Vendor_Details Where Vendor_ID = ",V.ODBC.con!rst.FieldVal!VID," ",V.Local.sSQL)
+'			F.ODBC.Connection!con.OpenRecordsetRO("rstLu",V.Local.sSQL)
+'			F.Intrinsic.Control.If(V.ODBC.con!rstLu.EOF,=,False)
+'				F.Intrinsic.String.Concat(V.Local.sText,V.ODBC.con!rstLu.FieldVal!Company_Name,"*!*",V.Local.sText)
+'			F.Intrinsic.Control.Else
+'				F.Intrinsic.String.Concat(V.Local.sText,"*!*",V.Local.sText)
+'			F.Intrinsic.Control.EndIf
+'			F.ODBC.con!rstLu.Close
+'		F.Intrinsic.Control.Else
+'			F.Intrinsic.String.Concat(V.Local.sText,"*!*",V.Local.sText)
+'		F.Intrinsic.Control.EndIf
+F.Intrinsic.Debug.Stop
+		'MNotes
+		F.Intrinsic.Control.If(V.ODBC.con!rst.FieldValisnull!MNotes,=,False)
+			F.Intrinsic.String.Concat(V.Local.sText,V.ODBC.con!rst.FieldVal!MNotes,"*!*",V.Local.sText)
+		F.Intrinsic.Control.Else
+			F.Intrinsic.String.Concat(V.Local.sText,"*!*",V.Local.sText)
+		F.Intrinsic.Control.EndIf
+		'Warrant End Date
+		F.Intrinsic.Control.If(V.ODBC.con!rst.FieldValisnull!Warranty_End_DT,=,False)
+			F.Intrinsic.String.Concat(V.Local.sText,V.ODBC.con!rst.FieldVal!Warranty_End_DT,"*!*",V.Local.sText)
+		F.Intrinsic.Control.Else
+			F.Intrinsic.String.Concat(V.Local.sText,"*!*",V.Local.sText)
+		F.Intrinsic.Control.EndIf
+		'Tag ID
+		F.Intrinsic.Control.If(V.ODBC.con!rst.FieldValIsNull!Tag_ID,=,False)
+			F.Intrinsic.String.Concat(V.Local.sText,V.ODBC.con!rst.FieldVal!Tag_ID,"*!*",V.Local.sText)
+		F.Intrinsic.Control.Else
+			F.Intrinsic.String.Concat(V.Local.sText,"*!*",V.Local.sText)
+		F.Intrinsic.Control.EndIf
+		'Warranty Cost
+		F.Intrinsic.Control.If(V.ODBC.con!rst.FieldValIsNull!Warranty_Cost,=,False)
+			F.Intrinsic.String.Concat(V.Local.sText,V.ODBC.con!rst.FieldVal!Warranty_Cost,"*!*",V.Local.sText)
+		F.Intrinsic.Control.Else
+			F.Intrinsic.String.Concat(V.Local.sText,"*!*",V.Local.sText)
+		F.Intrinsic.Control.EndIf
+		'Asset ID
+		F.Intrinsic.Control.If(V.ODBC.con!rst.FieldValIsNull!Asset_ID,=,False)
+			F.Intrinsic.String.Concat(V.Local.sText,V.ODBC.con!rst.FieldVal!Asset_ID,"*!*",V.Local.sText)
+		F.Intrinsic.Control.Else
+			F.Intrinsic.String.Concat(V.Local.sText,"*!*",V.Local.sText)
+		F.Intrinsic.Control.EndIf
+		'Date_Received
+		F.Intrinsic.Control.If(V.ODBC.con!rst.FieldValIsNull!Date_Received,=,False)
+			F.Intrinsic.String.Concat(V.Local.sText,V.ODBC.con!rst.FieldVal!Date_Received,"@!@",V.Local.sText)
+		F.Intrinsic.Control.Else
+			F.Intrinsic.String.Concat(V.Local.sText,"@!@",V.Local.sText)
+		F.Intrinsic.Control.EndIf
+F.Intrinsic.Control.EndIf
+F.ODBC.con!rst.MoveNext
+F.Intrinsic.Control.Loop
+F.ODBC.con!rst.Close
+F.Intrinsic.Debug.Stop
+
+F.Intrinsic.Math.Sub(V.Local.sText.Length,3,V.Local.iTemp)
+F.Intrinsic.String.Left(V.Local.sText,V.Local.iTemp,V.Local.sText)
+F.Intrinsic.UI.BrowserFromString("Select Asset",V.Local.sText,"*!*","@!@",V.Local.sTitle,V.Local.iWidth,9950,6000,V.Local.sRet)
+
+F.intrinsic.control.If(V.Local.sRet,<>,"***CANCEL***")
+	F.Intrinsic.String.Split(V.Local.sRet,"*!*",V.Local.sRet)
+	F.Intrinsic.String.Concat("Select * From AM_Asset Where Asset_ID = ",V.Local.sRet(0),"",V.Local.sSQL)
+	F.ODBC.Connection!con.OpenRecordsetRO("rstAID",V.Local.sSQL)
+	F.Intrinsic.Control.If(V.ODBC.con!rstAID.EOF,=,False)
+'	Gui.F_Asset.txtAsset_AssetLookup.Text(V.Local.sRet(0))
+'	Gui.F_Asset.txtAsset_TagID.Text(V.Local.sRet(1))
+'	Gui.F_Asset.dlstAsset_Type.Text(V.Local.sRet(2))
+'	Gui.F_Asset.dlstAsset_Category.Text(V.Local.sRet(3))
+'	Gui.F_Asset.dlstAsset_subcategory.Text(V.Local.sRet(4))
+'	Gui.F_Asset.dlstAsset_Make.Text(V.Local.sRet(5))
+'	Gui.F_Asset.dlstAsset_Model.Text(V.Local.sRet(6))
+'	Gui.F_Asset.txtAsset_Vendor.Text(V.Local.sRet(7))
+	Gui.F_Maintenance.mltxtM_Notes.Text(V.Local.sRet(7))
+	Gui.F_Maintenance.dtpMain_WarrantyEndDT.Value(V.Local.sRet(8))
+	Gui.F_Maintenance.txtMain_TagID.Text(V.Local.sRet(9))
+	Gui.F_Maintenance.txtMain_Cost.Text(V.Local.sRet(10))
+	Gui.F_Maintenance.txtMain_AssetID.Text(V.Local.sRet(11))
+	V.Local.Datex.Set(V.Local.sRet(12))
+	Gui.F_Maintenance.dtpMain_PurchaseDate.value(V.Local.datex)
+	F.Intrinsic.Control.If(V.ODBC.con!rstAID.FieldVal!Extended_Warranty,=,1)
+		Gui.F_Maintenance.dlstMain_ExtWarranty.Text("Yes")
+	F.Intrinsic.Control.ElseIf(V.ODBC.con!rstAID.FieldVal!Extended_Warranty,=,2)
+		Gui.F_Maintenance.dlstMain_ExtWarranty.Text("No")
+	F.Intrinsic.Control.Else
+		Gui.F_Maintenance.dlstMain_ExtWarranty.Text("")
+	F.Intrinsic.Control.EndIf
+
+	F.Intrinsic.Control.EndIf
+	F.ODBC.con!rstAID.Close
+F.Intrinsic.Control.EndIf
+F.Intrinsic.Debug.Stop
+
+program.sub.cmdmain_tagid_click.end
+
+program.sub.cmdmain_clear_click.start
+V.Local.sError.Declare(String)
+
+F.Intrinsic.Control.SetErrorHandler("cmdmain_clear_click_Err")
+F.Intrinsic.Control.ClearErrors
+
+Gui.F_Maintenance.txtMain_tagID.Text("")
+'Gui.F_Maintenance.txtMain_CompanyName.Text("")
+'Gui.F_Maintenance.txtMain_VendorContact.Text("")
+'Gui.F_Maintenance.txtMain_AcctNum.Text("")
+'Gui.F_Maintenance.txtMain_PhoneNum.Text("")
+'Gui.F_Maintenance.txtMain_InvoiceNum.Text("")
+'Gui.F_Maintenance.txtMain_SerialNum.Text("")
+Gui.F_Maintenance.dtpMain_PurchaseDate.Value(V.Ambient.Date)
+Gui.F_Maintenance.txtMain_AssetID.Text("")
+Gui.F_Maintenance.dtpMain_WarrantyEndDT.Value(V.Ambient.Date)
+Gui.F_Maintenance.txtMain_Cost.Text("")
+Gui.F_Maintenance.dlstMain_ExtWarranty.Text("")
+Gui.F_Maintenance.mltxtM_Notes.Text("")
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("cmdmain_clear_click_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+    Function.Intrinsic.String.Concat("Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+    F.Intrinsic.UI.Msgbox(V.Local.sError)
+Function.Intrinsic.Control.EndIf
+
+program.sub.cmdmain_clear_click.end
+
+program.sub.cmdmain_save_click.start
+V.Local.sSQL.Declare(String)
+V.Local.sError.Declare(String)
+
+F.Intrinsic.Control.SetErrorHandler("cmdmain_save_click_Err")
+F.Intrinsic.Control.ClearErrors
+'Gui.F_Maintenance.cmdMain_Save.Enabled(False)
+F.Intrinsic.string.Concat("Select * from AM_Asset Where Asset_ID = ",V.Screen.F_Maintenance!txtMain_AssetID.Text,"",V.Local.sSQL)
+	F.ODBC.Connection!con.OpenRecordsetRW("rstMainSave",V.Local.sSQL)
+	F.ODBC.con!rstMainSave.Set!Warranty_End_DT(V.Screen.F_Maintenance!dtpMain_WarrantyEndDT.Value)
+	F.ODBC.con!rstMainSave.Set!Extended_Warranty(V.Screen.F_Maintenance!dlstMain_ExtWarranty.listindex)
+	F.ODBC.con!rstMainSave.Set!Warranty_Cost(V.Screen.F_Maintenance!txtMain_Cost.Text)
+	F.ODBC.con!rstMainSave.Set!MNotes(V.Screen.F_Maintenance!mltxtM_Notes.Text)
+F.ODBC.con!rstMainSave.Update
+F.ODBC.con!rstMainSave.Close
+F.Intrinsic.Control.CallSub(Cmdmain_clear_click)
+'Gui.F_Maintenance.cmdMain_Save.Enabled(True)
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("cmdmain_save_click_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+    Function.Intrinsic.String.Concat("Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+    F.Intrinsic.UI.Msgbox(V.Local.sError)
+Function.Intrinsic.Control.EndIf
+
+
+
+program.sub.cmdmain_save_click.end
+
+program.sub.f_maintenance_resize.start
+
+V.local.width.declare(Long)
+V.local.height.declare(Long)
+V.local.x.declare(Long)
+V.local.Y.declare(Long)
+Function.Intrinsic.Control.If(Variable.Screen.F_Maintenance.Width,<>,6675)
+	Gui.F_Maintenance..Size(6675,Variable.Screen.F_Maintenance.Height)
+Function.Intrinsic.Control.EndIf
+Function.Intrinsic.Control.If(Variable.Screen.F_Maintenance.height,<>,4845)
+	Gui.F_Maintenance..Size(Variable.Screen.F_Maintenance.Width,4845)
+Function.Intrinsic.Control.EndIf
+
+F.IntrinsiC.Math.Sub(V.Screen.F_Maintenance.height,3285,V.Local.height)
+F.Intrinsic.Math.Sub(V.Screen.F_Maintenance.Width,600,V.Local.width)
+Gui.F_Maintenance.mltxtM_Notes.Size(V.Local.width,V.Local.height)
+
+F.Intrinsic.Math.Add(V.Screen.F_Maintenance!mltxtM_Notes.Height,2240,V.Local.Y)
+V.Local.x.Set(V.screen.F_Maintenance!cmdMain_Clear.Left)
+Gui.F_Maintenance.cmdMain_Clear.Position(V.local.x,V.Local.y)
+
+F.Intrinsic.Math.Add(V.Screen.F_Maintenance!mltxtM_Notes.Height,2240,V.Local.Y)
+V.Local.x.Set(V.Screen.F_Maintenance!cmdMain_Save.Left)
+Gui.F_Maintenance.cmdMain_Save.Position(V.Local.x,V.Local.y)
+
+
+
+
+program.sub.f_maintenance_resize.end
+
+program.sub.cmdrecord_empnum_click.start
+V.Local.sSQL.Declare(String)
+V.Local.sWidth.Declare(String)
+V.Local.sTitle.Declare(String)
+V.Local.sRet.Declare(String)
+V.Local.sError.Declare(String)
+
+F.Intrinsic.Control.SetErrorHandler("cmdrecord_empnum_click_Err")
+F.Intrinsic.Control.ClearErrors
+
+F.Intrinsic.String.Split("Employee ID*!*EmployeeNumber*!*FirstName*!*LastName*!*EmailAddress","*!*",V.local.stitle)
+F.Intrinsic.String.Split("0*!*1500 *!* 2500 *!* 2500 *!* 2500*!*0*!*0","*!*",V.local.swidth)
+V.Local.sSQL.Set("select Employee_ID, Emp_Num, Fname,Lname,work_email, Location,Type from AM_Employee Order BY Emp_Num")
+F.Intrinsic.UI.Browser("Select Employee","con",V.Local.sSQL,V.Local.sTitle,V.Local.sWidth,10200,6000,V.Local.sRet)
+F.intrinsic.Control.If(V.Local.sRet,<>,"***CANCEL***")
+	F.Intrinsic.String.Split(V.Local.sRet,"*!*",V.Local.sRet)
+	Gui.F_Record.txtRecord_EmpID.Text(V.Local.sRet(0))
+	Gui.F_Record.txtRecord_EmpNum.Text(V.Local.sRet(1))
+	Gui.F_Record.txtRecord_Fnam.Text(V.Local.sRet(2))
+	Gui.F_Record.txtRecord_Lname.text(V.Local.sRet(3))
+	Gui.F_Record.txtRecord_Email.Text(V.Local.sRet(4))
+	F.Intrinsic.control.if(V.Local.sRet(5),=,"")
+		Gui.F_Record.dlstRecord_Location.listindex(2)
+	F.Intrinsic.Control.Else
+		Gui.F_Record.dlstRecord_Location.listindex(V.Local.sRet(5))
+	F.Intrinsic.Control.Endif
+	F.Intrinsic.Control.If(V.Local.sRet(6),=,"")
+		Gui.F_Record.dlstEmp_Type.ListIndex(2)
+	F.Intrinsic.Control.Else
+		Gui.F_Record.dlstEmp_Type.ListIndex(V.Local.sRet(6))
+	F.Intrinsic.Control.EndIf
+F.Intrinsic.Control.Else
+	F.Intrinsic.UI.Msgbox("No Employee Selected")
+F.Intrinsic.Control.Endif
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("cmdrecord_empnum_click_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+    Function.Intrinsic.String.Concat("Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+    F.Intrinsic.UI.Msgbox(V.Local.sError)
+Function.Intrinsic.Control.EndIf
+
+program.sub.cmdrecord_empnum_click.end
+
+program.sub.cmdrecord_clear_click.start
+V.Local.sError.Declare(String)
+
+F.Intrinsic.Control.SetErrorHandler("cmdrecord_clear_click_Err")
+F.Intrinsic.Control.ClearErrors
+
+Gui.F_Record.txtrecord_EmpNum.Text("")
+Gui.F_Record.txtRecord_Fnam.Text("")
+Gui.F_Record.txtRecord_Lname.Text("")
+Gui.F_Record.txtRecord_Email.Text("")
+Gui.F_Record.dlstRecord_Location.Text("")
+Gui.F_Record.dlstEmp_Type.Text("")
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("cmdrecord_clear_click_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+    Function.Intrinsic.String.Concat("Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+    F.Intrinsic.UI.Msgbox(V.Local.sError)
+Function.Intrinsic.Control.EndIf
+
+
+
+
+
+program.sub.cmdrecord_clear_click.end
+
+program.sub.cmdrecord_save_click.start
+V.Local.sSQL.Declare(String)
+V.Local.iEmpID.Declare(Long)
+V.Local.sError.Declare(String)
+V.Local.iRet.Declare(Long)
+
+F.Intrinsic.Control.SetErrorHandler("cmdrecord_save_click_Err")
+F.Intrinsic.Control.ClearErrors
+
+F.Intrinsic.Control.If(V.Screen.F_Record!txtrecord_EmpNum.Text,=,"")
+	F.Intrinsic.UI.Msgbox("Enter employee number")
+F.Intrinsic.Control.elseif(V.Screen.F_Record!txtRecord_fnam.Text,=,"")
+	F.Intrinsic.UI.Msgbox("Enter First Name")
+F.Intrinsic.Control.Elseif(V.Screen.F_Record!txtRecord_Lname.Text,=,"")
+	F.Intrinsic.UI.Msgbox("Enter Last Name")
+F.Intrinsic.Control.Elseif(V.Screen.F_Record!txtRecord_Email.Text,=,"")
+	F.Intrinsic.UI.Msgbox("Enter Email Address")
+F.Intrinsic.Control.ElseIf(V.Screen.F_Record!dlstRecord_Location.Text,=,"")
+	F.Intrinsic.UI.Msgbox("Please Select Employee Location")
+F.Intrinsic.Control.ElseIf(V.Screen.F_Record!dlstEmp_Type.Text,=,"")
+	F.Intrinsic.UI.Msgbox("Select Employee type")
+F.Intrinsic.Control.Else
+	F.Intrinsic.String.Instr(V.screen.F_Record!txtRecord_Email.Text,"@",1,V.Local.iRet)
+	F.Intrinsic.Control.If(V.Local.iRet,=,0)
+		F.Intrinsic.UI.Msgbox("Invalid Email - Please use @")
+	F.Intrinsic.Control.Else
+		F.Intrinsic.String.Instr(V.Screen.F_Record!txtRecord_Email.Text," ",V.Local.iRet)
+		F.Intrinsic.Control.If(V.Local.iRet,<>,0)
+			F.Intrinsic.UI.Msgbox("No Spaces allowed in email")
+		F.Intrinsic.Control.Else
+'	F.Intrinsic.Control.If(V.Screen.F_Record!txtrecord_EmpNum.Text.trim,<>,"")
+'		F.Intrinsic.String.Concat("Select Employee_ID, Emp_Num FROM AM_Employee Where Emp_Num = ",V.Screen.F_Record!txtRecord_EmpNum.Text," and Employee_ID <> ",V.Screen.F_Record!txtRecord_EmpID.Text,"",V.Local.sSQL)
+'		F.ODBC.Connection!con.OpenRecordsetRO("rstEmp",V.Local.sSQL)
+'		F.Intrinsic.Control.if(V.ODBC.con!rstEmp.EOF,=,False)
+'			F.Intrinsic.String.Concat("Employee Number already exist. Please choose a Employee Number that is not being used. Employee Number assigned to Employee ID = ",V.ODBC.con!rstEmp.FieldVal!Employee_ID,V.Local.sSQL)
+'			F.Intrinsic.UI.Msgbox(V.Local.sSQL)
+'			Gui.F_Record.txtrecord_EmpNum.SetFocus
+'			F.ODBC.con!rstEmp.Close
+'			F.Intrinsic.Control.ExitSub
+'		F.Intrinsic.Control.EndIf
+'		F.ODBC.con!rstEmp.Close
+'	F.Intrinsic.Control.EndIf
+
+
+			F.Intrinsic.Control.If(V.Screen.F_Record!txtRecord_EmpID.Text,=,"")
+				V.Local.iEmpID.Set(-1)
+			F.Intrinsic.Control.Else
+				V.Local.iEmpID.Set(V.Screen.F_Record!txtRecord_EmpID.Text,=,"")
+			F.Intrinsic.Control.EndIf
+			F.Intrinsic.String.Concat("Select * From AM_Employee Where Employee_ID=",V.local.iEmpID,"",V.Local.sSQL)
+			F.ODBC.Connection!con.OpenRecordsetRW("rstSave",V.Local.sSQL)
+			F.Intrinsic.Control.If(V.ODBC.con!rstSave.EOF,=,True)
+				F.ODBC.con!rstSave.AddNew
+			F.Intrinsic.Control.EndIf
+
+			F.ODBC.con!rstSave.Set!Location(V.Screen.F_Record!dlstRecord_Location.ItemData)
+			F.ODBC.con!rstSave.Set!Type(V.Screen.F_Record!dlstEmp_Type.ItemData)
+			F.ODBC.con!rstSave.Set!Emp_Num(V.Screen.F_Record!txtRecord_EmpNum.Text)
+			F.ODBC.con!rstSave.Set!Fname(V.Screen.F_Record!txtRecord_fnam.Text)
+			F.ODBC.con!rstSave.Set!Lname(V.Screen.F_Record!txtRecord_Lname.Text)
+			F.ODBC.con!rstSave.Set!Work_Email(V.Screen.F_Record!txtRecord_Email.Text)
+
+			F.ODBC.con!rstSave.Update
+			F.ODBC.con!rstSave.Close
+			F.Intrinsic.Control.CallSub(Cmdrecord_clear_click)
+		F.Intrinsic.Control.EndIf
+	F.Intrinsic.Control.EndIf
+F.Intrinsic.Control.EndIf
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("cmdrecord_save_click_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+    Function.Intrinsic.String.Concat("Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+    F.Intrinsic.UI.Msgbox(V.Local.sError)
+Function.Intrinsic.Control.EndIf
+
+program.sub.cmdrecord_save_click.end
+
+program.sub.txtrecord_empnum_lostfocus.start
+V.Local.sSQL.Declare(String)
+V.Local.sError.Declare(String)
+
+
+F.Intrinsic.Control.SetErrorHandler("txtrecord_empnum_lostfocus_Err")
+F.Intrinsic.Control.ClearErrors
+
+F.Intrinsic.Control.If(V.Screen.F_Record!txtrecord_EmpNum.Text,=,"")
+	F.Intrinsic.Control.ExitSub
+F.Intrinsic.Control.else
+
+	F.Intrinsic.Control.If(V.Screen.F_Record!txtrecord_EmpNum.Text,<>," ")
+		'F.Intrinsic.UI.Msgbox(V.Screen.F_Record!txtRecord_fnam.Text)
+		F.Intrinsic.Control.If(V.Screen.F_Record!txtRecord_fnam.Text,=,"")
+		'F.Intrinsic.Control.AndIf(V.Screen.F_Record!txtRecord_fNam.Text,=," ")
+			F.Intrinsic.String.Concat("Select * From AM_Employee Where Emp_Num=",V.Screen.F_Record!txtrecord_EmpNum.Text,"",V.Local.sSQL)
+			F.ODBC.Connection!con.OpenRecordsetRO("rstTab",V.Local.sSQL)
+			F.Intrinsic.Control.If(V.ODBC.con!rstTab.EOF,=,True)
+				F.Intrinsic.UI.Msgbox("Employee not found in database. Create new employee or enter a different Employee Number")
+				'Gui.F_Record.txtrecord_EmpNum.SetFocus
+			F.Intrinsic.Control.Else
+				Gui.F_Record.txtRecord_EmpId.Text(V.ODBC.con!rstTab.Fieldval!Employee_ID)
+				Gui.F_Record.txtRecord_fnam.Text(V.ODBC.con!rstTab.FieldVal!Fname)
+				Gui.F_Record.txtRecord_Lname.Text(V.ODBC.con!rstTab.FieldVal!Lname)
+				Gui.F_Record.txtRecord_Email.Text(V.ODBC.con!rstTab.FieldVal!Work_Email)
+				F.Intrinsic.Control.If(V.ODBC.con!rstTab.FieldVal!Location,=,0)
+					Gui.F_Record.dlstRecord_Location.Text("Internal")
+				F.Intrinsic.Control.Else
+					Gui.F_Record.dlstRecord_Location.Text("External")
+				F.Intrinsic.Control.EndIf
+				F.Intrinsic.Control.If(V.ODBC.con!rstTab.FieldVal!Type,=,0)
+					Gui.F_Record.dlstEmp_Type.Text("Employee")
+				F.Intrinsic.Control.Else
+					Gui.F_Record.dlstEmp_Type.Text("Storage")
+				F.Intrinsic.Control.EndIf
+			F.Intrinsic.Control.EndIf
+			F.ODBC.con!rstTab.Close
+		F.Intrinsic.Control.EndIf
+	F.Intrinsic.Control.EndIf
+F.Intrinsic.Control.EndIf
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("txtrecord_empnum_lostfocus_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+    Function.Intrinsic.String.Concat("Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+    F.Intrinsic.UI.Msgbox(V.Local.sError)
+Function.Intrinsic.Control.EndIf
+
+program.sub.txtrecord_empnum_lostfocus.end
+
+program.sub.cmdJumpemployee_click.start
+Gui.F_Record..Show
+
+program.sub.cmdJumpemployee_click.end
+
+program.sub.cmdJumpaassign_click.start
+Gui.F_AssetAssignment..Show
+
+program.sub.cmdJumpaassign_click.end
+
+program.sub.cmdJumpvendor_click.start
+Gui.F_Vendor..Show
+
+program.sub.cmdJumpvendor_click.end
+
+program.sub.cmdjumpasset_click.start
+'Gui.F_Search..Visible(false)
+Gui.F_Asset..Show
+
+program.sub.cmdjumpasset_click.end
+
+program.sub.cmdjumpsearch_click.start
+Gui.F_Search..Show
+
+program.sub.cmdjumpsearch_click.end
+
+program.sub.cmdjumpmaint_click.start
+Gui.F_Maintenance..Show
+
+
+program.sub.cmdjumpmaint_click.end
+
+program.sub.f_search_unload.start
+Gui.F_Search..Visible(false)
+Gui.F_Asset..Show
+
+
+program.sub.f_search_unload.end
+
+program.sub.f_assetassignment_unload.start
+Gui.F_AssetAssignment..Visible(False)
+Gui.F_Asset..Show
+
+program.sub.f_assetassignment_unload.end
+
+program.sub.f_maintenance_unload.start
+Gui.F_Maintenance..Visible(false)
+Gui.F_Asset..Show
+
+program.sub.f_maintenance_unload.end
+
+program.sub.f_vendor_unload.start
+Gui.F_Vendor..Visible(false)
+Gui.F_Asset..Show
+
+program.sub.f_vendor_unload.end
+
+program.sub.f_record_unload.start
+Gui.F_Record..Visible(false)
+Gui.F_Asset..Show
+
+program.sub.f_record_unload.end
+
+program.sub.txtasset_vid_lostfocus.start
+V.Local.sSQL.Declare(String)
+
+F.Intrinsic.Control.If(V.Screen.F_Asset!txtAsset_VID.Text,=,"")
+	F.Intrinsic.Control.ExitSub
+F.Intrinsic.Control.else
+	Gui.F_Asset.txtAsset_Vendor.Text("")
+	F.Intrinsic.Control.If(V.Screen.F_Asset!txtAsset_Vendor.Text,=,"")
+	F.Intrinsic.String.Concat("Select * From AM_Vendor_Details Where Vendor_ID=",V.Screen.F_Asset!txtAsset_VID.Text,V.Local.sSQL)
+	F.ODBC.Connection!con.OpenRecordsetRO("rstAssetTab",V.Local.sSQL)
+		F.Intrinsic.Control.If(V.ODBC.con!rstAssetTab.EOF,=,True)
+			F.Intrinsic.UI.Msgbox("Vendor not found in database. Create new vendor or enter a different Vendor ID.")
+			'Gui.F_Asset.txtAsset_VID.SetFocus
+		F.Intrinsic.Control.Else
+			Gui.F_Asset.txtAsset_VID.Text(V.ODBC.con!rstAssetTab.Fieldval!Vendor_ID)
+			Gui.F_Asset.txtAsset_Vendor.Text(V.ODBC.con!rstAssetTab.FieldVal!Company_Name)
+		F.Intrinsic.Control.EndIf
+	F.ODBC.con!rstAssetTab.Close
+	F.Intrinsic.Control.EndIf
+F.Intrinsic.Control.EndIf
+
+program.sub.txtasset_vid_lostfocus.end
+
+program.sub.txtaa_tagid_lostfocus.start
+V.Local.sSQL.Declare(String)
+
+F.Intrinsic.Control.If(V.Screen.F_AssetAssignment!txtAA_TagID.Text,=,"")
+	F.Intrinsic.Control.ExitSub
+F.Intrinsic.Control.else
+'	F.Intrinsic.Control.If(V.Screen.F_AssetAssignment!txtAA_TagID.Text,<>," ")
+'		F.Intrinsic.Control.If(V.Screen.F_AssetAssignment!txtAA_AssetID.Text,=,"")
+		F.Intrinsic.String.Concat("Select * From AM_Asset Where Tag_ID=",V.Screen.F_AssetAssignment!txtAA_TagID.Text,"",V.Local.sSQL)
+		F.ODBC.Connection!con.OpenRecordsetRO("rstAATabTag",V.Local.sSQL)
+			F.Intrinsic.Control.If(V.ODBC.con!rstAATabtag.EOF,=,True)
+			F.Intrinsic.Control.Else
+				Gui.F_AssetAssignment.txtAA_TagID.Text(V.ODBC.con!rstAATabTag.Fieldval!Tag_ID)
+				Gui.F_AssetAssignment.txtAA_AssetID.Text(V.ODBC.con!rstAATabTag.FieldVal!Asset_ID)
+			F.Intrinsic.Control.EndIf
+		F.ODBC.con!rstAATabTag.Close
+'		F.Intrinsic.Control.EndIf
+'	F.Intrinsic.Control.EndIf
+F.Intrinsic.Control.EndIf
+
+
+program.sub.txtaa_tagid_lostfocus.end
+
+program.sub.txtaa_empnum_lostfocus.start
+V.Local.sSQL.Declare(String)
+
+F.Intrinsic.Control.If(V.Screen.F_AssetAssignment!txtAA_EmpNum.Text,=,"")
+	F.Intrinsic.Control.ExitSub
+F.Intrinsic.Control.else
+	F.Intrinsic.String.Concat("Select * From AM_Employee Where Emp_Num=",V.Screen.F_AssetAssignment!txtAA_EmpNum.Text,V.Local.sSQL)
+	F.ODBC.Connection!con.OpenRecordsetRO("rstAATab",V.Local.sSQL)
+		F.Intrinsic.Control.If(V.ODBC.con!rstAATab.EOF,=,True)
+			F.Intrinsic.UI.Msgbox("Employee Number does not exist")
+		F.Intrinsic.Control.Else
+			Gui.F_AssetAssignment.txtAA_EmpNum.Text(V.ODBC.con!rstAATab.FieldVal!Emp_Num)
+			Gui.F_AssetAssignment.txtAA_EmpId.Text(V.ODBC.con!rstAATab.Fieldval!Employee_ID)
+			Gui.F_AssetAssignment.txtAA_Fname.Text(V.ODBC.con!rstAATab.FieldVal!Fname)
+			Gui.F_AssetAssignment.txtAA_Lname.Text(V.ODBC.con!rstAATab.FieldVal!Lname)
+		F.Intrinsic.Control.EndIf
+	F.ODBC.con!rstAATab.Close
+F.Intrinsic.Control.EndIf
+
+
+
+program.sub.txtaa_empnum_lostfocus.end
+
+program.sub.txtvendor_vid_lostfocus.start
+V.Local.sSQL.Declare(String)
+
+
+F.Intrinsic.Control.If(V.Screen.F_Vendor!txtVendor_VID.Text,=,"")
+	F.Intrinsic.Control.ExitSub
+F.Intrinsic.Control.else
+	F.Intrinsic.Control.If(V.Screen.F_Vendor!txtVendor_CompanyName.Text,=,"")
+		F.Intrinsic.String.Concat("Select * From AM_Vendor_Details Where Vendor_ID=",V.Screen.F_Vendor!txtVendor_VID.Text,"",V.Local.sSQL)
+		F.ODBC.Connection!con.OpenRecordsetRW("rstVTab",V.Local.sSQL)
+		F.Intrinsic.Control.If(V.ODBC.con!rstVTab.EOF,=,True)
+			F.Intrinsic.UI.Msgbox("Vendor ID not found in database. Create new vendor or enter another Vendor ID")
+			'Gui.F_Vendor.txtVendor_VID.SetFocus
+		F.Intrinsic.Control.Else
+			Gui.F_Vendor.txtVendor_VID.Text(V.ODBC.con!rstVTab.FieldVal!Vendor_ID)
+			Gui.F_Vendor.txtVendor_CompanyName.Text(V.ODBC.con!rstVTab.FieldVal!Company_Name)
+			Gui.F_Vendor.txtVendor_ContactName.Text(V.ODBC.con!rstVTab.FieldVal!Vendor_Contact_Name)
+			Gui.F_Vendor.txtVendor_AcctNum.Text(V.ODBC.con!rstVTab.FieldVal!Account_Number)
+			Gui.F_Vendor.txtVendor_Address.Text(V.ODBC.con!rstVTab.FieldVal!Address)
+			Gui.F_Vendor.txtVendor_City.Text(V.ODBC.con!rstVTab.FieldVal!City)
+			Gui.F_Vendor.txtVendor_State.Text(V.ODBC.con!rstVTab.FieldVal!State)
+			Gui.F_Vendor.txtVendor_Zipcode.Text(V.ODBC.con!rstVTab.FieldVal!Zipcode)
+			Gui.F_Vendor.txtVendr_PhoneNum.Text(V.ODBC.con!rstVTab.FieldVal!Vendor_Phone_Number)
+			Gui.F_Vendor.txtVendor_WebAddress.Text(V.ODBC.con!rstVTab.FieldVal!Web_Address)
+			Gui.F_Vendor.txtVendor_Email.Text(V.ODBC.con!rstVTab.FieldVal!Email)
+			Gui.F_Vendor.mltxtVendor_Notes.Text(V.ODBC.con!rstVTab.FieldVal!Notes)
+		F.Intrinsic.Control.EndIf
+		F.ODBC.con!rstVTab.Close
+	F.Intrinsic.Control.EndIf
+F.Intrinsic.Control.EndIf
+
+
+
+
+
+
+program.sub.txtvendor_vid_lostfocus.end
+
+program.sub.txtasset_assetid_lostfocus.start
+
+program.sub.txtasset_assetid_lostfocus.end
+
+program.sub.txtmain_tagid_lostfocus.start
+V.Local.sSQL.Declare(String)
+
+F.Intrinsic.Control.If(V.Screen.F_Maintenance!txtMain_TagID.Text,=,"")
+	F.Intrinsic.Control.ExitSub
+F.Intrinsic.Control.else
+	F.Intrinsic.Control.If(V.Screen.F_Maintenance!txtMain_TagID.Text,<>," ")
+		F.Intrinsic.Control.If(V.Screen.F_Maintenance!txtMain_AssetID.Text,=,"")
+		F.Intrinsic.String.Concat("Select * From AM_Asset Where Tag_ID=",V.Screen.F_Maintenance!txtMain_TagID.Text,"",V.Local.sSQL)
+		F.ODBC.Connection!con.OpenRecordsetRW("rstMainTabTag",V.Local.sSQL)
+			F.Intrinsic.Control.If(V.ODBC.con!rstMainTabtag.EOF,=,True)
+				F.Intrinsic.UI.Msgbox("Tag ID does not exist")
+			F.Intrinsic.Control.Else
+				Gui.F_Maintenance.txtMain_TagID.Text(V.ODBC.con!rstMainTabTag.Fieldval!Tag_ID)
+				Gui.F_Maintenance.txtMain_AssetID.Text(V.ODBC.con!rstMainTabTag.FieldVal!Asset_ID)
+				Gui.F_Maintenance.txtMain_Cost.Text(V.ODBC.con!rstMainTabTag.FieldVal!Warranty_Cost)
+				Gui.F_Maintenance.mltxtM_Notes.Text(V.ODBC.con!rstMainTabTag.FieldVal!MNotes)
+				Gui.F_Maintenance.dtpMain_PurchaseDate.Value(V.ODBC.con!rstMainTabTag.FieldVal!Date_Received)
+				F.Intrinsic.Control.If(V.ODBC.con!rstMainTabTag.FieldVal!Extended_Warranty,=,1)
+					Gui.F_Maintenance.dlstMain_ExtWarranty.Text("Yes")
+				F.Intrinsic.Control.Else
+					Gui.F_Maintenance.dlstMain_ExtWarranty.Text("No")
+				F.Intrinsic.Control.EndIf
+				F.Intrinsic.Control.If(V.ODBC.con!rstMainTabTag.FieldValisnull!Warranty_End_DT,=,False)
+					Gui.F_Maintenance.dtpMain_WarrantyEndDT.Value(V.ODBC.con!rstMainTabTag.FieldVal!Warranty_End_DT)
+				F.Intrinsic.Control.Else
+					Gui.F_Maintenance.dtpMain_WarrantyEndDT.Value(V.Ambient.Date)
+				F.Intrinsic.Control.EndIf
+		F.Intrinsic.Control.EndIf
+		F.ODBC.con!rstMainTabTag.Close
+		F.Intrinsic.Control.EndIf
+	F.Intrinsic.Control.EndIf
+F.Intrinsic.Control.EndIf
+
+
+
+program.sub.txtmain_tagid_lostfocus.end
+
+
