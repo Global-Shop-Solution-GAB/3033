@@ -1,0 +1,568 @@
+Program.Sub.ScreenSU.Start
+gui.Form1..create
+gui.Form1..caption("ATG Physical Inventory")
+gui.Form1..size(11850,6540)
+gui.Form1..position(0,0)
+gui.Form1..event(unload,form1_unload)
+gui.Form1..alwaysontop(False)
+gui.Form1..fontname("Arial")
+gui.Form1..fontsize(8)
+gui.Form1..forecolor(0)
+gui.Form1..fontstyle(,,,,)
+gui.Form1..BackColor(-2147483633)
+gui.Form1..controlbox(True)
+gui.Form1..maxbutton(True)
+gui.Form1..minbutton(True)
+gui.Form1..mousepointer(0)
+gui.Form1..moveable(True)
+gui.Form1..sizeable(True)
+gui.Form1..ShowInTaskBar(True)
+gui.Form1..titlebar(True)
+gui.Form1.gsflexgrid1.create(gsflexgrid)
+gui.Form1.gsflexgrid1.FixedRows(0)
+gui.Form1.gsflexgrid1.FixedCols(0)
+gui.Form1.gsflexgrid1.visible(True)
+gui.Form1.gsflexgrid1.size(11280,5040)
+gui.Form1.gsflexgrid1.zorder(0)
+gui.Form1.gsflexgrid1.position(200,200)
+gui.Form1.gsflexgrid1.enabled(True)
+gui.Form1.gsflexgrid1.event(cellenter,cmdcalc_click)
+gui.Form1.cmdINVSave.create(button)
+gui.Form1.cmdINVSave.caption("Save")
+gui.Form1.cmdINVSave.visible(True)
+gui.Form1.cmdINVSave.size(855,450)
+gui.Form1.cmdINVSave.zorder(0)
+gui.Form1.cmdINVSave.position(200,5425)
+gui.Form1.cmdINVSave.enabled(True)
+gui.Form1.cmdINVSave.fontname("Arial")
+gui.Form1.cmdINVSave.fontsize(8)
+gui.Form1.cmdINVSave.event(click,cmdinvsave_click)
+
+
+gui.FormCalc..create
+gui.FormCalc..caption("Physical Inv Calculator")
+gui.FormCalc..size(4065,3660)
+gui.FormCalc..position(0,0)
+gui.FormCalc..event(unload,formcalc_unload)
+gui.FormCalc..alwaysontop(True)
+gui.FormCalc..fontname("Arial")
+gui.FormCalc..fontsize(8)
+gui.FormCalc..forecolor(0)
+gui.FormCalc..fontstyle(,,,,)
+gui.FormCalc..BackColor(-2147483633)
+gui.FormCalc..controlbox(True)
+gui.FormCalc..maxbutton(True)
+gui.FormCalc..minbutton(True)
+gui.FormCalc..mousepointer(0)
+gui.FormCalc..moveable(True)
+gui.FormCalc..sizeable(True)
+gui.FormCalc..ShowInTaskBar(True)
+gui.FormCalc..titlebar(True)
+gui.FormCalc.cmdCalc.create(button)
+gui.FormCalc.cmdCalc.caption("Calculate")
+gui.FormCalc.cmdCalc.visible(True)
+gui.FormCalc.cmdCalc.size(855,375)
+gui.FormCalc.cmdCalc.zorder(0)
+gui.FormCalc.cmdCalc.position(170,2565)
+gui.FormCalc.cmdCalc.enabled(True)
+gui.FormCalc.cmdCalc.fontname("Arial")
+gui.FormCalc.cmdCalc.fontsize(8)
+gui.FormCalc.cmdCalc.event(click,cmdcalculate)
+gui.FormCalc.cmdCalcSave.create(button)
+gui.FormCalc.cmdCalcSave.caption("Save")
+gui.FormCalc.cmdCalcSave.visible(True)
+gui.FormCalc.cmdCalcSave.size(855,375)
+gui.FormCalc.cmdCalcSave.zorder(0)
+gui.FormCalc.cmdCalcSave.position(2755,2565)
+gui.FormCalc.cmdCalcSave.enabled(True)
+gui.FormCalc.cmdCalcSave.fontname("Arial")
+gui.FormCalc.cmdCalcSave.fontsize(8)
+gui.FormCalc.cmdCalcSave.event(click,cmdCalc_Save)
+gui.FormCalc.txtILen.create(textbox,"",True,930,300,0,845,1265,True,0,Arial,8,-2147483643,1)
+gui.FormCalc.txtIWid.create(textbox,"",True,930,300,0,2730,1265,True,0,Arial,8,-2147483643,1)
+gui.FormCalc.lbl2.create(label,"Length",True,930,255,1,890,1010,True,0,Arial,8,-2147483633,0)
+gui.FormCalc.lbl3.create(label,"Width",True,930,255,1,2700,1010,True,0,Arial,8,-2147483633,0)
+gui.FormCalc.txtITot.create(textbox,"",True,3495,330,0,170,2075,False,0,Arial,8,-2147483643,1)
+gui.FormCalc.lbl5.create(label,"Total Quantity (square ft)",True,2160,255,1,170,1795,True,0,Arial,8,-2147483633,0)
+gui.FormCalc.dropdownlistLength.create(dropdownlist)
+gui.FormCalc.dropdownlistLength.visible(True)
+gui.FormCalc.dropdownlistLength.size(660,330)
+gui.FormCalc.dropdownlistLength.zorder(0)
+gui.FormCalc.dropdownlistLength.position(170,1265)
+gui.FormCalc.dropdownlistLength.enabled(True)
+gui.FormCalc.dropdownlistLength.fontname("Arial")
+gui.FormCalc.dropdownlistLength.fontsize(8)
+gui.FormCalc.dropdownlistWidth.create(dropdownlist)
+gui.FormCalc.dropdownlistWidth.visible(True)
+gui.FormCalc.dropdownlistWidth.size(660,330)
+gui.FormCalc.dropdownlistWidth.zorder(0)
+gui.FormCalc.dropdownlistWidth.position(2050,1265)
+gui.FormCalc.dropdownlistWidth.enabled(True)
+gui.FormCalc.dropdownlistWidth.fontname("Arial")
+gui.FormCalc.dropdownlistWidth.fontsize(8)
+gui.FormCalc.lbl9.create(label,"UM",True,525,255,1,170,1010,True,0,Arial,8,-2147483633,0)
+gui.FormCalc.lbl10.create(label,"UM",True,525,255,1,2100,1010,True,0,Arial,8,-2147483633,0)
+gui.FormCalc.lblDim1.create(label,"",True,825,300,1,900,3085,True,0,Arial,8,-2147483633,0)
+gui.FormCalc.lblDim2.create(label,"",True,825,300,1,2830,3085,True,0,Arial,8,-2147483633,0)
+gui.FormCalc.txtRoll.create(textbox,"",True,3510,300,0,170,400,True,0,Arial,8,-2147483643,1)
+gui.FormCalc.lbl8.create(label,"Serial Number",True,1935,255,1,200,140,True,0,Arial,8,-2147483633,0)
+gui.FormCalc.txtLenUM.create(textbox,"",True,630,330,0,170,1265,True,0,Arial,8,-2147483643,1)
+gui.FormCalc.txtWidUM.create(textbox,"",True,630,330,0,2050,1265,True,0,Arial,8,-2147483643,1)
+gui.FormCalc.txtILen.tabstop(True)
+gui.FormCalc.txtILen.tabindex(2)
+gui.FormCalc.txtIWid.tabstop(True)
+gui.FormCalc.txtIWid.tabindex(3)
+gui.FormCalc.cmdCalc.tabstop(True)
+gui.FormCalc.cmdCalc.tabindex(4)
+gui.FormCalc.cmdCalcSave.tabstop(True)
+gui.FormCalc.cmdCalcSave.tabindex(5)
+
+
+Program.Sub.ScreenSU.End
+
+Program.Sub.Preflight.Start
+
+Variable.Global.lRow.Declare(Long,0)
+Variable.Global.lRowCount.Declare(Long,0)
+Variable.Global.sLength.Declare(String)
+Variable.Global.sTotal.Declare(String)
+Variable.Global.Type.Declare(String)
+Program.Sub.Preflight.End
+
+Program.Sub.Main.Start
+'GKD
+'jct
+'11-07-10
+'hook Id 26715
+'bdf in AUX001
+'part=000005
+
+V.Local.sSel.Declare(String)
+V.Local.sRoll.Declare(String)
+V.Local.bRoll.Declare(Boolean)
+
+F.ODBC.Connection!Con.OpenConnection(V.Ambient.PDSN,V.Ambient.PUser,V.Ambient.PPass)
+
+
+
+'Populate
+F.Intrinsic.Control.If(V.Caller.Hook,=,26715)
+F.Intrinsic.String.Concat("select ROLL from INVENTORY_MST3 where PART='",V.Passed.000005,"'",V.Local.sSel)
+F.ODBC.Connection!Con.OpenRecordsetRO("rstA",V.Local.sSel)
+	F.Intrinsic.Control.If(V.ODBC.Con!rstA.EOF,=,False)
+		V.Local.sRoll.Set(V.ODBC.Con!rstA.FieldValTrim!ROLL)
+	F.Intrinsic.Control.EndIf
+F.ODBC.Con!rstA.Close
+	F.Intrinsic.Control.If(V.Local.sRoll,=,"Y")
+		F.Intrinsic.Control.CallSub(User)
+	F.Intrinsic.Control.Else
+		F.Intrinsic.Control.CallSub(Form1_unload)
+	F.Intrinsic.Control.EndIf
+
+'script1
+F.Intrinsic.Control.elseIf(V.Caller.Hook,=,26701)
+F.Intrinsic.String.Concat("select ROLL from INVENTORY_MST3 where PART='",V.Passed.000005,"'",V.Local.sSel)
+F.ODBC.Connection!Con.OpenRecordsetRO("rstA",V.Local.sSel)
+	F.Intrinsic.Control.If(V.ODBC.Con!rstA.EOF,=,False)
+		V.Local.sRoll.Set(V.ODBC.Con!rstA.FieldValTrim!ROLL)
+	F.Intrinsic.Control.EndIf
+F.ODBC.Con!rstA.Close
+	F.Intrinsic.Control.If(V.Local.sRoll,=,"Y")
+		F.Intrinsic.Control.CallSub(User)
+	F.Intrinsic.Control.Else
+		F.Intrinsic.Control.CallSub(Form1_unload)
+	F.Intrinsic.Control.EndIf
+
+
+F.Intrinsic.Control.ElseIf(V.Caller.Hook,=,26713)
+	F.Intrinsic.Control.CallSub(Cmdissuesave)
+	F.Intrinsic.String.Concat("delete from ATG_TMP_PHYSICAL_INV where PART='",V.Passed.000005,"'",V.Local.sSel)
+	F.ODBC.Connection!Con.Execute(V.Local.sSel)
+		F.Intrinsic.Control.CallSub(Form1_unload)
+
+
+F.Intrinsic.Control.Else
+	F.Intrinsic.Control.CallSub(Form1_unload)
+
+F.Intrinsic.Control.EndIf
+
+
+
+
+Program.Sub.Main.End
+
+program.sub.form1_unload.start
+
+f.ODBC.Connection!Con.Close
+F.Intrinsic.Control.End
+
+program.sub.form1_unload.end
+
+program.sub.cmdCalc_Save.start
+
+V.Local.sSel.Declare(String)
+V.Local.fOHLen.Declare(Float)
+V.Local.fOHWid.Declare(Float)
+V.Local.fOHTot.Declare(Float)
+V.Local.fALLLen.Declare(Float)
+V.Local.fALLWid.Declare(Float)
+V.Local.fALLTotal.Declare(Float)
+V.Local.sLength.Declare(String)
+V.Local.sWidth.Declare(String)
+V.Local.sTotal.Declare(String)
+V.Local.sOHTotal.Declare(Float)
+V.Local.sRec.Declare(String)
+V.Local.sDelete.Declare(String)
+V.Local.sInsert.Declare(String)
+
+
+F.Intrinsic.String.Format(V.Screen.FormCalc!txtIWid.Text,"0.0000",V.Local.sWidth)
+F.Intrinsic.String.Format(V.Screen.FormCalc!txtILen.Text,"0.0000",V.Local.sLength)
+
+Gui.Form1.gsflexgrid1.TextMatrix(4,V.Global.lRow,V.Screen.FormCalc!txtITot.Text)
+
+F.Intrinsic.String.Concat("delete from ATG_TMP_PHYSICAL_INV where PART='",V.Passed.000005,"' and SERIAL='",V.Screen.FormCalc!txtRoll.Text,"'",V.Local.sDelete)
+F.ODBC.Connection!Con.Execute(V.Local.sDelete)
+'Gui.Form1.gsflexgrid1.TextMatrix(5,V.Global.lRow,V.Local.sLength)
+'Gui.Form1.gsflexgrid1.TextMatrix(6,V.Global.lRow,V.Local.sWidth)
+
+F.Intrinsic.String.Concat("insert into ATG_TMP_PHYSICAL_INV values('",V.Passed.000005,"','",V.Screen.FormCalc!txtRoll.Text,"','",V.Local.sLength,"','",V.Local.sWidth,"','",V.Screen.FormCalc!txtITot.Text,"','",V.Global.lRow,"')",V.Local.sInsert)
+F.ODBC.Connection!Con.Execute(V.Local.sInsert)
+'F.Intrinsic.String.Concat("select * from ATG_TMP_PHYSICAL_INV where PART='",V.Passed.000005,"' and SERIAL='",V.Screen.FormCalc!txtRoll.Text,"'",V.Local.sSel)
+'F.ODBC.Connection!Con.OpenRecordsetRW("rstA",V.Local.sSel)
+'	F.Intrinsic.Control.If(V.ODBC.Con!rstA.EOF,=,True)
+'		F.ODBC.Con!rstA.AddNew
+'			F.ODBC.Con!rstA.Set!PART(V.Passed.000005)
+'			F.ODBC.Con!rstA.Set!SERIAL(V.Screen.FormCalc!txtRoll.Text)
+'	F.Intrinsic.Control.EndIf
+'			F.ODBC.Con!rstA.Set!LENGTH(V.Local.sLength)
+				Gui.Form1.gsflexgrid1.TextMatrix(5,V.Global.lRow,V.Local.sLength)
+'			F.ODBC.Con!rstA.Set!WIDTH(V.Local.sWidth)
+				Gui.Form1.gsflexgrid1.TextMatrix(6,V.Global.lRow,V.Local.sWidth)
+'F.ODBC.Con!rstA.Set!TOTAL(V.Screen.FormCalc!txtITot.Tex
+'			F.ODBC.Con!rstA.Set!ROW(V.Global.lRow)
+'		F.ODBC.Con!rstA.Update
+'F.ODBC.Con!rstA.Close
+
+
+F.Intrinsic.Control.CallSub(Formcalc_unload)
+
+program.sub.cmdCalc_Save.end
+
+program.sub.cmdcalc_click.start
+
+'COLUMN
+'KEY
+
+F.Intrinsic.Control.If(V.Args.COLUMN,=,4)
+V.Local.lRow.Declare(Long)
+V.Local.flength.Declare(Float)
+V.Local.sRoll.Declare(String)
+V.Local.fWidth.Declare(Float)
+V.Local.fTot.Declare(Float)
+V.Local.sSel.Declare(String)
+V.Local.sSelB.Declare(String)
+
+
+
+Gui.Form1.gsflexgrid1.GetTextMatrix(3,V.Args.KEY,V.Local.sRoll)
+Gui.Form1.gsflexgrid1.GetTextMatrix(6,V.Args.KEY,V.Local.fWidth)
+
+
+Gui.FormCalc.txtRoll.Text(V.Local.sRoll)
+Gui.FormCalc.txtRoll.Enabled(false)
+
+
+Gui.FormCalc.dropdownlistLength.Visible(false)
+Gui.FormCalc.dropdownlistWidth.Visible(false)
+
+Gui.FormCalc.txtLenUM.Text("in")
+Gui.FormCalc.txtWidUM.Text("in")
+
+V.Global.lRow.Set(V.Args.KEY)
+
+
+F.Intrinsic.String.Concat("select * from ATG_TMP_PHYSICAL_INV where PART='",V.Passed.000005,"' and SERIAL='",V.Local.sRoll,"'",V.Local.sSel)
+F.ODBC.Connection!Con.OpenRecordsetRW("rstA",V.Local.sSel)
+	F.Intrinsic.Control.If(V.ODBC.Con!rstA.EOF,=,True)
+
+		F.Intrinsic.String.Concat("select LENGTH,WIDTH,TOTAL from ATG_ITMST_LEN_WIDTH where PART='",V.Passed.000005,"' and SERIAL='",V.Local.sRoll,"'",V.Local.sSelB)
+		F.ODBC.Connection!Con.OpenRecordsetRO("rstB",V.Local.sSelB)
+			F.Intrinsic.Control.If(V.ODBC.Con!rstB.EOF,=,False)
+				Gui.FormCalc.txtILen.Text(V.ODBC.Con!rstB.FieldVal!LENGTH)
+				Gui.FormCalc.txtIWid.Text(V.ODBC.Con!rstB.FieldVal!WIDTH)
+				Gui.FormCalc.txtITot.Text(V.ODBC.Con!rstB.FieldVal!TOTAL)
+
+			F.Intrinsic.Control.EndIf
+		F.ODBC.Con!rstB.Close
+
+	F.Intrinsic.Control.else
+			Gui.FormCalc.txtILen.Text(V.ODBC.Con!rstA.FieldVal!LENGTH)
+			Gui.FormCalc.txtIWid.Text(V.ODBC.Con!rstA.FieldVal!WIDTH)
+			Gui.FormCalc.txtITot.Text(V.ODBC.Con!rstA.FieldVal!TOTAL)
+	F.Intrinsic.Control.EndIf
+F.ODBC.Con!rstA.Close
+
+
+	
+Gui.FormCalc..AlwaysOnTop(true)
+Gui.FormCalc..Show
+
+F.Intrinsic.Control.Else
+	F.Intrinsic.Control.ExitSub
+F.Intrinsic.Control.EndIf
+
+program.sub.cmdcalc_click.end
+
+program.sub.formcalc_unload.start
+
+Gui.FormCalc.txtILen.Text("")
+Gui.FormCalc.txtIWid.Text("")
+Gui.FormCalc.txtITot.Text("")
+
+Gui.FormCalc..Visible(false)
+
+program.sub.formcalc_unload.end
+
+program.sub.cmdcalculate.start
+
+V.Local.fLength.Declare(Float)
+V.Local.fWidth.Declare(Float)
+V.Local.fTotal.Declare(Float)
+V.Local.sTotal.Declare(String)
+
+
+'F.Intrinsic.Control.If(V.Screen.FormCalc!dropdownlistLength.Text,=,"in")
+'	F.Intrinsic.Math.UnitConversion(V.Screen.FormCalc!txtILen.Text,"In2Ft",V.Local.fLength)
+'F.Intrinsic.Control.ElseIf(V.Screen.FormCalc!dropdownlistLength.Text,=,"M")
+'	F.Intrinsic.Math.UnitConversion(V.Screen.FormCalc!txtILen.Text,"M2Ft",V.Local.fLength)
+'F.Intrinsic.Control.ElseIf(V.Screen.FormCalc!dropdownlistLength.Text,=,"ft")
+'	V.Local.fLength.Set(V.Screen.FormCalc!txtILen.Text)
+'F.Intrinsic.Control.EndIf
+
+'F.Intrinsic.Control.If(V.Screen.FormCalc!dropdownlistWidth.Text,=,"in")
+'	F.Intrinsic.Math.UnitConversion(V.Screen.FormCalc!txtIWid.Text,"In2Ft",V.Local.fWidth)
+'F.Intrinsic.Control.elseIf(V.Screen.FormCalc!dropdownlistWidth.Text,=,"M")
+'	F.Intrinsic.Math.UnitConversion(V.Screen.FormCalc!txtIWid.Text,"M2Ft",V.Local.fWidth)
+'F.Intrinsic.Control.elseIf(V.Screen.FormCalc!dropdownlistWidth.Text,=,"ft")
+'	V.Local.fWidth.Set(V.Screen.FormCalc!txtIWid.Text)
+'F.Intrinsic.Control.endif
+
+F.Intrinsic.Math.UnitConversion(V.Screen.FormCalc!txtILen.Text,"In2Ft",V.Local.fLength)
+F.Intrinsic.Math.UnitConversion(V.Screen.FormCalc!txtIWid.Text,"In2Ft",V.Local.fWidth)
+
+F.Intrinsic.Math.Mult(V.Local.fLength,V.Local.fWidth,V.Local.fTotal)
+F.Intrinsic.String.Format(V.Local.fTotal,"0.0000",V.Local.sTotal)
+
+Gui.FormCalc.txtITot.Text(V.Local.sTotal)
+
+program.sub.cmdcalculate.end
+
+program.sub.cmdIssueSave.start
+
+V.Local.sSelC.Declare(String)
+V.Local.sSelB.Declare(String)
+V.Local.sTotal.Declare(String)
+V.Local.sRow.Declare(String)
+V.Local.sLength.Declare(String)
+V.Local.sWidth.Declare(String)
+V.Local.fLength.Declare(Float)
+V.Local.fWidth.Declare(Float)
+
+V.Local.sSerial.Declare(String)
+
+F.Intrinsic.String.Concat("select * from ATG_TMP_PHYSICAL_INV where PART='",V.Passed.000005,"'",V.Local.sSelB)
+F.ODBC.Connection!Con.OpenRecordsetRO("rstB",V.Local.sSelB)
+	F.Intrinsic.Control.DoUntil(V.ODBC.Con!rstB.EOF,=,True)
+
+		F.Intrinsic.String.Format(V.ODBC.Con!rstB.FieldVal!LENGTH,"0.0000",V.Local.sLength)
+		F.Intrinsic.String.Format(V.ODBC.Con!rstB.FieldVal!WIDTH,"0.0000",V.Local.sWidth)
+		F.Intrinsic.String.Format(V.ODBC.Con!rstB.FieldVal!TOTAL,"0.0000",V.Local.sTotal)
+
+
+'		F.Intrinsic.String.Concat("select SERIAL from ATG_ITMST_LEN_WIDTH where PART='",V.ODBC.Con!rstB.FieldValTrim!PART,"' and SERIAL ='",V.ODBC.Con!rstB.FieldValTrim!SERIAL,"'",V.Local.sSelC)
+'		F.ODBC.Connection!Con.OpenRecordsetRO("rstC",V.Local.sSelC)
+'			F.Intrinsic.Control.If(V.ODBC.Con!rstC.EOF,=,False)
+'				V.Local.sSerial.Set(V.ODBC.Con!rstC.FieldVal!SERIAL)
+'			F.Intrinsic.Control.EndIf
+'		F.ODBC.Con!rstC.Close
+
+		F.Intrinsic.String.Concat("select LENGTH,WIDTH,TOTAL from ATG_ITMST_LEN_WIDTH where PART='",V.ODBC.Con!rstB.FieldValTrim!PART,"' and SERIAL='",V.ODBC.Con!rstB.FieldValTrim!SERIAL,"'",V.Local.sSelC)
+		F.ODBC.Connection!Con.OpenRecordsetRW("rstC",V.Local.sSelC)
+			F.Intrinsic.Control.If(V.ODBC.Con!rstC.EOF,=,False)
+				F.ODBC.Con!rstC.Set!LENGTH(V.Local.sLength)
+				F.ODBC.Con!rstC.Set!WIDTH(V.Local.sWidth)
+				F.ODBC.Con!rstC.Set!TOTAL(V.Local.sTotal)
+				F.ODBC.Con!rstC.Update
+			F.Intrinsic.Control.EndIf
+		F.ODBC.Con!rstC.Close
+
+	F.ODBC.Con!rstB.MoveNext
+	F.Intrinsic.Control.Loop
+F.ODBC.Con!rstB.Close
+
+
+program.sub.cmdIssueSave.end
+
+Program.Sub.USER.Start
+
+
+V.Local.lColumnCt.Declare(Long)
+V.Local.lRow.Declare(Long)
+V.Local.lRowCt.Declare(Long)
+V.Local.lRows.Declare(Long)
+V.Local.lGridRow.Declare(Long)
+V.Local.lCol.Declare(Long)
+V.Local.lCols.Declare(Long)
+V.Local.sRowData.Declare(String)
+V.Local.sSelA.Declare(String)
+V.Local.sSelX.Declare(String)
+V.Local.sValue.Declare(String)
+
+
+F.Intrinsic.BDF.Load("AUX001","AUX001")
+F.Intrinsic.BDF.ReadColumnCount("AUX001",V.Local.lColumnCt)
+F.Intrinsic.BDF.ReadRowCount("AUX001",V.Global.lRowCount)
+
+F.Intrinsic.Math.add(V.Global.lRowCount,1,V.Local.lRows)
+
+Gui.Form1.gsflexgrid1.Rows(V.Local.lRows)
+Gui.Form1.gsflexgrid1.Cols(10)
+
+Gui.Form1.gsflexgrid1.TextMatrix(0,0,"Bin")
+Gui.Form1.gsflexgrid1.TextMatrix(1,0,"Lot")
+Gui.Form1.gsflexgrid1.TextMatrix(2,0,"Heat")
+Gui.Form1.gsflexgrid1.TextMatrix(3,0,"Serial Number")
+Gui.Form1.gsflexgrid1.TextMatrix(4,0,"Quantity")
+Gui.Form1.gsflexgrid1.TextMatrix(5,0,"Length")
+Gui.Form1.gsflexgrid1.TextMatrix(6,0,"Width")
+Gui.Form1.gsflexgrid1.TextMatrix(7,0,"DFAR")
+Gui.Form1.gsflexgrid1.TextMatrix(8,0,"USMELT")
+Gui.Form1.gsflexgrid1.TextMatrix(9,0,"USMFG")
+
+
+F.Intrinsic.Control.For(V.Local.lCol,0,9,1)
+	Gui.Form1.gsflexgrid1.BuildStyle(1,V.Local.lCol,"Type","Locked",True)
+F.Intrinsic.Control.Next(V.Local.lCol)
+
+
+'Gui.Form1.gsflexgrid1.ColWidth(0,500)
+'Gui.Form1.gsflexgrid1.ColWidth(1,1200)
+Gui.Form1.gsflexgrid1.ColWidth(3,3000)
+Gui.Form1.gsflexgrid1.ColWidth(7,700)
+Gui.Form1.gsflexgrid1.ColWidth(8,700)
+Gui.Form1.gsflexgrid1.ColWidth(9,700)
+
+F.Intrinsic.Math.Sub(V.Global.lRowCount,1,V.Local.lRowCt)
+F.Intrinsic.Math.Sub(V.Local.lColumnCt,1,V.Local.lColumnCt)
+
+
+F.Intrinsic.Control.For(V.Local.lRow,0,V.Local.lRowCt,1)
+
+	F.Intrinsic.BDF.ReadRow("AUX001",V.Local.lRow,V.Local.sRowData)
+	F.Intrinsic.String.Split(V.Local.sRowData,"|~|",V.Local.sRowData)
+		F.Intrinsic.Math.Add(V.Local.lRow,1,V.Local.lGridRow)
+
+		F.Intrinsic.Control.For(V.Local.lCol,0,V.Local.lColumnCt,1)
+			V.Local.sValue.Set(V.Local.sRowData(v.Local.lCol))
+			Gui.Form1.gsflexgrid1.TextMatrix(V.Local.lCol,V.Local.lGridRow,V.Local.sValue.Trim)
+		F.Intrinsic.Control.Next(V.Local.lCol)
+
+		F.Intrinsic.String.Concat("select LENGTH,WIDTH,DFAR,USMELT,USMFG from ATG_ITMST_LEN_WIDTH where PART='",V.Passed.000005.Trim,"' and SERIAL like'%",V.Local.sRowData(3).Trim,"'",V.Local.sSelA)
+		F.ODBC.Connection!Con.OpenRecordsetRO("rstA",V.Local.sSelA)
+			F.Intrinsic.Control.If(V.ODBC.Con!rstA.EOF,=,False)
+				Gui.Form1.gsflexgrid1.TextMatrix(5,V.Local.lGridRow,V.ODBC.Con!rstA.FieldValfloat!LENGTH)
+				Gui.Form1.gsflexgrid1.TextMatrix(6,V.Local.lGridRow,V.ODBC.Con!rstA.FieldValfloat!WIDTH)
+				Gui.Form1.gsflexgrid1.TextMatrix(7,V.Local.lGridRow,V.ODBC.Con!rstA.FieldValtrim!DFAR)
+				Gui.Form1.gsflexgrid1.TextMatrix(8,V.Local.lGridRow,V.ODBC.Con!rstA.FieldValtrim!USMELT)
+				Gui.Form1.gsflexgrid1.TextMatrix(9,V.Local.lGridRow,V.ODBC.Con!rstA.FieldValtrim!USMFG)
+			F.Intrinsic.Control.EndIf
+
+		F.ODBC.Con!rstA.Close
+	Gui.Form1.gsflexgrid1.ApplyStyle(V.Local.lGridRow,1)
+
+F.Intrinsic.Control.Next(V.Local.lrow)
+
+Gui.Form1.gsflexgrid1.FixedRows(1)
+
+Gui.Form1..Show
+
+Program.Sub.USER.End
+
+Program.Sub.Issue.Start
+
+
+V.Local.sSel.Declare(String)
+V.Local.sSelB.Declare(String)
+
+V.Local.sPart.Declare(String)
+V.Local.sSerial.Declare(String)
+V.Local.srecord.Declare(String)
+V.Local.sQty.Declare(String)
+V.Local.lFor.Declare(Long)
+V.Local.fLength.Declare(Float)
+V.Local.sLength.Declare(String)
+V.Local.sWidth.Declare(String)
+V.Local.sTotal.Declare(String)
+V.Local.sHeat.Declare(String)
+V.Local.fOHLen.Declare(Float)
+V.Local.fOHWid.Declare(Float)
+V.Local.fOHTot.Declare(Float)
+
+
+
+
+F.Intrinsic.String.Concat("select SERIAL,LENGTH,WIDTH,TOTAL,TYPE from ATG_TMP_PHYSICAL_INV where PART='",V.Passed.000005,"'",V.Local.sSelB)
+F.ODBC.Connection!Con.OpenRecordsetRO("rstB",V.Local.sSelB)
+	F.Intrinsic.Control.DoUntil(V.ODBC.Con!rstB.EOF,=,True)
+		F.Intrinsic.Math.Mult(V.ODBC.Con!rstB.FieldVal!LENGTH,12,V.Local.fLength)
+			F.Intrinsic.String.Format(V.Local.fLength,"0.0000",V.Local.sLength)
+			F.Intrinsic.String.Format(V.ODBC.Con!rstB.FieldVal!WIDTH,"0.0000",V.Local.sWidth)
+			F.Intrinsic.String.Format(V.ODBC.Con!rstB.FieldVal!TOTAL,"0.0000",V.Local.sTotal)
+			V.Local.sSerial.Set(V.ODBC.Con!rstB.FieldValTrim!SERIAL)
+
+
+		F.Intrinsic.String.Concat("select PART,LOCN,LOT,BIN,'HEAT' as HEAT,SERIAL,QTY,'LENGTH' as LENGTH,'in' as LENGTH_UM,'WIDTH' as WIDTH,'in' as WIDTH_UM,'TOTAL' as TOTAL,'sf' as TOTAL_UM,DFAR,USMELT,USMFG from ATG_ITMST_LEN_WIDTH where PART='",V.Passed.000005,"' and SERIAL='",V.Local.sSerial,"'",V.Local.sSel)
+		F.ODBC.Connection!Con.OpenRecordsetRW("rstA",V.Local.sSel)
+			F.Intrinsic.Control.If(V.ODBC.Con!rstA.EOF,=,False)
+
+'------------------update here-----------------------------
+					
+			F.Intrinsic.Control.EndIf
+		F.ODBC.Con!rstA.Close
+
+	F.ODBC.Con!rstB.MoveNext
+	F.Intrinsic.Control.Loop
+F.ODBC.Con!rstB.Close
+
+
+F.ODBC.Connection!Con.Execute("delete from ATG_TMP_PHYSICAL_INV")
+F.Intrinsic.Control.CallSub(Form1_unload)
+
+Program.Sub.Issue.End
+
+program.sub.cmdinvsave_click.start
+
+
+V.Local.sSelB.Declare(String)
+V.Local.sTotal.Declare(String)
+V.Local.sRowdata.Declare(String)
+V.Local.lRow.Declare(Long)
+V.Local.lRowCt.Declare(Long)
+V.Local.lFor.Declare(Long)
+
+f.Intrinsic.BDF.clone("AUX001","CLONE")
+
+F.Intrinsic.Math.Sub(V.Screen.Form1!gsflexgrid1.Rows,1,V.Local.lRowCt)
+	F.Intrinsic.Control.For(V.Local.lFor,1,V.Local.lRowCt,1)
+		Gui.Form1.gsflexgrid1.ReadRow(V.Local.lFor,V.Local.sRowdata)
+			F.Intrinsic.String.Replace(V.Local.sRowdata,"*!*","|~|",V.Local.sRowdata)
+			f.Intrinsic.BDF.writerow("CLONE",V.Local.sRowdata)
+	F.Intrinsic.Control.Next(V.Local.lFor)
+
+F.If.Intrinsic.BDF.Save("CLONE",AUX001)
+F.Intrinsic.Control.CallSub(Form1_unload)
+
+program.sub.cmdinvsave_click.end
+
+
