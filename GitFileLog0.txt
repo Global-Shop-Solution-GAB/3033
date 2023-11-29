@@ -1,3 +1,4 @@
 Changes in 'C:\Websites\Git\EMarlow\3033' committed. New commit created: 43b5e6f347db85d59e9108201e1610c75777ff91
 Push failed for current repository.
 Pull was successful for the current repository C:\Websites\Git\EMarlow\3033.
+File has been pushed successfully on Git repository.
