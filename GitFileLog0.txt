@@ -1,0 +1,6 @@
+Pull was successful for the current repository C:\Websites\Git\EMarlow\3033.
+File has been deleted successfully on Git repository.
+Pull was successful for the current repository C:\Websites\Git\EMarlow\3033.
+Failed to delete file on Git repository
+Pull was successful for the current repository C:\Websites\Git\EMarlow\3033.
+Failed to delete file on Git repository
