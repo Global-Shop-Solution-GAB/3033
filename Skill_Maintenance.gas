@@ -1,0 +1,285 @@
+Program.Sub.ScreenSU.Start
+gui.F_Main..create
+gui.F_Main..caption("Skill_Maintenance")
+gui.F_Main..size(4350,6600)
+gui.F_Main..position(0,0)
+gui.F_Main..event(unload,exit)
+gui.F_Main..alwaysontop(False)
+gui.F_Main..fontname("Arial")
+gui.F_Main..fontsize(8)
+gui.F_Main..forecolor(0)
+gui.F_Main..fontstyle(False,False,False,False,False)
+gui.F_Main..BackColor(-2147483633)
+gui.F_Main..controlbox(True)
+gui.F_Main..maxbutton(False)
+gui.F_Main..minbutton(True)
+gui.F_Main..mousepointer(0)
+gui.F_Main..moveable(True)
+gui.F_Main..sizeable(False)
+gui.F_Main..ShowInTaskBar(True)
+gui.F_Main..titlebar(True)
+gui.F_Main.frmControls.create(frame)
+gui.F_Main.frmControls.caption("")
+gui.F_Main.frmControls.size(3840,435)
+gui.F_Main.frmControls.position(100,2900)
+gui.F_Main.frmControls.visible(True)
+gui.F_Main.frmControls.borderstyle(0)
+gui.F_Main.frmControls.fontname("Arial")
+gui.F_Main.frmControls.fontsize(8)
+gui.F_Main.cmdSave.create(button)
+gui.F_Main.cmdSave.caption("Save")
+gui.F_Main.cmdSave.visible(True)
+gui.F_Main.cmdSave.size(855,375)
+gui.F_Main.cmdSave.zorder(0)
+gui.F_Main.cmdSave.position(0,0)
+gui.F_Main.cmdSave.enabled(true)
+gui.F_Main.cmdSave.parent("frmcontrols")
+gui.F_Main.cmdSave.fontname("Arial")
+gui.F_Main.cmdSave.fontsize(8)
+gui.F_Main.cmdSave.event(click,cmdsave_click)
+gui.F_Main.cmdDelete.create(button)
+gui.F_Main.cmdDelete.caption("Delete")
+gui.F_Main.cmdDelete.visible(True)
+gui.F_Main.cmdDelete.size(855,375)
+gui.F_Main.cmdDelete.zorder(0)
+gui.F_Main.cmdDelete.position(1845,0)
+gui.F_Main.cmdDelete.enabled(True)
+gui.F_Main.cmdDelete.parent("frmcontrols")
+gui.F_Main.cmdDelete.fontname("Arial")
+gui.F_Main.cmdDelete.fontsize(8)
+gui.F_Main.cmdDelete.event(click,cmddelete_click)
+gui.F_Main.cmdClear.create(button)
+gui.F_Main.cmdClear.caption("Clear")
+gui.F_Main.cmdClear.visible(True)
+gui.F_Main.cmdClear.size(855,375)
+gui.F_Main.cmdClear.zorder(0)
+gui.F_Main.cmdClear.position(2745,0)
+gui.F_Main.cmdClear.enabled(True)
+gui.F_Main.cmdClear.parent("frmcontrols")
+gui.F_Main.cmdClear.fontname("Arial")
+gui.F_Main.cmdClear.fontsize(8)
+gui.F_Main.cmdClear.event(click,cmdClear_click)
+gui.F_Main.txtSMID.create(textbox,"",False,315,315,0,2925,840,True,0,Arial,8,-2147483643,1)
+gui.F_Main.txtSKID.create(textbox,"",False,660,315,0,3280,875,True,0,Arial,8,-2147483643,1)
+gui.F_Main.lbl3.create(label,"Skill Description",True,2490,255,1,100,145,True,0,Arial,8,-2147483633,0)
+gui.F_Main.txtSK_Desc.create(textbox,"",True,2550,315,0,55,415,True,0,Arial,8,-2147483643,1)
+gui.F_Main.lbl5.create(label,"WC_WG_Desc",True,2490,255,1,100,1150,True,0,Arial,8,-2147483633,0)
+gui.F_Main.txtWC_WG_Desc.create(textbox,"",True,2550,315,0,85,1420,True,0,Arial,8,-2147483643,1)
+gui.F_Main.lbl6.create(label,"Training Required",True,2490,255,1,100,1765,True,0,Arial,8,-2147483633,0)
+gui.F_Main.txtTraining_Req.create(textbox,"",True,2550,315,0,100,2035,True,0,Arial,8,-2147483643,1)
+gui.F_Main.txtTR_ID.create(textbox,"",False,585,315,0,3250,2020,True,0,Arial,8,-2147483643,1)
+gui.F_Main.cmdNew.create(button)
+gui.F_Main.cmdNew.caption("New")
+gui.F_Main.cmdNew.visible(True)
+gui.F_Main.cmdNew.size(855,375)
+gui.F_Main.cmdNew.zorder(0)
+gui.F_Main.cmdNew.position(910,0)
+gui.F_Main.cmdNew.enabled(True)
+gui.F_Main.cmdNew.parent("frmcontrols")
+gui.F_Main.cmdNew.fontname("Arial")
+gui.F_Main.cmdNew.fontsize(8)
+gui.F_Main.cmdNew.event(click,cmdClear_click)
+gui.F_Main.chkWC.create(checkbox)
+gui.F_Main.chkWC.caption("WC")
+gui.F_Main.chkWC.visible(True)
+gui.F_Main.chkWC.size(720,255)
+gui.F_Main.chkWC.zorder(0)
+gui.F_Main.chkWC.position(100,800)
+gui.F_Main.chkWC.enabled(True)
+gui.F_Main.chkWC.alignment(0)
+gui.F_Main.chkWC.fontname("Arial")
+gui.F_Main.chkWC.fontsize(8)
+gui.F_Main.chkAct.create(checkbox)
+gui.F_Main.chkAct.caption("Skill Active")
+gui.F_Main.chkAct.visible(True)
+gui.F_Main.chkAct.size(1935,255)
+gui.F_Main.chkAct.zorder(0)
+gui.F_Main.chkAct.position(100,2500)
+gui.F_Main.chkAct.enabled(True)
+gui.F_Main.chkAct.alignment(0)
+gui.F_Main.chkAct.fontname("Arial")
+gui.F_Main.chkAct.fontsize(8)
+gui.F_Main.chkWG.create(checkbox)
+gui.F_Main.chkWG.caption("Work Group")
+gui.F_Main.chkWG.visible(True)
+gui.F_Main.chkWG.size(1200,255)
+gui.F_Main.chkWG.zorder(0)
+gui.F_Main.chkWG.position(1440,815)
+gui.F_Main.chkWG.enabled(True)
+gui.F_Main.chkWG.alignment(0)
+gui.F_Main.chkWG.fontname("Arial")
+gui.F_Main.chkWG.fontsize(8)
+gui.F_Main.lvw1.create(listview)
+gui.F_Main.lvw1.view(3)
+gui.F_Main.lvw1.addlistviewcolumn("TrID",0,0)
+gui.F_Main.lvw1.addlistviewcolumn("Skill Desc",1425,1)
+gui.F_Main.lvw1.addlistviewcolumn("Training Description",1275,1)
+gui.F_Main.lvw1.addlistviewcolumn("Skill Active",1000,1)
+gui.F_Main.lvw1.visible(True)
+gui.F_Main.lvw1.size(3945,2610)
+gui.F_Main.lvw1.zorder(0)
+gui.F_Main.lvw1.position(15,3400)
+gui.F_Main.lvw1.enabled(True)
+gui.F_Main.lvw1.fontname("Arial")
+gui.F_Main.lvw1.fontsize(8)
+gui.F_Main.cmdSkill.create(button)
+gui.F_Main.cmdSkill.caption("^")
+gui.F_Main.cmdSkill.visible(True)
+gui.F_Main.cmdSkill.size(400,375)
+gui.F_Main.cmdSkill.zorder(0)
+gui.F_Main.cmdSkill.position(2700,400)
+gui.F_Main.cmdSkill.enabled(True)
+gui.F_Main.cmdSkill.fontname("Arial")
+gui.F_Main.cmdSkill.fontsize(8)
+gui.F_Main.cmdSkill.event(click,Browser_Skill)
+gui.F_Main.cmdWC.create(button)
+gui.F_Main.cmdWC.caption("^")
+gui.F_Main.cmdWC.visible(True)
+gui.F_Main.cmdWC.size(400,375)
+gui.F_Main.cmdWC.zorder(0)
+gui.F_Main.cmdWC.position(2700,1400)
+gui.F_Main.cmdWC.enabled(True)
+gui.F_Main.cmdWC.fontname("Arial")
+gui.F_Main.cmdWC.fontsize(8)
+gui.F_Main.cmdTrain.create(button)
+gui.F_Main.cmdTrain.caption("^")
+gui.F_Main.cmdTrain.visible(True)
+gui.F_Main.cmdTrain.size(400,375)
+gui.F_Main.cmdTrain.zorder(0)
+gui.F_Main.cmdTrain.position(2700,2000)
+gui.F_Main.cmdTrain.enabled(True)
+gui.F_Main.cmdTrain.fontname("Arial")
+gui.F_Main.cmdTrain.fontsize(8)
+gui.F_Main.cmdTrain.event(click,Browser_Train)
+
+
+Program.Sub.ScreenSU.End
+
+Program.Sub.Preflight.Start
+
+Program.Sub.Preflight.End
+
+Program.sub.Main.start
+Gui.F_Main..size(3800,6535)
+Gui.F_Main.frmControls.position(100,2900)
+Gui.F_main..show
+F.ODBC.Connection!con.OpenConnection("Global_ENM","Master","master")
+
+Program.sub.main.end
+
+program.sub.cmdSave_click.start
+V.Local.sQuery.Declare(String)
+
+F.Intrinsic.Control.If(V.Screen.F_Main!txtSMID.Text,=,"")
+	V.Local.sQuery.Set("Select * from ATG_SKILL_Maint")
+F.Intrinsic.Control.Else
+	F.Intrinsic.String.Concat("Select * from ATG_SKILL_MAINT where SMID=",V.Screen.F_Main!txtSMID.Text,"",V.Local.sQuery)
+F.Intrinsic.Control.EndIf
+F.ODBC.Connection!con.OpenRecordsetRW("rstS",V.Local.sQuery)
+F.Intrinsic.Control.If(V.ODBC.con!rstS.EOF,=,True)
+	F.ODBC.con!rstS.AddNew
+	F.ODBC.con!rstS.Set!SKID(V.Screen.F_Main!txtSKID.Text)
+	F.ODBC.con!rstS.Set!SK_Desc(V.Screen.F_Main!txtSK_Desc.Text)
+F.Intrinsic.Control.EndIf
+F.ODBC.con!rstS.Set!WC_WG_Desc(V.Screen.F_Main!txtWC_WG_Desc.Text)
+F.ODBC.con!rstS.Set!Training_Req(V.Screen.F_Main!txtTraining_Req.Text)
+F.ODBC.con!rstS.Set!TRID(V.Screen.F_Main!txtTR_ID.Text)
+F.ODBC.con!rstS.Update
+'update lvw to show all skills
+
+program.sub.cmdSave_click.end
+
+program.sub.cmdDelete_click.start
+V.Local.sret.Declare(String)
+V.Local.squery.Declare(String)
+F.Intrinsic.UI.Msgbox("Are you sure you want to delete?","Delete",4,V.Local.sret)
+F.Intrinsic.Control.If(V.Local.sret,=,6)
+	F.Intrinsic.string.concat("DELETE FROM ATG_Skill_Maint WHERE SMID=",V.Screen.F_Main!txtSMID.Text," ",V.Local.squery)
+	F.ODBC.Connection!con.Execute(V.Local.squery)
+	F.Intrinsic.Control.CallSub("cmdclear_click")
+F.Intrinsic.Control.EndIf
+
+program.sub.cmdDelete_click.end
+
+program.sub.cmdClear_click.start
+Gui.f_main.txtSMID.text("")
+Gui.f_main.txtSKID.text("")
+Gui.f_main.txtSK_Desc.text("")
+Gui.f_main.chkWC.value(0)
+Gui.F_Main.chkWG.Value(0)
+Gui.f_main.txtWC_WG_Desc.text("")
+Gui.f_main.txtTraining_Req.text("")
+Gui.f_main.txtTR_ID.text("")
+'gui.f_main.txtCreate_Dt.text("")
+Gui.f_main.chkAct.Value(0)
+
+program.sub.cmdClear_click.end
+
+Program.sub.exit.start
+F.ODBC.Connection!con.close
+F.intrinsic.control.end
+Program.sub.exit.end
+
+Program.Sub.Browser_Skill.Start
+V.Local.sCol.Declare(String)
+V.Local.sWidth.Declare(String)
+V.Local.sret.Declare(String)
+V.Local.squery.Declare(String)
+F.Intrinsic.String.Split("SMID*!*SKID*!*Skill Desc*!*TR_ID","*!*",V.Local.sCol)
+F.Intrinsic.String.Split("0*!*0*!*4000*!*1000","*!*",V.Local.swidth)
+V.Local.squery.Set("SELECT SMID,SKID, SK_Desc, TRID FROM ATG_Skill_Maint ORDER BY SKID")
+F.intrinsic.UI.Browser("SELECT","con",V.Local.squery,V.Local.sCol,V.Local.sWidth,400,400,V.Local.sret)
+F.Intrinsic.Control.If(V.Local.sret,<>,"***CANCEL***")
+	F.Intrinsic.string.Split(V.Local.sret,"*!*",V.Local.sret)
+	Gui.F_Main.txtSMID.text(V.local.sret(0))
+	Gui.F_Main.txtSKID.text(V.local.sret(1))
+	Gui.F_Main.txtSK_Desc.text(V.local.sret(2))
+	Gui.F_Main.txtTR_ID.text(V.local.sret(3))
+	F.Intrinsic.String.Concat("SELECT * FROM ATG_Skill_Maint WHERE SKID= '",V.local.sRet(0),"' AND SK_Desc= '",V.local.sRet(1),"' AND TRID= '",V.local.sRet(2),"' ",V.Local.squery)
+
+	F.ODBC.Connection!con.OpenRecordsetRO("rst",V.Local.sQuery)
+
+	F.Intrinsic.Control.If(V.Odbc.con!rst.EOf,<>,True)
+
+		Gui.f_main.txtSMID.text(V.odbc.con!rst.fieldvaltrim!SMID)
+		F.Intrinsic.Control.If(V.ODBC.con!rst.FieldVal!WC_WG,=,1)
+			Gui.f_main.chkWC.Value(1)
+			Gui.F_Main.chkWG.Value(0)
+		F.Intrinsic.Control.Else
+			Gui.f_main.chkWC.Value(1)
+			Gui.F_Main.chkWG.Value(0)
+		F.Intrinsic.Control.EndIf
+		Gui.f_main.txtWC_WG_Desc.text(V.odbc.con!rst.fieldvaltrim!WC_WG_Desc)
+		Gui.f_main.txtTraining_Req.text(V.odbc.con!rst.fieldvaltrim!Training_Req)
+		'gui.f_main.txtCreate_Dt.text(V.odbc.con!rst.fieldvaltrim!Create_Dt)
+		Gui.f_main.chkAct.Value(V.odbc.con!rst.fieldvaltrim!SK_Active)
+	F.Intrinsic.Control.EndIf
+	F.ODBC.con!rst.Close
+
+F.Intrinsic.Control.EndIf
+
+
+Program.Sub.Browser_Skill.End
+
+Program.Sub.Browser_Train.Start
+V.Local.sCol.Declare(String)
+V.Local.sWidth.Declare(String)
+V.Local.sret.Declare(String)
+V.Local.squery.Declare(String)
+
+F.Intrinsic.String.Split("TRID*!*Training Desc","*!*",V.Local.sCol)
+F.Intrinsic.String.Split("0*!*4000","*!*",V.Local.swidth)
+V.Local.squery.Set("SELECT TRID, TR_Desc FROM ATG_Training_Maint ORDER BY TRID")
+F.intrinsic.UI.Browser("SELECT","con",V.Local.squery,V.Local.sCol,V.Local.sWidth,400,400,V.Local.sret)
+F.Intrinsic.Control.If(V.Local.sret,<>,"***CANCEL***")
+	F.Intrinsic.string.Split(V.Local.sret,"*!*",V.Local.sret)
+
+	Gui.F_Main.txtTR_ID.text(V.local.sret(0))
+	Gui.F_Main.txtTraining_Req.text(V.local.sret(1))
+	
+F.Intrinsic.Control.EndIf
+
+
+Program.Sub.Browser_Train.End
+
+
