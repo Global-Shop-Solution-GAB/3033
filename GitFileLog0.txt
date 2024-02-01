@@ -4,3 +4,6 @@ Pull was successful for the current repository C:\Websites\Git\EMarlow\3033.
 Failed to delete file on Git repository
 Pull was successful for the current repository C:\Websites\Git\EMarlow\3033.
 Failed to delete file on Git repository
+Remote 'origin' commit list. System.Collections.Generic.List`1[System.ValueTuple`4[System.String,System.String,System.String,System.String]]
+Pull was successful for the current repository C:\Websites\Git\EMarlow\3033.
+File has been deleted successfully on Git repository.
